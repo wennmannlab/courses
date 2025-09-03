@@ -1,25 +1,52 @@
 ---
-title: "First steps using Galaxy"
+title: "Getting started with Galaxy"
 ---
 
-## Welcome
+## A short introduction to Galaxy
 
-::: hands_on
-<hands-on-title>Vorbereitung vor Kursbeginn</hands-on-title>
+To get started with the Galaxy platform, complete the following tutorial. It takes about 40 minutes and will familiarize you with the interface and the most important Galaxy terms. You will also upload your first data.
 
-1.  Account bei [usegalaxy.eu](https://usegalaxy.eu) anlegen
-2.  Chrome oder Firefox installieren\
-3.  Beispieldatensatz herunterladen
+:::: hands_on
+<hands-on-title>Hands-on: First steps with Galaxy</hands-on-title>
+
+The tutorial is available in several languages:
+
+[![English](assets/gb.svg){.flag width="25px"} Galaxy Introduction Tutorial (GTN)](https://training.galaxyproject.org/training-material/topics/introduction/tutorials/galaxy-intro-short/tutorial.html)
+
+[![日本語](assets/jp.svg){.flag width="25px"} Galaxy Introduction Tutorial (GTN, automatic translation)](https://training-galaxyproject-org.translate.goog/training-material/topics/introduction/tutorials/galaxy-intro-short/tutorial.html?_x_tr_sl=en&_x_tr_tl=ja&_x_tr_hl=en&_x_tr_pto=wapp)
+
+::: reference
+<reference-title>Reference</reference-title> This tutorial is from the Galaxy Training Network (GTN): [*Introduction to Galaxy*](https://training.galaxyproject.org/training-material/topics/introduction/tutorials/galaxy-intro-short/tutorial.html) Lizenz: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+:::
+::::
+
+## Create a new history
+
+Now that the tutorial is complete, we can plan the work with our own data. To do this, we create a new, empty history. Then we rename the history to **Data NCBI**
+
+![](png/history_new.PNG){width="80%"}
+
+## Rename the new history
+
+After creating the new history, we rename it. With the new name, it can be clearly identified and cannot be confused with previous analyses.
+
+![](png/history_name.PNG){width="80%"}
+
+## Upload from sequencing files
+
+The sequence data that provided here is taken from one of my publications and is intended to serve as an example. The sequence data has been published on NCBI SRA and is freely available. The sequenced sample is a large dsDNA virus and the data is small in size. The small size makes it perfect, easy and quick to handle.
+
+
+::: reference
+<reference-title>Reference</reference-title>
+
+| Isolate  |  BioSample   | NCBI SRA (Illumina) | NCBI SRA (Nanopore) |
+|:--------:|:------------:|:-------------------:|:-------------------:|
+| BmNPV-My | SAMN18849911 |     SRR14313723     |     SRR26992684     |
+
+Wennmann, J.T., Lim, F.S., Senger, S., Gani, M., Jehle, J.A., Keilwagen, J (2024). Haplotype determination of the Bombyx mori nucleopolyhedrovirus by Nanopore sequencing and linkage of single nucleotide variants. Journal of General Virology. 105 (5), 001983. [<https://doi.org/10.1099/jgv.0.001983>]
 :::
 
-::: comment
-<comment-title>Comment</comment-title>
+Please download the 
 
-Galaxy sieht je nach Server etwas unterschiedlich aus.
-:::
-
-::: warning
-<warning-title>Warnung</warning-title>
-
-Galaxy sieht je nach Server etwas unterschiedlich aus.
-:::
+Jetzt sind wir bereit die Daten 

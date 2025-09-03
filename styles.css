@@ -4,23 +4,28 @@ main { max-width: 1100px; margin-inline: auto; }
 
 comment-title,
 hands-on-title,
-warning-title{
+warning-title,
+reference-title {
   display: block;
   font-weight: bold;
   margin-bottom: 0.5em;
 }
 
 /*---------------------------------------*/
-comment-title {
+hands-on-title {
   color: #b36b00;
 }
 
-hands-on-title {
+comment-title {
   color: #2c3e99;
 }
 
 warning-title {
   color: #cc0000;
+}
+
+reference-title {
+  color: #333333;
 }
 
 
@@ -41,10 +46,15 @@ warning-title::before {
   margin-right: 0.3em;
 }
 
+reference-title::before {
+  content: "📖 ";
+  margin-right: 0.3em;
+}
+
 /*---------------------------------------*/
 
-.comment {
-  background: #ffecc1;  /* wie im GTN */
+.hands_on {
+  background: #ffecc1; 
   padding: 1em;
   margin: 1em 0;
   border-left: 5px solid #e6b800; 
@@ -52,8 +62,8 @@ warning-title::before {
 }
 
 
-.hands_on {
-  background: #dfe5f9;  /* wie im GTN */
+.comment {
+  background: #dfe5f9; 
   padding: 1em;
   margin: 1em 0;
   border-left: 5px solid #2c3e99; 
@@ -61,9 +71,26 @@ warning-title::before {
 }
 
 .warning {
-  background: #ffe5e5;  /* wie im GTN */
+  background: #ffe5e5; 
   padding: 1em;
   margin: 1em 0;
-  border-left: 5px solid ##cc0000; 
+  border-left: 5px solid #cc0000; 
   border-radius: 5px;
+}
+
+.reference {
+  background: #cccccc; 
+  padding: 1em;
+  margin: 1em 0;
+  border-left: 5px solid #333333; 
+  border-radius: 5px;
+}
+
+/*---------------------------------------*/
+
+.flag {
+  border: 1px solid #ccc;   /* dünner grauer Rand */
+  border-radius: 3px;       /* leicht abgerundet, kein Kreis */
+  background-color: white;  /* Weiß als Hintergrund, damit die JP-Flagge klar wirkt */
+  padding: 1px;             /* kleiner Abstand zum Rand */
 }
