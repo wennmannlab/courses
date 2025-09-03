@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>First steps using Galaxy – Courses, Tutorials and Slides</title>
+<title>Getting started with Galaxy – Courses, Tutorials and Slides</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -117,7 +117,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#welcome" id="toc-welcome" class="nav-link active" data-scroll-target="#welcome">Welcome</a></li>
+  <li><a href="#a-short-introduction-to-galaxy" id="toc-a-short-introduction-to-galaxy" class="nav-link active" data-scroll-target="#a-short-introduction-to-galaxy">A short introduction to Galaxy</a></li>
+  <li><a href="#create-a-new-history" id="toc-create-a-new-history" class="nav-link" data-scroll-target="#create-a-new-history">Create a new history</a></li>
+  <li><a href="#rename-the-new-history" id="toc-rename-the-new-history" class="nav-link" data-scroll-target="#rename-the-new-history">Rename the new history</a></li>
+  <li><a href="#upload-from-sequencing-files" id="toc-upload-from-sequencing-files" class="nav-link" data-scroll-target="#upload-from-sequencing-files">Upload from sequencing files</a></li>
   </ul>
 </nav>
     </div>
@@ -126,7 +129,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">First steps using Galaxy</h1>
+<h1 class="title">Getting started with Galaxy</h1>
 </div>
 
 
@@ -143,25 +146,56 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="welcome" class="level2">
-<h2 class="anchored" data-anchor-id="welcome">Welcome</h2>
+<section id="a-short-introduction-to-galaxy" class="level2">
+<h2 class="anchored" data-anchor-id="a-short-introduction-to-galaxy">A short introduction to Galaxy</h2>
+<p>To get started with the Galaxy platform, complete the following tutorial. It takes about 40 minutes and will familiarize you with the interface and the most important Galaxy terms. You will also upload your first data.</p>
 <div class="hands_on">
-<p><hands-on-title>Vorbereitung vor Kursbeginn</hands-on-title></p>
-<ol type="1">
-<li>Account bei <a href="https://usegalaxy.eu">usegalaxy.eu</a> anlegen</li>
-<li>Chrome oder Firefox installieren<br>
-</li>
-<li>Beispieldatensatz herunterladen</li>
-</ol>
+<p><hands-on-title>Hands-on: First steps with Galaxy</hands-on-title></p>
+<p>The tutorial is available in several languages:</p>
+<p><a href="https://training.galaxyproject.org/training-material/topics/introduction/tutorials/galaxy-intro-short/tutorial.html"><img src="assets/gb.svg" class="flag img-fluid" width="25" alt="English"> Galaxy Introduction Tutorial (GTN)</a></p>
+<p><a href="https://training-galaxyproject-org.translate.goog/training-material/topics/introduction/tutorials/galaxy-intro-short/tutorial.html?_x_tr_sl=en&amp;_x_tr_tl=ja&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp"><img src="assets/jp.svg" class="flag img-fluid" width="25" alt="日本語"> Galaxy Introduction Tutorial (GTN, automatic translation)</a></p>
+<div class="reference">
+<p><reference-title>Reference</reference-title> This tutorial is from the Galaxy Training Network (GTN): <a href="https://training.galaxyproject.org/training-material/topics/introduction/tutorials/galaxy-intro-short/tutorial.html"><em>Introduction to Galaxy</em></a> Lizenz: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
 </div>
-<div class="comment">
-<p><comment-title>Comment</comment-title></p>
-<p>Galaxy sieht je nach Server etwas unterschiedlich aus.</p>
 </div>
-<div class="warning">
-<p><warning-title>Warnung</warning-title></p>
-<p>Galaxy sieht je nach Server etwas unterschiedlich aus.</p>
+</section>
+<section id="create-a-new-history" class="level2">
+<h2 class="anchored" data-anchor-id="create-a-new-history">Create a new history</h2>
+<p>Now that the tutorial is complete, we can plan the work with our own data. To do this, we create a new, empty history. Then we rename the history to <strong>Data NCBI</strong></p>
+<p><img src="png/history_new.PNG" class="img-fluid" style="width:80.0%"></p>
+</section>
+<section id="rename-the-new-history" class="level2">
+<h2 class="anchored" data-anchor-id="rename-the-new-history">Rename the new history</h2>
+<p>After creating the new history, we rename it. With the new name, it can be clearly identified and cannot be confused with previous analyses.</p>
+<p><img src="png/history_name.PNG" class="img-fluid" style="width:80.0%"></p>
+</section>
+<section id="upload-from-sequencing-files" class="level2">
+<h2 class="anchored" data-anchor-id="upload-from-sequencing-files">Upload from sequencing files</h2>
+<p>The sequence data that provided here is taken from one of my publications and is intended to serve as an example. The sequence data has been published on NCBI SRA and is freely available. The sequenced sample is a large dsDNA virus and the data is small in size. The small size makes it perfect, easy and quick to handle.</p>
+<div class="reference">
+<p><reference-title>Reference</reference-title></p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Isolate</th>
+<th style="text-align: center;">BioSample</th>
+<th style="text-align: center;">NCBI SRA (Illumina)</th>
+<th style="text-align: center;">NCBI SRA (Nanopore)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">BmNPV-My</td>
+<td style="text-align: center;">SAMN18849911</td>
+<td style="text-align: center;">SRR14313723</td>
+<td style="text-align: center;">SRR26992684</td>
+</tr>
+</tbody>
+</table>
+<p>Wennmann, J.T., Lim, F.S., Senger, S., Gani, M., Jehle, J.A., Keilwagen, J (2024). Haplotype determination of the Bombyx mori nucleopolyhedrovirus by Nanopore sequencing and linkage of single nucleotide variants. Journal of General Virology. 105 (5), 001983. [<a href="https://doi.org/10.1099/jgv.0.001983" class="uri">https://doi.org/10.1099/jgv.0.001983</a>]</p>
 </div>
+<p>Please download the</p>
+<p>Jetzt sind wir bereit die Daten</p>
 
 
 </section>

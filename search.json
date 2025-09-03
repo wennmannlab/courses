@@ -44,16 +44,37 @@
   {
     "objectID": "topics/02_galaxy-first-steps/02_galaxy_steps.html",
     "href": "topics/02_galaxy-first-steps/02_galaxy_steps.html",
-    "title": "First steps using Galaxy",
+    "title": "Getting started with Galaxy",
     "section": "",
-    "text": "Vorbereitung vor Kursbeginn\n\nAccount bei usegalaxy.eu anlegen\nChrome oder Firefox installieren\n\nBeispieldatensatz herunterladen\n\n\n\nComment\nGalaxy sieht je nach Server etwas unterschiedlich aus.\n\n\nWarnung\nGalaxy sieht je nach Server etwas unterschiedlich aus."
+    "text": "To get started with the Galaxy platform, complete the following tutorial. It takes about 40 minutes and will familiarize you with the interface and the most important Galaxy terms. You will also upload your first data.\n\nHands-on: First steps with Galaxy\nThe tutorial is available in several languages:\n Galaxy Introduction Tutorial (GTN)\n Galaxy Introduction Tutorial (GTN, automatic translation)\n\nReference This tutorial is from the Galaxy Training Network (GTN): Introduction to Galaxy Lizenz: CC BY 4.0."
   },
   {
-    "objectID": "topics/02_galaxy-first-steps/02_galaxy_steps.html#welcome",
-    "href": "topics/02_galaxy-first-steps/02_galaxy_steps.html#welcome",
-    "title": "First steps using Galaxy",
+    "objectID": "topics/02_galaxy-first-steps/02_galaxy_steps.html#a-short-introduction-to-galaxy",
+    "href": "topics/02_galaxy-first-steps/02_galaxy_steps.html#a-short-introduction-to-galaxy",
+    "title": "Getting started with Galaxy",
     "section": "",
-    "text": "Vorbereitung vor Kursbeginn\n\nAccount bei usegalaxy.eu anlegen\nChrome oder Firefox installieren\n\nBeispieldatensatz herunterladen\n\n\n\nComment\nGalaxy sieht je nach Server etwas unterschiedlich aus.\n\n\nWarnung\nGalaxy sieht je nach Server etwas unterschiedlich aus."
+    "text": "To get started with the Galaxy platform, complete the following tutorial. It takes about 40 minutes and will familiarize you with the interface and the most important Galaxy terms. You will also upload your first data.\n\nHands-on: First steps with Galaxy\nThe tutorial is available in several languages:\n Galaxy Introduction Tutorial (GTN)\n Galaxy Introduction Tutorial (GTN, automatic translation)\n\nReference This tutorial is from the Galaxy Training Network (GTN): Introduction to Galaxy Lizenz: CC BY 4.0."
+  },
+  {
+    "objectID": "topics/02_galaxy-first-steps/02_galaxy_steps.html#create-a-new-history",
+    "href": "topics/02_galaxy-first-steps/02_galaxy_steps.html#create-a-new-history",
+    "title": "Getting started with Galaxy",
+    "section": "Create a new history",
+    "text": "Create a new history\nNow that the tutorial is complete, we can plan the work with our own data. To do this, we create a new, empty history. Then we rename the history to Data NCBI"
+  },
+  {
+    "objectID": "topics/02_galaxy-first-steps/02_galaxy_steps.html#rename-the-new-history",
+    "href": "topics/02_galaxy-first-steps/02_galaxy_steps.html#rename-the-new-history",
+    "title": "Getting started with Galaxy",
+    "section": "Rename the new history",
+    "text": "Rename the new history\nAfter creating the new history, we rename it. With the new name, it can be clearly identified and cannot be confused with previous analyses."
+  },
+  {
+    "objectID": "topics/02_galaxy-first-steps/02_galaxy_steps.html#upload-from-sequencing-files",
+    "href": "topics/02_galaxy-first-steps/02_galaxy_steps.html#upload-from-sequencing-files",
+    "title": "Getting started with Galaxy",
+    "section": "Upload from sequencing files",
+    "text": "Upload from sequencing files\nThe sequence data that provided here is taken from one of my publications and is intended to serve as an example. The sequence data has been published on NCBI SRA and is freely available. The sequenced sample is a large dsDNA virus and the data is small in size. The small size makes it perfect, easy and quick to handle.\n\nReference\n\n\n\nIsolate\nBioSample\nNCBI SRA (Illumina)\nNCBI SRA (Nanopore)\n\n\n\n\nBmNPV-My\nSAMN18849911\nSRR14313723\nSRR26992684\n\n\n\nWennmann, J.T., Lim, F.S., Senger, S., Gani, M., Jehle, J.A., Keilwagen, J (2024). Haplotype determination of the Bombyx mori nucleopolyhedrovirus by Nanopore sequencing and linkage of single nucleotide variants. Journal of General Virology. 105 (5), 001983. [https://doi.org/10.1099/jgv.0.001983]\n\nPlease download the\nJetzt sind wir bereit die Daten"
   },
   {
     "objectID": "topics/01_flyer/01_flyer.html",
