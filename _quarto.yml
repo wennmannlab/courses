@@ -4,13 +4,15 @@ project:
 website:
   title: "Courses, Tutorials and Slides"
   navbar:
-    title: Bioinformatic Course
+    title: Intro to Bioinformatics
     search: true
     left:
       - href: index.qmd
         text: Home
-      - href: flyer/index.qmd
+      - href: topics/01_flyer/01_flyer.qmd
         text: Flyer
+      - href: topics/02_galaxy-first-steps/02_galaxy_steps.qmd
+        text: First steps in Galaxy
 
   page-footer: 
     right:

@@ -1,0 +1,19 @@
+::: hands_on
+<hands-on-title>Vorbereitung vor Kursbeginn</hands-on-title>
+
+1.  Account bei [usegalaxy.eu](https://usegalaxy.eu) anlegen
+2.  Chrome oder Firefox installieren\
+3.  Beispieldatensatz herunterladen
+:::
+
+::: comment
+<comment-title>Comment</comment-title>
+
+Galaxy sieht je nach Server etwas unterschiedlich aus.
+:::
+
+::: warning
+<warning-title>Warnung</warning-title>
+
+Galaxy sieht je nach Server etwas unterschiedlich aus.
+:::

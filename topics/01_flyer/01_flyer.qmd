@@ -7,8 +7,9 @@ page-layout: full
 # TUAT - 18 - 19 September 2025
 
 <object data="flyer.pdf" type="application/pdf" width="100%" height="800px">
-  <p>Your browser cannot display the PDF file. 
-  [Download](flyer.pdf).</p>
+
+<p>Your browser cannot display the PDF file. [Download](flyer.pdf).</p>
+
 </object>
 
-[Download flyer as PDF](flyer.pdf)  
+[Download flyer as PDF](flyer.pdf)
