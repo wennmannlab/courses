@@ -1,2 +1,69 @@
 .navbar-brand { font-weight: 700; letter-spacing: .2px; }
 main { max-width: 1100px; margin-inline: auto; }
+
+
+comment-title,
+hands-on-title,
+warning-title{
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+/*---------------------------------------*/
+comment-title {
+  color: #b36b00;
+}
+
+hands-on-title {
+  color: #2c3e99;
+}
+
+warning-title {
+  color: #cc0000;
+}
+
+
+/*---------------------------------------*/
+
+hands-on-title::before {
+  content: "🛠️ ";
+  margin-right: 0.3em;
+}
+
+comment-title::before {
+  content: "💡 ";
+  margin-right: 0.3em;
+}
+
+warning-title::before {
+  content: "⚡ ";
+  margin-right: 0.3em;
+}
+
+/*---------------------------------------*/
+
+.comment {
+  background: #ffecc1;  /* wie im GTN */
+  padding: 1em;
+  margin: 1em 0;
+  border-left: 5px solid #e6b800; 
+  border-radius: 5px;
+}
+
+
+.hands_on {
+  background: #dfe5f9;  /* wie im GTN */
+  padding: 1em;
+  margin: 1em 0;
+  border-left: 5px solid #2c3e99; 
+  border-radius: 5px;
+}
+
+.warning {
+  background: #ffe5e5;  /* wie im GTN */
+  padding: 1em;
+  margin: 1em 0;
+  border-left: 5px solid ##cc0000; 
+  border-radius: 5px;
+}

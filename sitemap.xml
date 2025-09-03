@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://wennmannlab.github.io/courses/flyer/index.html</loc>
-    <lastmod>2025-09-01T19:01:13.192Z</lastmod>
+    <loc>https://wennmannlab.github.io/courses/index.html</loc>
+    <lastmod>2025-09-03T13:49:30.659Z</lastmod>
   </url>
   <url>
-    <loc>https://wennmannlab.github.io/courses/index.html</loc>
-    <lastmod>2025-09-01T19:01:13.192Z</lastmod>
+    <loc>https://wennmannlab.github.io/courses/topics/02_galaxy-first-steps/02_galaxy_steps.html</loc>
+    <lastmod>2025-09-03T13:49:30.666Z</lastmod>
+  </url>
+  <url>
+    <loc>https://wennmannlab.github.io/courses/topics/01_flyer/01_flyer.html</loc>
+    <lastmod>2025-09-03T13:49:30.662Z</lastmod>
   </url>
 </urlset>

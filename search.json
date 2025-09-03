@@ -1,16 +1,65 @@
 [
   {
-    "objectID": "flyer/index.html",
-    "href": "flyer/index.html",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome",
+    "section": "",
+    "text": "Welcome to this brief introduction to Bioinformatics. It is intended as an introduction to this field and to lay the foundation for the mostly complex and individual analyses.\nThe contents of this website are for informational purposes only. They are continuously updated and expanded. However, no guarantee can be given for the topicality, correctness, and completeness of the information provided.\nIf you have any questions or comments, please contact me at: joerg.wennmann@julius-kuehn.de"
+  },
+  {
+    "objectID": "index.html#required-items",
+    "href": "index.html#required-items",
+    "title": "Welcome",
+    "section": "Required items",
+    "text": "Required items\nTo complete this tutorial, you will need access to a Galaxy Platform. There are various Galaxy servers in different regions around the world. Of course, you are free to choose whichever instance you prefer. For this tutorial, I recommend creating an account at usegalaxy.eu. Accounts are free and can be deleted at any time.\n\nRequired course items The follwoing course items are required:\n\nBring your own laptop\nInternet connection\nAn account at usegalaxy.eu"
+  },
+  {
+    "objectID": "index.html#crate-an-galaxy-account",
+    "href": "index.html#crate-an-galaxy-account",
+    "title": "Welcome",
+    "section": "Crate an Galaxy account",
+    "text": "Crate an Galaxy account\nDepending on the instance and update of the website, the home page may look slightly different.\n\nLogin or Register to Galaxy\n\nOpen your favorite browser.\nBrowse to https://usegalaxy.eu\nLogin or register\n\n\nIf you have registered as a new user, don’t forget to confirm your email address."
+  },
+  {
+    "objectID": "index.html#laptop-or-computer",
+    "href": "index.html#laptop-or-computer",
+    "title": "Welcome",
+    "section": "Laptop or computer",
+    "text": "Laptop or computer\nThere are no requirements for your laptop! You can use any laptop or computer to participate, as all calculations are performed on the Galaxy server itself."
+  },
+  {
+    "objectID": "index.html#internet-connection.",
+    "href": "index.html#internet-connection.",
+    "title": "Welcome",
+    "section": "Internet connection.",
+    "text": "Internet connection.\nA stable internet connection is required, as a connection to the Galaxy server is necessary in order to perform bioinformatic analysis."
+  },
+  {
+    "objectID": "index.html#websites",
+    "href": "index.html#websites",
+    "title": "Welcome",
+    "section": "Websites",
+    "text": "Websites\n\nGalaxy Training Network https://training.galaxyproject.org"
+  },
+  {
+    "objectID": "topics/02_galaxy-first-steps/02_galaxy_steps.html",
+    "href": "topics/02_galaxy-first-steps/02_galaxy_steps.html",
+    "title": "First steps using Galaxy",
+    "section": "",
+    "text": "Vorbereitung vor Kursbeginn\n\nAccount bei usegalaxy.eu anlegen\nChrome oder Firefox installieren\n\nBeispieldatensatz herunterladen\n\n\n\nComment\nGalaxy sieht je nach Server etwas unterschiedlich aus.\n\n\nWarnung\nGalaxy sieht je nach Server etwas unterschiedlich aus."
+  },
+  {
+    "objectID": "topics/02_galaxy-first-steps/02_galaxy_steps.html#welcome",
+    "href": "topics/02_galaxy-first-steps/02_galaxy_steps.html#welcome",
+    "title": "First steps using Galaxy",
+    "section": "",
+    "text": "Vorbereitung vor Kursbeginn\n\nAccount bei usegalaxy.eu anlegen\nChrome oder Firefox installieren\n\nBeispieldatensatz herunterladen\n\n\n\nComment\nGalaxy sieht je nach Server etwas unterschiedlich aus.\n\n\nWarnung\nGalaxy sieht je nach Server etwas unterschiedlich aus."
+  },
+  {
+    "objectID": "topics/01_flyer/01_flyer.html",
+    "href": "topics/01_flyer/01_flyer.html",
     "title": "Flyer",
     "section": "",
     "text": "TUAT - 18 - 19 September 2025\n\n\nYour browser cannot display the PDF file. Download.\n\n\nDownload flyer as PDF"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "wennmannlab – Training and Materials",
-    "section": "",
-    "text": "Welcome!\nHere you find Tutorials, Courses and Slides. …."
   }
 ]
