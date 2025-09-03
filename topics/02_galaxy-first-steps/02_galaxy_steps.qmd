@@ -47,6 +47,4 @@ The sequence data that provided here is taken from one of my publications and is
 Wennmann, J.T., Lim, F.S., Senger, S., Gani, M., Jehle, J.A., Keilwagen, J (2024). Haplotype determination of the Bombyx mori nucleopolyhedrovirus by Nanopore sequencing and linkage of single nucleotide variants. Journal of General Virology. 105 (5), 001983. [<https://doi.org/10.1099/jgv.0.001983>]
 :::
 
-Please download the 
-
-Jetzt sind wir bereit die Daten 
+<to be continued>
