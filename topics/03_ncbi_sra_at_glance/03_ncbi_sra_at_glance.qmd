@@ -60,33 +60,45 @@ The SRA web interface also offers a simple analysis of the taxonomy. This is hel
 
 At the bottom, there is a field called ‘View in Krona’, which we click on.
 
-![](png/sra_link_to_krona.png){width="100%"}
-The Taxonomy Browser window will then open. This analysis is performed automatically by NCBI SRA for every dataset that is uploaded there. It is a rough metagenomic analysis based on the information stored at NCBI itself. You can see which organisms (including viruses) were found in the sequence data.  
+![](png/sra_link_to_krona.png){width="100%"} The Taxonomy Browser window will then open. This analysis is performed automatically by NCBI SRA for every dataset that is uploaded there. It is a rough metagenomic analysis based on the information stored at NCBI itself. You can see which organisms (including viruses) were found in the sequence data.
 
-![](png/sra_taxonomy_browser.png){width="100%"}
-The web interface also offers an interactive way to analyse the composition. This tool is called `Krona`{.tool}, which we will launch next.  
+![](png/sra_taxonomy_browser.png){width="100%"} The web interface also offers an interactive way to analyse the composition. This tool is called `Krona`{.tool}, which we will launch next.
 
 ![](png/sra_link_to_krona.png){width="70%"}
 
-The `Krona`{.tool} tool for interactive analysis will then open. 
+The `Krona`{.tool} tool for interactive analysis will then open. Play around with the interactive display to understand how Krona works!
 
-
-
+![](png/krona_demonstration.gif){width="100%"}
 :::
 
+## Search SRA database
 
+It's time to put what you've learned into practice. How about searching the SRA database yourself? Can you think of any organisms that might have been sequenced?
 
+Let's find out. Search for organisms you work with!
 
+::: hands-on
+<hands-on-title>Your own search</hands-on-title>
 
+Which organism comes to your mind? Then search for it!\
+Examples:
 
+-   Ascovirus
+-   Homo sapiens
+-   Beauveria bassiana
+-   Silkworm
 
+Visit <https://www.ncbi.nlm.nih.gov/sra> to start your search.
 
+**Also use Krona to analyse your search!**
 
+![](png/sra_own_search.png){width="100%"}
 
+::: comment
+<comment-title>Let's discuss your findings!</comment-title>
 
+Who found something interesing?  
+Can you share your findings?  
+:::
 
-
-
-
-
-
+:::
