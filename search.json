@@ -175,6 +175,20 @@
     "text": "Search SRA database\nIt’s time to put what you’ve learned into practice. How about searching the SRA database yourself? Can you think of any organisms that might have been sequenced?\nLet’s find out. Search for organisms you work with!\n\nYour own search\nWhich organism comes to your mind? Then search for it!\nExamples:\n\nAscovirus\nHomo sapiens\nBeauveria bassiana\nSilkworm\n\nVisit https://www.ncbi.nlm.nih.gov/sra to start your search.\nAlso use Krona to analyse your search!\n\n\nLet’s discuss your findings!\nWho found something interesing?\nCan you share your findings?"
   },
   {
+    "objectID": "topics/02_read_sequence_information/02_read_sequence_information.html",
+    "href": "topics/02_read_sequence_information/02_read_sequence_information.html",
+    "title": "How is sequence information stored?",
+    "section": "",
+    "text": "What is a read? The term is important in bioinformatics because a read carries so much information that it is essential for sequence analysis."
+  },
+  {
+    "objectID": "topics/02_read_sequence_information/02_read_sequence_information.html#the-art-of-the-read",
+    "href": "topics/02_read_sequence_information/02_read_sequence_information.html#the-art-of-the-read",
+    "title": "How is sequence information stored?",
+    "section": "",
+    "text": "What is a read? The term is important in bioinformatics because a read carries so much information that it is essential for sequence analysis."
+  },
+  {
     "objectID": "topics/99_flyer/99_flyer.html",
     "href": "topics/99_flyer/99_flyer.html",
     "title": "Flyer",
