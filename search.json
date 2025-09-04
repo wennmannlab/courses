@@ -165,7 +165,14 @@
     "href": "topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.html#taxonomy-analysis-tool",
     "title": "Where is the raw sequencing data stored publicly?",
     "section": "Taxonomy Analysis Tool",
-    "text": "Taxonomy Analysis Tool\nThe SRA web interface also offers a simple analysis of the taxonomy. This is helpful if you want to know what is included in the sequencing. It can provide an indication of whether there may be contamination in the sequencing.\n\nTaxonomy Analysis Tool - Window into the SRA dataset\nAt the bottom, there is a field called ‘View in Krona’, which we click on.\n The Taxonomy Browser window will then open. This analysis is performed automatically by NCBI SRA for every dataset that is uploaded there. It is a rough metagenomic analysis based on the information stored at NCBI itself. You can see which organisms (including viruses) were found in the sequence data.\n The web interface also offers an interactive way to analyse the composition. This tool is called Krona, which we will launch next.\n\nThe Krona tool for interactive analysis will then open."
+    "text": "Taxonomy Analysis Tool\nThe SRA web interface also offers a simple analysis of the taxonomy. This is helpful if you want to know what is included in the sequencing. It can provide an indication of whether there may be contamination in the sequencing.\n\nTaxonomy Analysis Tool - Window into the SRA dataset\nAt the bottom, there is a field called ‘View in Krona’, which we click on.\n The Taxonomy Browser window will then open. This analysis is performed automatically by NCBI SRA for every dataset that is uploaded there. It is a rough metagenomic analysis based on the information stored at NCBI itself. You can see which organisms (including viruses) were found in the sequence data.\n The web interface also offers an interactive way to analyse the composition. This tool is called Krona, which we will launch next.\n\nThe Krona tool for interactive analysis will then open. Play around with the interactive display to understand how Krona works!"
+  },
+  {
+    "objectID": "topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.html#search-sra-database",
+    "href": "topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.html#search-sra-database",
+    "title": "Where is the raw sequencing data stored publicly?",
+    "section": "Search SRA database",
+    "text": "Search SRA database\nIt’s time to put what you’ve learned into practice. How about searching the SRA database yourself? Can you think of any organisms that might have been sequenced?\nLet’s find out. Search for organisms you work with!\n\nYour own search\nWhich organism comes to your mind? Then search for it!\nExamples:\n\nAscovirus\nHomo sapiens\nBeauveria bassiana\nSilkworm\n\nVisit https://www.ncbi.nlm.nih.gov/sra to start your search.\nAlso use Krona to analyse your search!\n\n\nLet’s discuss your findings!\nWho found something interesing?\nCan you share your findings?"
   },
   {
     "objectID": "topics/99_flyer/99_flyer.html",
