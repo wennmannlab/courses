@@ -2,14 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://wennmannlab.github.io/courses/index.html</loc>
-    <lastmod>2025-09-04T15:17:31.009Z</lastmod>
+    <lastmod>2025-09-04T18:05:29.974Z</lastmod>
   </url>
   <url>
-    <loc>https://wennmannlab.github.io/courses/topics/02_galaxy-first-steps/02_galaxy_steps.html</loc>
-    <lastmod>2025-09-04T15:17:31.105Z</lastmod>
+    <loc>https://wennmannlab.github.io/courses/topics/05_galaxy_first_steps/05_galaxy_first_steps.html</loc>
+    <lastmod>2025-09-04T18:05:30.069Z</lastmod>
   </url>
   <url>
-    <loc>https://wennmannlab.github.io/courses/topics/01_flyer/01_flyer.html</loc>
-    <lastmod>2025-09-04T15:17:31.102Z</lastmod>
+    <loc>https://wennmannlab.github.io/courses/topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.html</loc>
+    <lastmod>2025-09-04T18:05:30.069Z</lastmod>
+  </url>
+  <url>
+    <loc>https://wennmannlab.github.io/courses/topics/02_read_sequence_information/02_read_sequence_information.html</loc>
+    <lastmod>2025-09-04T18:05:30.069Z</lastmod>
+  </url>
+  <url>
+    <loc>https://wennmannlab.github.io/courses/topics/99_flyer/99_flyer.html</loc>
+    <lastmod>2025-09-04T18:05:30.097Z</lastmod>
+  </url>
+  <url>
+    <loc>https://wennmannlab.github.io/courses/topics/04_intro_to_galaxy/04_intro_to_galaxy.html</loc>
+    <lastmod>2025-09-04T18:05:30.069Z</lastmod>
+  </url>
+  <url>
+    <loc>https://wennmannlab.github.io/courses/topics/01_basics_of_sequencing/01_basics_of_sequencing.html</loc>
+    <lastmod>2025-09-04T18:05:30.069Z</lastmod>
   </url>
 </urlset>

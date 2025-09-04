@@ -42,99 +42,99 @@
     "text": "Websites\n\nGalaxy Training Network https://training.galaxyproject.org"
   },
   {
-    "objectID": "topics/02_galaxy-first-steps/02_galaxy_steps.html",
-    "href": "topics/02_galaxy-first-steps/02_galaxy_steps.html",
+    "objectID": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html",
+    "href": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html",
     "title": "Getting started with Galaxy",
     "section": "",
     "text": "To get started with the Galaxy platform, complete the following tutorial. It takes about 40 minutes and will familiarize you with the interface and the most important Galaxy terms. You will also upload your first data.\n\nFirst steps with Galaxy\nGo through and finish the tutiral “A short introduction to Galaxy”!\nThe tutorial is available in several languages:\n Galaxy Introduction Tutorial (GTN)\n Galaxy Introduction Tutorial (GTN, automatic translation)\n\nReference This tutorial is from the Galaxy Training Network (GTN): Introduction to Galaxy Lizenz: CC BY 4.0."
   },
   {
-    "objectID": "topics/02_galaxy-first-steps/02_galaxy_steps.html#a-short-introduction-to-galaxy",
-    "href": "topics/02_galaxy-first-steps/02_galaxy_steps.html#a-short-introduction-to-galaxy",
+    "objectID": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#a-short-introduction-to-galaxy",
+    "href": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#a-short-introduction-to-galaxy",
     "title": "Getting started with Galaxy",
     "section": "",
     "text": "To get started with the Galaxy platform, complete the following tutorial. It takes about 40 minutes and will familiarize you with the interface and the most important Galaxy terms. You will also upload your first data.\n\nFirst steps with Galaxy\nGo through and finish the tutiral “A short introduction to Galaxy”!\nThe tutorial is available in several languages:\n Galaxy Introduction Tutorial (GTN)\n Galaxy Introduction Tutorial (GTN, automatic translation)\n\nReference This tutorial is from the Galaxy Training Network (GTN): Introduction to Galaxy Lizenz: CC BY 4.0."
   },
   {
-    "objectID": "topics/02_galaxy-first-steps/02_galaxy_steps.html#starting-with-training-data",
-    "href": "topics/02_galaxy-first-steps/02_galaxy_steps.html#starting-with-training-data",
+    "objectID": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#starting-with-training-data",
+    "href": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#starting-with-training-data",
     "title": "Getting started with Galaxy",
     "section": "Starting with training data",
     "text": "Starting with training data\nOnce the tutorial is complete, we can begin with our own data. I hope you enjoy it.\n\n Let’s get started!"
   },
   {
-    "objectID": "topics/02_galaxy-first-steps/02_galaxy_steps.html#create-a-new-history",
-    "href": "topics/02_galaxy-first-steps/02_galaxy_steps.html#create-a-new-history",
+    "objectID": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#create-a-new-history",
+    "href": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#create-a-new-history",
     "title": "Getting started with Galaxy",
     "section": "Create a new history",
     "text": "Create a new history\nNow that the tutorial is complete, we can plan the work with our own data. To do this, we create a new, empty history. Then we rename the history to Data NCBI"
   },
   {
-    "objectID": "topics/02_galaxy-first-steps/02_galaxy_steps.html#rename-the-new-history",
-    "href": "topics/02_galaxy-first-steps/02_galaxy_steps.html#rename-the-new-history",
+    "objectID": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#rename-the-new-history",
+    "href": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#rename-the-new-history",
     "title": "Getting started with Galaxy",
     "section": "Rename the new history",
     "text": "Rename the new history\nAfter creating the new history, we rename it. With the new name, it can be clearly identified and cannot be confused with previous analyses."
   },
   {
-    "objectID": "topics/02_galaxy-first-steps/02_galaxy_steps.html#download-sequencing-data",
-    "href": "topics/02_galaxy-first-steps/02_galaxy_steps.html#download-sequencing-data",
+    "objectID": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#download-sequencing-data",
+    "href": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#download-sequencing-data",
     "title": "Getting started with Galaxy",
     "section": "Download sequencing data",
     "text": "Download sequencing data\nThe sequence data that provided here is taken from one of my publications and is intended to serve as an example. The sequence data has been published on NCBI SRA and is freely available. The sequenced sample is a large dsDNA virus and the data is small in size. The small size makes it perfect, easy and quick to handle.\n\nReference\n\n\n\nIsolate\nBioSample\nNCBI SRA (Illumina)\nNCBI SRA (Nanopore)\n\n\n\n\nBmNPV-My\nSAMN18849911\nSRR14313723\nSRR26992684\n\n\n\nWennmann, J.T., Lim, F.S., Senger, S., Gani, M., Jehle, J.A., Keilwagen, J (2024). Haplotype determination of the Bombyx mori nucleopolyhedrovirus by Nanopore sequencing and linkage of single nucleotide variants. Journal of General Virology. 105 (5), 001983. [https://doi.org/10.1099/jgv.0.001983]\n\nPlease download the sequence data directly and save it temporarily on your computer. We will then upload it directly to your newly created Galaxy history “Data NCBI.”\n\nDownloading sequencing data\n\nFollow this link to download the Illumina data and save it on your computer. You should download the forward and reverse reads in two separate files:\n💾 [Illumina forward reads]\n💾 [Illumina reverse reads]\nFollow the link to download the Nanopore reads:\n💾 [Nanopore reads]\n\n\nYou should now have three files saved on your computer."
   },
   {
-    "objectID": "topics/02_galaxy-first-steps/02_galaxy_steps.html#upload-your-data-to-galaxy",
-    "href": "topics/02_galaxy-first-steps/02_galaxy_steps.html#upload-your-data-to-galaxy",
+    "objectID": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#upload-your-data-to-galaxy",
+    "href": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#upload-your-data-to-galaxy",
     "title": "Getting started with Galaxy",
     "section": "Upload your data to Galaxy",
     "text": "Upload your data to Galaxy\nSequence data is usually obtained directly in fastq or fastqsanger format. It is then uploaded to the Galaxy platform. We will do this in the next step.\n\nUpload your data to Galaxy\n\nYou have the three files.\n\nGo to the folder where you saved the files.\n\nGo to usegalaxy.eu and click on “Upload.”\n\nDrag your files into the upload window (drag and drop).\n\nClick on “Start.” The upload will begin.\n\nOnce all files have been uploaded, click on “Close.”\n\n\nNow you have to wait until all files are completely uploaded. This may take a moment. The upload is complete when the files appear green in the history."
   },
   {
-    "objectID": "topics/02_galaxy-first-steps/02_galaxy_steps.html#status-of-files-in-your-history",
-    "href": "topics/02_galaxy-first-steps/02_galaxy_steps.html#status-of-files-in-your-history",
+    "objectID": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#status-of-files-in-your-history",
+    "href": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#status-of-files-in-your-history",
     "title": "Getting started with Galaxy",
     "section": "Status of files in your history",
     "text": "Status of files in your history\nFiles can have four statuses in your history. Only green files and files being processed can be worked on further.\n\n\n\n\n\n\n\n\nColor\nStatus\nMeaning\n\n\n\n\n🟩 Green\nReady\nFile is ready to use\n\n\n🟧 Orange\nRunning/Processing\nFile is being processed (job still running)\n\n\n⬜ Gray\nQueued\nFile is waiting to run\n\n\n🟥 Red\nError\nFile has failed (an error occurred)"
   },
   {
-    "objectID": "topics/02_galaxy-first-steps/02_galaxy_steps.html#run-your-first-galaxy-tools",
-    "href": "topics/02_galaxy-first-steps/02_galaxy_steps.html#run-your-first-galaxy-tools",
+    "objectID": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#run-your-first-galaxy-tools",
+    "href": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#run-your-first-galaxy-tools",
     "title": "Getting started with Galaxy",
     "section": "Run your first Galaxy tools",
     "text": "Run your first Galaxy tools\nOnce the data has been uploaded, we want to do something with it. We want to analyse it, not just look at it. But before we analyse it, it’s important that we get to know the data well. It’s important to know whether the sequencing worked well. We also want to know how good the quality of the sequencing is.\nThere are two tools we can use for Illumina and Nanopore data.\n\nPractice tool selection\nPlease practice to select some tools. Go to web interface of usegalaxy.eu and click on tools. In the tools menu you can search for tools you would like to apply to your data. Please search for two tools and select them:\n\nfalco\nnanoplot"
   },
   {
-    "objectID": "topics/02_galaxy-first-steps/02_galaxy_steps.html#quality-check-of-nanopore-reads",
-    "href": "topics/02_galaxy-first-steps/02_galaxy_steps.html#quality-check-of-nanopore-reads",
+    "objectID": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#quality-check-of-nanopore-reads",
+    "href": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#quality-check-of-nanopore-reads",
     "title": "Getting started with Galaxy",
     "section": "Quality check of Nanopore reads",
     "text": "Quality check of Nanopore reads\nAt first we start the tool nanoplot on the Nanopore data. The file’s name should be SRR26992684_nanopore.fastqsanger.gz and it is the input for the tool nanoplot.\n\nStart tool nanoplot on Nanopore data"
   },
   {
-    "objectID": "topics/02_galaxy-first-steps/02_galaxy_steps.html#quality-check-of-illumina-reads",
-    "href": "topics/02_galaxy-first-steps/02_galaxy_steps.html#quality-check-of-illumina-reads",
+    "objectID": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#quality-check-of-illumina-reads",
+    "href": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#quality-check-of-illumina-reads",
     "title": "Getting started with Galaxy",
     "section": "Quality check of Illumina reads",
     "text": "Quality check of Illumina reads\nNext, we use the falco tool, which we run on the forward file of the Illumina data. Here we chose the file SRR14313726_forward_illumina.fastqsanger.gz.\n\nStart tool falco on Illumina data"
   },
   {
-    "objectID": "topics/02_galaxy-first-steps/02_galaxy_steps.html#the-correct-files-for-the-right-tools",
-    "href": "topics/02_galaxy-first-steps/02_galaxy_steps.html#the-correct-files-for-the-right-tools",
+    "objectID": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#the-correct-files-for-the-right-tools",
+    "href": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#the-correct-files-for-the-right-tools",
     "title": "Getting started with Galaxy",
     "section": "The correct files for the right tools",
     "text": "The correct files for the right tools\nNot all files can be read, processed or analysed by all tools. You learn this over time and with increasing experience.\n\nChose the correct file!\nA common mistake is selecting the wrong files for the wrong tool. Falco is for short reads (Illumina data) and Nanoplot is for long reads. Therefore, the following combination must be selected:\n\nfalco = SRR14313726_forward_illumina.fastqsanger.gz\n\nfalco = SRR14313726_reverse_illumina.fastqsanger.gz\nnanoplot = SRR26992684_nanopore.fastqsanger.gz"
   },
   {
-    "objectID": "topics/02_galaxy-first-steps/02_galaxy_steps.html#reviewing-the-output-and-evaluating-the-quality",
-    "href": "topics/02_galaxy-first-steps/02_galaxy_steps.html#reviewing-the-output-and-evaluating-the-quality",
+    "objectID": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#reviewing-the-output-and-evaluating-the-quality",
+    "href": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#reviewing-the-output-and-evaluating-the-quality",
     "title": "Getting started with Galaxy",
     "section": "Reviewing the output and evaluating the quality",
     "text": "Reviewing the output and evaluating the quality\nTo view the results of the tools, click on the eye icon next to the outputs. Make sure you select the correct output files. They are called html report for the nanoplot tool and webpage for the falco tool.\n\nLet’s discuss the results together!\nClick on the eye of one of the files. The results should open in the center panel.\n\n\n The results are discussed together in the group.\n\nSelf-study to interpret the results\nIf you would like to learn how to evaluate and analyse the output of faclo (or fastqc, which is the predecessor of faclo) and nanoplot yourself, you can do so in the following tutorial:\nGalaxy Training Tutorial - Quality Control.\nEnjoy reading!"
   },
   {
-    "objectID": "topics/01_flyer/01_flyer.html",
-    "href": "topics/01_flyer/01_flyer.html",
+    "objectID": "topics/99_flyer/99_flyer.html",
+    "href": "topics/99_flyer/99_flyer.html",
     "title": "Flyer",
     "section": "",
     "text": "TUAT - 18 - 19 September 2025\n\n\nYour browser cannot display the PDF file. Download.\n\n\nDownload flyer as PDF"
