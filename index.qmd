@@ -27,7 +27,7 @@ The follwoing course items are required:
 
 Depending on the instance and update of the website, the home page may look slightly different.
 
-::: hands_on
+::: hands-on
 <hands-on-title>Login or Register to Galaxy</hands-on-title>
 
 1.  Open your favorite browser.

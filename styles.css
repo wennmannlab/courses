@@ -12,11 +12,11 @@ reference-title {
 }
 
 /*---------------------------------------*/
-hands-on-title {
+comment-title {
   color: #b36b00;
 }
 
-comment-title {
+hands-on-title {
   color: #2c3e99;
 }
 
@@ -32,28 +32,28 @@ reference-title {
 /*---------------------------------------*/
 
 hands-on-title::before {
-  content: "🛠️ ";
+  content: "🛠️ Hands-on: ";
   margin-right: 0.3em;
 }
 
 comment-title::before {
-  content: "💡 ";
+  content: "💡 Comment: ";
   margin-right: 0.3em;
 }
 
 warning-title::before {
-  content: "⚡ ";
+  content: "⚡  Warning: ";
   margin-right: 0.3em;
 }
 
 reference-title::before {
-  content: "📖 ";
+  content: "📖 : ";
   margin-right: 0.3em;
 }
 
 /*---------------------------------------*/
 
-.hands_on {
+.comment {
   background: #ffecc1; 
   padding: 1em;
   margin: 1em 0;
@@ -62,7 +62,7 @@ reference-title::before {
 }
 
 
-.comment {
+.hands-on {
   background: #dfe5f9; 
   padding: 1em;
   margin: 1em 0;
@@ -79,7 +79,7 @@ reference-title::before {
 }
 
 .reference {
-  background: #cccccc; 
+  background: #f0f0f0; 
   padding: 1em;
   margin: 1em 0;
   border-left: 5px solid #333333; 
@@ -93,4 +93,20 @@ reference-title::before {
   border-radius: 3px;       /* leicht abgerundet, kein Kreis */
   background-color: white;  /* Weiß als Hintergrund, damit die JP-Flagge klar wirkt */
   padding: 1px;             /* kleiner Abstand zum Rand */
+}
+
+/*---------------------------------------*/
+
+code.tool {
+  display: inline-block;
+  background: #000 !important;
+  color: #fff !important;
+  font-weight: 700;
+  padding: 0.1em 0.45em;
+  border-radius: 4px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+  line-height: 1;
+}
+code.tool::before {
+  content: "🔧 ";
 }

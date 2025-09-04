@@ -1,4 +1,4 @@
-::: hands_on
+::: hands-on
 <hands-on-title>Vorbereitung vor Kursbeginn</hands-on-title>
 
 1.  Account bei [usegalaxy.eu](https://usegalaxy.eu) anlegen

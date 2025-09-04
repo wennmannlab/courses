@@ -4,7 +4,7 @@ project:
 website:
   title: "Courses, Tutorials and Slides"
   navbar:
-    title: Intro to Bioinformatics
+    title: The Beginner's Guide to Galaxy
     search: true
     left:
       - href: index.qmd
