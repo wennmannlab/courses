@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Where to find raw sequencing data – Courses, Tutorials and Slides</title>
+<title>Where is the raw sequencing data stored publicly? – Courses, Tutorials and Slides</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -133,7 +133,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#to-be-done" id="toc-to-be-done" class="nav-link active" data-scroll-target="#to-be-done">to be done</a></li>
+  <li><a href="#data-availability" id="toc-data-availability" class="nav-link active" data-scroll-target="#data-availability">Data availability</a></li>
+  <li><a href="#sequence-read-archive-sra" id="toc-sequence-read-archive-sra" class="nav-link" data-scroll-target="#sequence-read-archive-sra">Sequence Read Archive (SRA)</a></li>
+  <li><a href="#sra-entry-information" id="toc-sra-entry-information" class="nav-link" data-scroll-target="#sra-entry-information">SRA entry information</a></li>
+  <li><a href="#taxonomy-analysis-tool" id="toc-taxonomy-analysis-tool" class="nav-link" data-scroll-target="#taxonomy-analysis-tool">Taxonomy Analysis Tool</a></li>
   </ul>
 </nav>
     </div>
@@ -142,7 +145,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Where to find raw sequencing data</h1>
+<h1 class="title">Where is the raw sequencing data stored publicly?</h1>
 </div>
 
 
@@ -159,8 +162,55 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="to-be-done" class="level2">
-<h2 class="anchored" data-anchor-id="to-be-done">to be done</h2>
+<section id="data-availability" class="level2">
+<h2 class="anchored" data-anchor-id="data-availability">Data availability</h2>
+<p>Most peer-reviewed journals require studies dealing with bioinformatic data to include a data availability statement. This statement explains where the raw sequencing data and all important associated data sets are available. Publishing sequence data online is now mandatory and considered good practice, as it allows other scientists to repeat the analyses or use the data for their own studies.</p>
+<p><img src="png/data_availability_statement.png" class="img-fluid" style="width:80.0%"></p>
+<p>Typically, the Data Availability Statement is located at the end of the manuscript. Sometimes it is also located at the very beginning. The information can also be integrated into the Materials and Methods section.</p>
+</section>
+<section id="sequence-read-archive-sra" class="level2">
+<h2 class="anchored" data-anchor-id="sequence-read-archive-sra">Sequence Read Archive (SRA)</h2>
+<p>Sequence data is published as raw data. The world’s largest public database for raw sequence data from high-throughput sequencing is the Sequence Read Archive (SRA). The SRA was founded in 2007 and is now jointly operated by the NCBI (USA), the EBI/ENA (Europe), and the DDBJ (Japan).</p>
+<p>The SRA is the world’s largest collection of sequence data.</p>
+<div class="hands-on">
+<p><hands-on-title>Visit the Sequence Read Archive (SRA)</hands-on-title></p>
+<ol type="1">
+<li>Visit <a href="https://www.ncbi.nlm.nih.gov/sra" class="uri">https://www.ncbi.nlm.nih.gov/sra</a></li>
+<li>Search for SRA data entry <code>SRR14313721</code></li>
+</ol>
+<p><img src="png/sra_access.png" class="img-fluid" style="width:100.0%"> Next, you should see the SRA record entry.</p>
+<p>What information can you see?</p>
+<p>Can you find out the meaning of…</p>
+<ul>
+<li>BioProject</li>
+<li>BioSample</li>
+<li>Run</li>
+</ul>
+<p><img src="png/sra_entry.png" class="img-fluid" style="width:100.0%"></p>
+</div>
+</section>
+<section id="sra-entry-information" class="level2">
+<h2 class="anchored" data-anchor-id="sra-entry-information">SRA entry information</h2>
+<p>The SRA offers the possibility to retrieve a lot of information about the sequencing. We will look at this in the next step. To do this, we click directly on the run entry <code>SRR14313721</code>.</p>
+<div class="hands-on">
+<p><hands-on-title>SRA entry up close</hands-on-title></p>
+<p>Click on <code>SRR14313721</code>.</p>
+<p><img src="png/sra_closeup.png" class="img-fluid" style="width:60.0%"></p>
+<p>This should open the detailed view, which provides information on the number of sequenced bases, the quality of the sequencing, and the format of the sequence data.</p>
+<p><img src="png/sra_detailed.png" class="img-fluid" style="width:100.0%"></p>
+</div>
+</section>
+<section id="taxonomy-analysis-tool" class="level2">
+<h2 class="anchored" data-anchor-id="taxonomy-analysis-tool">Taxonomy Analysis Tool</h2>
+<p>The SRA web interface also offers a simple analysis of the taxonomy. This is helpful if you want to know what is included in the sequencing. It can provide an indication of whether there may be contamination in the sequencing.</p>
+<div class="hands-on">
+<p><hands-on-title>Taxonomy Analysis Tool - Window into the SRA dataset</hands-on-title></p>
+<p>At the bottom, there is a field called ‘View in Krona’, which we click on.</p>
+<p><img src="png/sra_link_to_krona.png" class="img-fluid" style="width:100.0%"> The Taxonomy Browser window will then open. This analysis is performed automatically by NCBI SRA for every dataset that is uploaded there. It is a rough metagenomic analysis based on the information stored at NCBI itself. You can see which organisms (including viruses) were found in the sequence data.</p>
+<p><img src="png/sra_taxonomy_browser.png" class="img-fluid" style="width:100.0%"> The web interface also offers an interactive way to analyse the composition. This tool is called <code class="tool">Krona</code>, which we will launch next.</p>
+<p><img src="png/sra_link_to_krona.png" class="img-fluid" style="width:70.0%"></p>
+<p>The <code class="tool">Krona</code> tool for interactive analysis will then open.</p>
+</div>
 
 
 </section>

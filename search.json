@@ -130,7 +130,42 @@
     "href": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#reviewing-the-output-and-evaluating-the-quality",
     "title": "Getting started with Galaxy",
     "section": "Reviewing the output and evaluating the quality",
-    "text": "Reviewing the output and evaluating the quality\nTo view the results of the tools, click on the eye icon next to the outputs. Make sure you select the correct output files. They are called html report for the nanoplot tool and webpage for the falco tool.\n\nLet’s discuss the results together!\nClick on the eye of one of the files. The results should open in the center panel.\n\n\n The results are discussed together in the group.\n\nSelf-study to interpret the results\nIf you would like to learn how to evaluate and analyse the output of faclo (or fastqc, which is the predecessor of faclo) and nanoplot yourself, you can do so in the following tutorial:\nGalaxy Training Tutorial - Quality Control.\nEnjoy reading!"
+    "text": "Reviewing the output and evaluating the quality\nTo view the results of the tools, click on the eye icon next to the outputs. Make sure you select the correct output files. They are called html report for the nanoplot tool and webpage for the falco tool.\n\nLet’s discuss the results together!\nClick on the eye of one of the files. The results should open in the center panel.\n\n\n The results are discussed together in the group.\n\nSelf-study to interpret the results\nIf you would like to learn how to evaluate and analyse the output of falco (or fastqc, which is the predecessor of falco) and nanoplot yourself, you can do so in the following tutorial:\nGalaxy Training Tutorial - Quality Control.\nEnjoy reading!"
+  },
+  {
+    "objectID": "topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.html",
+    "href": "topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.html",
+    "title": "Where is the raw sequencing data stored publicly?",
+    "section": "",
+    "text": "Most peer-reviewed journals require studies dealing with bioinformatic data to include a data availability statement. This statement explains where the raw sequencing data and all important associated data sets are available. Publishing sequence data online is now mandatory and considered good practice, as it allows other scientists to repeat the analyses or use the data for their own studies.\n\nTypically, the Data Availability Statement is located at the end of the manuscript. Sometimes it is also located at the very beginning. The information can also be integrated into the Materials and Methods section."
+  },
+  {
+    "objectID": "topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.html#data-availability",
+    "href": "topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.html#data-availability",
+    "title": "Where is the raw sequencing data stored publicly?",
+    "section": "",
+    "text": "Most peer-reviewed journals require studies dealing with bioinformatic data to include a data availability statement. This statement explains where the raw sequencing data and all important associated data sets are available. Publishing sequence data online is now mandatory and considered good practice, as it allows other scientists to repeat the analyses or use the data for their own studies.\n\nTypically, the Data Availability Statement is located at the end of the manuscript. Sometimes it is also located at the very beginning. The information can also be integrated into the Materials and Methods section."
+  },
+  {
+    "objectID": "topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.html#sequence-read-archive-sra",
+    "href": "topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.html#sequence-read-archive-sra",
+    "title": "Where is the raw sequencing data stored publicly?",
+    "section": "Sequence Read Archive (SRA)",
+    "text": "Sequence Read Archive (SRA)\nSequence data is published as raw data. The world’s largest public database for raw sequence data from high-throughput sequencing is the Sequence Read Archive (SRA). The SRA was founded in 2007 and is now jointly operated by the NCBI (USA), the EBI/ENA (Europe), and the DDBJ (Japan).\nThe SRA is the world’s largest collection of sequence data.\n\nVisit the Sequence Read Archive (SRA)\n\nVisit https://www.ncbi.nlm.nih.gov/sra\nSearch for SRA data entry SRR14313721\n\n Next, you should see the SRA record entry.\nWhat information can you see?\nCan you find out the meaning of…\n\nBioProject\nBioSample\nRun"
+  },
+  {
+    "objectID": "topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.html#sra-entry-information",
+    "href": "topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.html#sra-entry-information",
+    "title": "Where is the raw sequencing data stored publicly?",
+    "section": "SRA entry information",
+    "text": "SRA entry information\nThe SRA offers the possibility to retrieve a lot of information about the sequencing. We will look at this in the next step. To do this, we click directly on the run entry SRR14313721.\n\nSRA entry up close\nClick on SRR14313721.\n\nThis should open the detailed view, which provides information on the number of sequenced bases, the quality of the sequencing, and the format of the sequence data."
+  },
+  {
+    "objectID": "topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.html#taxonomy-analysis-tool",
+    "href": "topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.html#taxonomy-analysis-tool",
+    "title": "Where is the raw sequencing data stored publicly?",
+    "section": "Taxonomy Analysis Tool",
+    "text": "Taxonomy Analysis Tool\nThe SRA web interface also offers a simple analysis of the taxonomy. This is helpful if you want to know what is included in the sequencing. It can provide an indication of whether there may be contamination in the sequencing.\n\nTaxonomy Analysis Tool - Window into the SRA dataset\nAt the bottom, there is a field called ‘View in Krona’, which we click on.\n The Taxonomy Browser window will then open. This analysis is performed automatically by NCBI SRA for every dataset that is uploaded there. It is a rough metagenomic analysis based on the information stored at NCBI itself. You can see which organisms (including viruses) were found in the sequence data.\n The web interface also offers an interactive way to analyse the composition. This tool is called Krona, which we will launch next.\n\nThe Krona tool for interactive analysis will then open."
   },
   {
     "objectID": "topics/99_flyer/99_flyer.html",
