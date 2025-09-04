@@ -94,7 +94,7 @@ Now you have to wait until all files are completely uploaded. This may take a mo
 Files can have four statuses in your history. Only green files and files being processed can be worked on further.
 
 | Color     | Status             | Meaning                                     |
-|-----------|--------------------|---------------------------------------------|
+|------------------|------------------|-------------------------------------|
 | 🟩 Green  | Ready              | File is ready to use                        |
 | 🟧 Orange | Running/Processing | File is being processed (job still running) |
 | ⬜ Gray   | Queued             | File is waiting to run                      |
@@ -168,7 +168,7 @@ Click on the eye of one of the files. The results should open in the center pane
 ::: comment
 <comment-title>Self-study to interpret the results</comment-title>
 
-If you would like to learn how to evaluate and analyse the output of `faclo`{.tool} (or `fastqc`{.tool}, which is the predecessor of `faclo`{.tool}) and `nanoplot`{.tool} yourself, you can do so in the following tutorial:\
+If you would like to learn how to evaluate and analyse the output of `falco`{.tool} (or `fastqc`{.tool}, which is the predecessor of `falco`{.tool}) and `nanoplot`{.tool} yourself, you can do so in the following tutorial:\
 [Galaxy Training Tutorial - Quality Control](https://training.galaxyproject.org/topics/sequence-analysis/tutorials/quality-control/tutorial.html).
 
 Enjoy reading!
