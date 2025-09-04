@@ -1,5 +1,9 @@
 ---
-title: "How sequence information are stored"
+title: "How is sequence information stored?"
 ---
 
-## to be done
+## The art of the read
+
+What is a `read`? The term is important in bioinformatics because a read carries so much information that it is essential for sequence analysis.
+
+

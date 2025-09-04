@@ -1,0 +1,11 @@
+---
+title: "02_lecture_read_information"
+format:
+  revealjs:
+    width: 1600
+    height: 900   # 16:9
+    margin: 0.08  # (optional) Rand um den Slide-Inhalt
+    css: styles.css
+---
+
+---
