@@ -1,6 +1,7 @@
 ---
 title: "Welcome"
 ---
+
 ![](png/bio_wordcloud.png){width="50%" fig-align="center"}
 
 Welcome to this brief introduction to Bioinformatics. It is intended as an introduction to this field and to lay the foundation for the mostly complex and individual analyses.
@@ -14,13 +15,11 @@ If you have any questions or comments, please contact me at: joerg.wennmann\@jul
 To complete this tutorial, you will need access to a Galaxy Platform. There are various Galaxy servers in different regions around the world. Of course, you are free to choose whichever instance you prefer. For this tutorial, I recommend creating an account at [usegalaxy.eu](https://usegalaxy.eu). Accounts are free and can be deleted at any time.
 
 ::: comment
-<comment-title>Required course items</comment-title> 
-The follwoing course items are required: 
+<comment-title>Required course items</comment-title> The follwoing course items are required:
 
-- Bring your own laptop 
-- Internet connection 
-- An account at usegalaxy.eu
-
+-   Bring your own laptop
+-   Internet connection
+-   An account at usegalaxy.eu
 :::
 
 ## Crate an Galaxy account
@@ -37,7 +36,6 @@ Depending on the instance and update of the website, the home page may look slig
 ![](png/galaxy_login_register.png)
 
 If you have registered as a new user, don't forget to confirm your email address.
-
 :::
 
 ## Laptop or computer
@@ -46,9 +44,8 @@ There are no requirements for your laptop! You can use any laptop or computer to
 
 ## Internet connection.
 
-A stable internet connection is required, as a connection to the Galaxy server is necessary in order to perform bioinformatic analysis. 
+A stable internet connection is required, as a connection to the Galaxy server is necessary in order to perform bioinformatic analysis.
 
 ## Websites
 
-- Galaxy Training Network [https://training.galaxyproject.org](https://training.galaxyproject.org)
-
+-   Galaxy Training Network <https://training.galaxyproject.org>
