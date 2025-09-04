@@ -80,7 +80,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="../../index.html">
-    <span class="navbar-title">Intro to Bioinformatics</span>
+    <span class="navbar-title">The Beginner’s Guide to Galaxy</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -118,9 +118,17 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#a-short-introduction-to-galaxy" id="toc-a-short-introduction-to-galaxy" class="nav-link active" data-scroll-target="#a-short-introduction-to-galaxy">A short introduction to Galaxy</a></li>
+  <li><a href="#starting-with-training-data" id="toc-starting-with-training-data" class="nav-link" data-scroll-target="#starting-with-training-data">Starting with training data</a></li>
   <li><a href="#create-a-new-history" id="toc-create-a-new-history" class="nav-link" data-scroll-target="#create-a-new-history">Create a new history</a></li>
   <li><a href="#rename-the-new-history" id="toc-rename-the-new-history" class="nav-link" data-scroll-target="#rename-the-new-history">Rename the new history</a></li>
-  <li><a href="#upload-from-sequencing-files" id="toc-upload-from-sequencing-files" class="nav-link" data-scroll-target="#upload-from-sequencing-files">Upload from sequencing files</a></li>
+  <li><a href="#download-sequencing-data" id="toc-download-sequencing-data" class="nav-link" data-scroll-target="#download-sequencing-data">Download sequencing data</a></li>
+  <li><a href="#upload-your-data-to-galaxy" id="toc-upload-your-data-to-galaxy" class="nav-link" data-scroll-target="#upload-your-data-to-galaxy">Upload your data to Galaxy</a></li>
+  <li><a href="#status-of-files-in-your-history" id="toc-status-of-files-in-your-history" class="nav-link" data-scroll-target="#status-of-files-in-your-history">Status of files in your history</a></li>
+  <li><a href="#run-your-first-galaxy-tools" id="toc-run-your-first-galaxy-tools" class="nav-link" data-scroll-target="#run-your-first-galaxy-tools">Run your first Galaxy tools</a></li>
+  <li><a href="#quality-check-of-nanopore-reads" id="toc-quality-check-of-nanopore-reads" class="nav-link" data-scroll-target="#quality-check-of-nanopore-reads">Quality check of Nanopore reads</a></li>
+  <li><a href="#quality-check-of-illumina-reads" id="toc-quality-check-of-illumina-reads" class="nav-link" data-scroll-target="#quality-check-of-illumina-reads">Quality check of Illumina reads</a></li>
+  <li><a href="#the-correct-files-for-the-right-tools" id="toc-the-correct-files-for-the-right-tools" class="nav-link" data-scroll-target="#the-correct-files-for-the-right-tools">The correct files for the right tools</a></li>
+  <li><a href="#reviewing-the-output-and-evaluating-the-quality" id="toc-reviewing-the-output-and-evaluating-the-quality" class="nav-link" data-scroll-target="#reviewing-the-output-and-evaluating-the-quality">Reviewing the output and evaluating the quality</a></li>
   </ul>
 </nav>
     </div>
@@ -149,15 +157,22 @@ ul.task-list li input[type="checkbox"] {
 <section id="a-short-introduction-to-galaxy" class="level2">
 <h2 class="anchored" data-anchor-id="a-short-introduction-to-galaxy">A short introduction to Galaxy</h2>
 <p>To get started with the Galaxy platform, complete the following tutorial. It takes about 40 minutes and will familiarize you with the interface and the most important Galaxy terms. You will also upload your first data.</p>
-<div class="hands_on">
-<p><hands-on-title>Hands-on: First steps with Galaxy</hands-on-title></p>
-<p>The tutorial is available in several languages:</p>
+<div class="hands-on">
+<p><hands-on-title>First steps with Galaxy</hands-on-title></p>
+<p>Go through and finish the tutiral “A short introduction to Galaxy”!<br>
+The tutorial is available in several languages:</p>
 <p><a href="https://training.galaxyproject.org/training-material/topics/introduction/tutorials/galaxy-intro-short/tutorial.html"><img src="assets/gb.svg" class="flag img-fluid" width="25" alt="English"> Galaxy Introduction Tutorial (GTN)</a></p>
 <p><a href="https://training-galaxyproject-org.translate.goog/training-material/topics/introduction/tutorials/galaxy-intro-short/tutorial.html?_x_tr_sl=en&amp;_x_tr_tl=ja&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp"><img src="assets/jp.svg" class="flag img-fluid" width="25" alt="日本語"> Galaxy Introduction Tutorial (GTN, automatic translation)</a></p>
 <div class="reference">
 <p><reference-title>Reference</reference-title> This tutorial is from the Galaxy Training Network (GTN): <a href="https://training.galaxyproject.org/training-material/topics/introduction/tutorials/galaxy-intro-short/tutorial.html"><em>Introduction to Galaxy</em></a> Lizenz: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
 </div>
 </div>
+</section>
+<section id="starting-with-training-data" class="level2">
+<h2 class="anchored" data-anchor-id="starting-with-training-data">Starting with training data</h2>
+<p>Once the tutorial is complete, we can begin with our own data. I hope you enjoy it.<br>
+</p>
+<p><img src="assets/get_started_atgc.png" class="img-fluid" style="width:20.0%"> Let’s get started!</p>
 </section>
 <section id="create-a-new-history" class="level2">
 <h2 class="anchored" data-anchor-id="create-a-new-history">Create a new history</h2>
@@ -169,8 +184,8 @@ ul.task-list li input[type="checkbox"] {
 <p>After creating the new history, we rename it. With the new name, it can be clearly identified and cannot be confused with previous analyses.</p>
 <p><img src="png/history_name.PNG" class="img-fluid" style="width:80.0%"></p>
 </section>
-<section id="upload-from-sequencing-files" class="level2">
-<h2 class="anchored" data-anchor-id="upload-from-sequencing-files">Upload from sequencing files</h2>
+<section id="download-sequencing-data" class="level2">
+<h2 class="anchored" data-anchor-id="download-sequencing-data">Download sequencing data</h2>
 <p>The sequence data that provided here is taken from one of my publications and is intended to serve as an example. The sequence data has been published on NCBI SRA and is freely available. The sequenced sample is a large dsDNA virus and the data is small in size. The small size makes it perfect, easy and quick to handle.</p>
 <div class="reference">
 <p><reference-title>Reference</reference-title></p>
@@ -194,7 +209,141 @@ ul.task-list li input[type="checkbox"] {
 </table>
 <p>Wennmann, J.T., Lim, F.S., Senger, S., Gani, M., Jehle, J.A., Keilwagen, J (2024). Haplotype determination of the Bombyx mori nucleopolyhedrovirus by Nanopore sequencing and linkage of single nucleotide variants. Journal of General Virology. 105 (5), 001983. [<a href="https://doi.org/10.1099/jgv.0.001983" class="uri">https://doi.org/10.1099/jgv.0.001983</a>]</p>
 </div>
-<p><to be="" continued=""></to></p>
+<p>Please download the sequence data directly and save it temporarily on your computer. We will then upload it directly to your newly created Galaxy history “Data NCBI.”</p>
+<div class="hands-on">
+<p><hands-on-title>Downloading sequencing data</hands-on-title></p>
+<ol type="1">
+<li><p>Follow this link to download the Illumina data and save it on your computer. You should download the forward and reverse reads in two separate files:<br>
+<a href="https://zenodo.org/records/17054180/files/SRR14313723_forward_illumina.fastqsanger.gz">💾 [Illumina forward reads]</a><br>
+<a href="https://zenodo.org/records/17054180/files/SRR14313723_reverse_illumina.fastqsanger.gz">💾 [Illumina reverse reads]</a></p></li>
+<li><p>Follow the link to download the Nanopore reads:<br>
+<a href="https://zenodo.org/records/17054180/files/SRR26992684_nanopore.fastqsanger.gz">💾 [Nanopore reads]</a></p></li>
+</ol>
+</div>
+<p>You should now have three files saved on your computer.</p>
+</section>
+<section id="upload-your-data-to-galaxy" class="level2">
+<h2 class="anchored" data-anchor-id="upload-your-data-to-galaxy">Upload your data to Galaxy</h2>
+<p>Sequence data is usually obtained directly in fastq or fastqsanger format. It is then uploaded to the Galaxy platform. We will do this in the next step.</p>
+<div class="hands-on">
+<p><hands-on-title>Upload your data to Galaxy</hands-on-title></p>
+<ol type="1">
+<li>You have the three files.<br>
+</li>
+<li>Go to the folder where you saved the files.<br>
+</li>
+<li>Go to usegalaxy.eu and click on “Upload.”<br>
+</li>
+<li>Drag your files into the upload window (drag and drop).<br>
+</li>
+<li>Click on “Start.” The upload will begin.<br>
+</li>
+<li>Once all files have been uploaded, click on “Close.”</li>
+</ol>
+<p><img src="png/upload_data.gif" class="img-fluid" style="width:100.0%"></p>
+<p>Now you have to wait until all files are completely uploaded. This may take a moment. The upload is complete when the files appear green in the history.</p>
+<p><img src="png/file_status.PNG" class="img-fluid" style="width:80.0%"></p>
+</div>
+</section>
+<section id="status-of-files-in-your-history" class="level2">
+<h2 class="anchored" data-anchor-id="status-of-files-in-your-history">Status of files in your history</h2>
+<p>Files can have four statuses in your history. Only green files and files being processed can be worked on further.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 27%">
+<col style="width: 47%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Color</th>
+<th>Status</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>🟩 Green</td>
+<td>Ready</td>
+<td>File is ready to use</td>
+</tr>
+<tr class="even">
+<td>🟧 Orange</td>
+<td>Running/Processing</td>
+<td>File is being processed (job still running)</td>
+</tr>
+<tr class="odd">
+<td>⬜ Gray</td>
+<td>Queued</td>
+<td>File is waiting to run</td>
+</tr>
+<tr class="even">
+<td>🟥 Red</td>
+<td>Error</td>
+<td>File has failed (an error occurred)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="run-your-first-galaxy-tools" class="level2">
+<h2 class="anchored" data-anchor-id="run-your-first-galaxy-tools">Run your first Galaxy tools</h2>
+<p>Once the data has been uploaded, we want to do something with it. We want to analyse it, not just look at it. But before we analyse it, it’s important that we get to know the data well. It’s important to know whether the sequencing worked well. We also want to know how good the quality of the sequencing is.</p>
+<p>There are two tools we can use for Illumina and Nanopore data.</p>
+<div class="hands-on">
+<p><hands-on-title>Practice tool selection</hands-on-title></p>
+<p>Please practice to select some tools. Go to web interface of usegalaxy.eu and click on tools. In the tools menu you can search for tools you would like to apply to your data. Please search for two tools and select them:</p>
+<ul>
+<li>falco</li>
+<li>nanoplot</li>
+</ul>
+<p><img src="png/tool_selection.gif" class="img-fluid" style="width:100.0%"></p>
+</div>
+</section>
+<section id="quality-check-of-nanopore-reads" class="level2">
+<h2 class="anchored" data-anchor-id="quality-check-of-nanopore-reads">Quality check of Nanopore reads</h2>
+<p>At first we start the tool <code class="tool">nanoplot</code> on the Nanopore data. The file’s name should be <code>SRR26992684_nanopore.fastqsanger.gz</code> and it is the input for the tool <code class="tool">nanoplot</code>.</p>
+<div class="hands-on">
+<p><hands-on-title>Start tool nanoplot on Nanopore data</hands-on-title></p>
+<p><img src="png/tool_nanoplot.png" class="img-fluid" style="width:100.0%"></p>
+</div>
+</section>
+<section id="quality-check-of-illumina-reads" class="level2">
+<h2 class="anchored" data-anchor-id="quality-check-of-illumina-reads">Quality check of Illumina reads</h2>
+<p>Next, we use the <code class="tool">falco</code> tool, which we run on the forward file of the Illumina data. Here we chose the file <code>SRR14313726_forward_illumina.fastqsanger.gz</code>.</p>
+<div class="hands-on">
+<p><hands-on-title>Start tool falco on Illumina data</hands-on-title></p>
+<p><img src="png/tool_falco.png" class="img-fluid" style="width:100.0%"></p>
+</div>
+</section>
+<section id="the-correct-files-for-the-right-tools" class="level2">
+<h2 class="anchored" data-anchor-id="the-correct-files-for-the-right-tools">The correct files for the right tools</h2>
+<p>Not all files can be read, processed or analysed by all tools. You learn this over time and with increasing experience.</p>
+<div class="warning">
+<p><warning-title>Chose the correct file!</warning-title></p>
+<p>A common mistake is selecting the wrong files for the wrong tool. Falco is for short reads (Illumina data) and Nanoplot is for long reads. Therefore, the following combination must be selected:</p>
+<ul>
+<li><code class="tool">falco</code> = <code>SRR14313726_forward_illumina.fastqsanger.gz</code><br>
+</li>
+<li><code class="tool">falco</code> = <code>SRR14313726_reverse_illumina.fastqsanger.gz</code></li>
+<li><code class="tool">nanoplot</code> = <code>SRR26992684_nanopore.fastqsanger.gz</code></li>
+</ul>
+</div>
+</section>
+<section id="reviewing-the-output-and-evaluating-the-quality" class="level2">
+<h2 class="anchored" data-anchor-id="reviewing-the-output-and-evaluating-the-quality">Reviewing the output and evaluating the quality</h2>
+<p>To view the results of the tools, click on the eye icon next to the outputs. Make sure you select the correct output files. They are called <code>html report</code> for the <code class="tool">nanoplot</code> tool and <code>webpage</code> for the <code class="tool">falco</code> tool.</p>
+<div class="hands-on">
+<p><hands-on-title>Let’s discuss the results together!</hands-on-title></p>
+<p>Click on the eye of one of the files. The results should open in the center panel.</p>
+<p><img src="png/tool_eye_falco_nanoplot.png" class="img-fluid" style="width:100.0%"></p>
+</div>
+<p><img src="assets/get_end_atgc.png" class="img-fluid" style="width:20.0%"> The results are discussed together in the group.</p>
+<div class="comment">
+<p><comment-title>Self-study to interpret the results</comment-title></p>
+<p>If you would like to learn how to evaluate and analyse the output of <code class="tool">faclo</code> (or <code class="tool">fastqc</code>, which is the predecessor of <code class="tool">faclo</code>) and <code class="tool">nanoplot</code> yourself, you can do so in the following tutorial:<br>
+<a href="https://training.galaxyproject.org/topics/sequence-analysis/tutorials/quality-control/tutorial.html">Galaxy Training Tutorial - Quality Control</a>.</p>
+<p>Enjoy reading!</p>
+</div>
 
 
 </section>
