@@ -1,5 +1,11 @@
-/* außen: grau */
-.reveal { background-color: #e6e6e6; }
+/* Hintergrund außerhalb der Slides (der Margin-Bereich) */
+.reveal {
+  background-color:  #ffffff;
+}
 
-/* innen: weißes Canvas (optional mit leichtem Schatten) */
-.reveal .slides { background: #fff; box-shadow: 0 0 24px rgba(0,0,0,.12); }
+/* Folienfläche selbst bleibt weiß */
+.reveal .slides {
+  background-color: #ffffff;
+  /* box-shadow: 0 0 20px rgba(0,0,0,0.2); */
+  /* border-radius: 8px; */
+}
