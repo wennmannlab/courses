@@ -6,4 +6,4 @@ title: "How is sequence information stored?"
 
 What is a `read`? The term is important in bioinformatics because a read carries so much information that it is essential for sequence analysis.
 
-
+{{< revealjs "lecture/02_lecture_read_information.html" >}}
