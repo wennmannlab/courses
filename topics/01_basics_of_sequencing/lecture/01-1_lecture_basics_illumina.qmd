@@ -14,7 +14,6 @@ format:
     margin: 0.08
     slide-number: c
     css: ../../lecture_styles.css
-
 ---
 
 ## Illumina sequencing (short read sequencing)

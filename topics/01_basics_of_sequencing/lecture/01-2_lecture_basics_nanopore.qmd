@@ -1,261 +1,116 @@
 ---
+title: "Nanopore sequencing technology"
+title-slide-attributes: 
+  data-background-image: png/P4180044.jpg
+  data-background-color: black
+
 format:
   revealjs:
     menu:
       side: left
       width: wide
     width: 1600
-    height: 900   # 16:9
-    margin: 0.08  # (optional) Rand um den Slide-Inhalt
+    height: 900
+    margin: 0.08
     slide-number: c
-    css: styles.css
+    css: ../../lecture_styles.css
 ---
 
-# reads - Storing Sequence Information {.smaller}
+## Nano? Pore?
 
-------------------------------------------------------------------------
-
-## Sequence data format (fastq) {.smaller}
-
-:::::: columns
-:::: {.column width="65%"}
-<br> <br>
-
-**Illumina sequencing:**
-
--   Millions of sequences (= reads) are generated\
--   single-read sequencing = one file (R1)\
--   paired-read sequencing = two files (R1/R2)
-
-**MinION:**
-
--   reads are not paired!
--   But saved in the same way! <br> <br> <br> <br>
-
-::: {style="margin-left: 6em;"}
-Identifier (run, cluster, …)\
-Sequence (A, T, G, C)\
-“+” separator\
-Quality (ASCII)
-:::
-::::
-
-::: {.column width="35%"}
-![](png/single_cluster_perspective.png){width="100%" align="right"} ![](png/one_read_short_grey.png){.absolute width="50%" bottom="30" right="300"}
-:::
-::::::
-
-## For row format (fastq) {.smaller}
-
-<br> <br>
-
-| Row | Description |
-|-----------------|-------------------------------------------------------|
-| **1st row** | Identifier (run, cluster, location on flow cell, read number, etc.) |
-| **2nd row** | Nucleotide sequence (A, T, G, C, N) |
-| **3rd row** | Separator line (optionally repeats carries an identifier) |
-| **4th row** | Quality scores for each base (ASCII-encoded Phred scores) |
-
-<br>\
-<br>
-
-![](png/one_read_short_grey.png){.absolute bottom="100" right="240" width="70%"}
-
-## Read format
-
-\
-Example: NCBI SRA GenBank entry: SRR5560266 (single read data)\
-\
-![](png/one_read_long_grey.png)
-
--   The first row provides information about the cluster, read position, location, run, ... <https://help.basespace.illumina.com/articles/descriptive/fastq-files/>
--   Nucleotide sequence
--   Spacer
--   Base call quality for each nucleotide
-
-## Read format (paired reads)
-
--   Paired reads are saved in the same format as single read data
--   Usually paired reads are stored in two separate files, each file with the same number and order of reads
--   Paired reads have (almost) the same identifier
-
-![](png/paired_reads_grey.png){.absolute bottom="100" right="0" bottom="0" width="70%"}
-
-## Read quality (Q) and error probability (P)
-
-![](png/one_read_long_grey.png){width="100%"}
-
--   quality = probability that a base is detected falsely
--   each base gets its own quality score = Q score
--   **Q** = Phred quality score
--   **P** = base-calling error probability
-
-![](png/q_to_p_calculation.png){.absolute left="100" bottom="150" width="40%"}
-
-![](png/q_vs_p_plot.png){.absolute right="0" bottom="0" width="37%"}
-
-## Relationship between error probability (P) and Phred quality score (Q)
-
-Here is the R code in case you want to create this graph by yourself in R...
-
-``` r
-library(ggplot2)
-
-P  <- 10^seq(-4, 0, length.out = 1000)
-df <- data.frame(P = P, Q = -10 * log10(P))
-
-Qvals  <- c(10, 20, 30)
-guides <- data.frame(
-  Q   = Qvals,
-  P   = 10^(-Qvals/10),
-  col = c("red", "forestgreen", "blue"),
-  lty = c("dashed", "dotted", "dotdash")
-)
-
-p <- ggplot(df, aes(x = P, y = Q)) +
-  geom_line(size = 1) +
-  geom_segment(data = guides,
-               aes(x = 1e-4, xend = P, y = Q, yend = Q,
-                   colour = col, linetype = lty),
-               inherit.aes = FALSE, size = 1) +
-  geom_segment(data = guides,
-               aes(x = P, xend = P, y = 0, yend = Q,
-                   colour = col, linetype = lty),
-               inherit.aes = FALSE, size = 1) +
-  geom_point(data = guides,
-             aes(x = P, y = Q, colour = col),
-             inherit.aes = FALSE, size = 3) +
-  scale_x_log10(
-    limits = c(1e-4, 1),
-    breaks = c(1e-4, 1e-3, 1e-2, 1e-1, 1),
-    labels = c("0.0001", "0.001", "0.01", "0.1", "1")
-  ) +
-  scale_y_continuous(
-    limits = c(0, 45),
-    breaks = seq(0, 45, by = 5),
-    expand = expansion(mult = c(0, 0))
-  ) +
-  scale_colour_identity() +
-  scale_linetype_identity() +
-  labs(x = expression(P == 10^{-Q/10}), 
-       y = expression(Q == -10 %.% log[10](P))) +
-  theme_minimal(base_size = 14) +
-  theme(
-    panel.border   = element_rect(color = "black", fill = NA),
-    panel.grid.major = element_blank(),
-    panel.grid.minor = element_blank(),
-    axis.ticks = element_line(color = "black", size = 0.5),
-    axis.ticks.length = unit(0.2, "cm")
-  )
-
-ggsave("q_vs_p_plot.png",
-       plot = p,
-       width = 1200*f, height = 1200*f, units = "px", dpi = 300, bg="white")
-```
-
-## Read quality: Illumina vs Nanopore data
-
-\
-\
-\
-![](png/q_vs_p_ill_vs_nano.png)
-
-## Phred quality scores
-
-\
-\
-\
-
-:::::: columns
-::: {.column width="15%"}
-<!-- emtpy column -->
+::::: columns
+::: {.column width="80%"}
+**Idea**: Push DNA through a small gap (pore) in a membrane and detect each nucleotide as it passes by.
 :::
 
+::: {.column width="20%"}
+:::
+:::::
+
+![](png/clipart_nanopore.png){.absolute right="400" bottom="0" width="60%"}
+
+## One upon a time ...
+
+::::: columns
 ::: {.column width="70%"}
-| Quality score (Q) | Probability that a base<br>is called incorrectly | Accuracy | Error probability |
-|:------------:|:------------------------------:|:------------:|:------------:|
-| 10 | 1 in 10 | 90% | 10% |
-| 20 | 1 in 100 | 99% | 1% |
-| 30 | 1 in 1000 | 99.9% | 0.1% |
-| 40 | 1 in 10000 | 99.99% | 0.01% |
+Idea for Nanopore sequenced in the 1980s...
+
+| Year |   |
+|--------------------|----------------------------------------------------|
+| 1980 | Nobel prize for chain termination method (Sanger sequencing) |
+| 1980 to mid 2000 | Improvement of Sanger sequencing technique |
+| 1990 | Idea of using reversible fluorescent labeled nucleotides for sequencing |
+| 1998 | Formatino of Solexa (sequencing by synthesis) and other companies |
+| 2007 | Illumina acquires Solexa |
+| 2021 | Sequencing by synthesis is an essential technique and Illumina is market leader |
 :::
 
-::: {.column width="15%"}
-<!-- emtpy column -->
+::: {.column width="30%"}
 :::
-::::::
+:::::
 
-## Read quality (Q) is encoded in ASCII format {.smaller}
+## First pores were based on alpha-hemolysin
 
--   Every base in FASTQ has a quality score
--   FASTQ does not store numbers but ASCII characters
--   To geht the character: calculate Q + 33 --\> position in ASCII table
--   Example: Q = 4 --\> 37 --\> %
+...a cell toxin from *Staphylococcus aureus*
 
-|   Q | P_error | ASCII |   Q | P_error | ASCII |   Q | P_error | ASCII |   Q | P_error | ASCII |
-|-----:|------|:-----|-----:|------|:-----|-----:|------|:-----|-----:|------|:-----|
-|   0 | 1.00000 | !     |  11 | 0.07943 | ,     |  22 | 0.00631 | 7     |  33 | 0.00050 | B     |
-|   1 | 0.79433 | "     |  12 | 0.06310 | \-    |  23 | 0.00501 | 8     |  34 | 0.00040 | C     |
-|   2 | 0.63096 | \#    |  13 | 0.05012 | .     |  24 | 0.00398 | 9     |  35 | 0.00032 | D     |
-|   3 | 0.50119 | \$    |  14 | 0.03981 | /     |  25 | 0.00316 | :     |  36 | 0.00025 | E     |
-|   4 | 0.39811 | \%    |  15 | 0.03162 | 0     |  26 | 0.00251 | ;     |  37 | 0.00020 | F     |
-|   5 | 0.31623 | &     |  16 | 0.02512 | 1     |  27 | 0.00200 | \<    |  38 | 0.00016 | G     |
-|   6 | 0.25119 | '     |  17 | 0.01995 | 2     |  28 | 0.00158 | =     |  39 | 0.00013 | H     |
-|   7 | 0.19953 | (     |  18 | 0.01585 | 3     |  29 | 0.00126 | \>    |  40 | 0.00010 | I     |
-|   8 | 0.15849 | )     |  19 | 0.01259 | 4     |  30 | 0.00100 | ?     |  41 | 0.00008 | J     |
-|   9 | 0.12589 | \*    |  20 | 0.01000 | 5     |  31 | 0.00079 | \@    |  42 | 0.00006 | K     |
-|  10 | 0.10000 | \+    |  21 | 0.00794 | 6     |  32 | 0.00063 | A     |     |         |       |
+![](png/nanopore_membrane.png){.absolute bottom="0"}
 
-## Read quality (Q) is encoded in ASCII format {.smaller}
 
-![](png/one_read_long_grey.png){width="100%"}
+## Nanopores allow ssDNA to pass
 
-|   Q | P_error | ASCII |   Q | P_error | ASCII |   Q | P_error | ASCII |   Q | P_error | ASCII |
-|-----:|------|:-----|-----:|------|:-----|-----:|------|:-----|-----:|------|:-----|
-|   0 | 1.00000 | !     |  11 | 0.07943 | ,     |  22 | 0.00631 | 7     |  33 | 0.00050 | B     |
-|   1 | 0.79433 | "     |  12 | 0.06310 | \-    |  23 | 0.00501 | 8     |  34 | 0.00040 | C     |
-|   2 | 0.63096 | \#    |  13 | 0.05012 | .     |  24 | 0.00398 | 9     |  35 | 0.00032 | D     |
-|   3 | 0.50119 | \$    |  14 | 0.03981 | /     |  25 | 0.00316 | :     |  36 | 0.00025 | E     |
-|   4 | 0.39811 | \%    |  15 | 0.03162 | 0     |  26 | 0.00251 | ;     |  37 | 0.00020 | F     |
-|   5 | 0.31623 | &     |  16 | 0.02512 | 1     |  27 | 0.00200 | \<    |  38 | 0.00016 | G     |
-|   6 | 0.25119 | '     |  17 | 0.01995 | 2     |  28 | 0.00158 | =     |  39 | 0.00013 | H     |
-|   7 | 0.19953 | (     |  18 | 0.01585 | 3     |  29 | 0.00126 | \>    |  40 | 0.00010 | I     |
-|   8 | 0.15849 | )     |  19 | 0.01259 | 4     |  30 | 0.00100 | ?     |  41 | 0.00008 | J     |
-|   9 | 0.12589 | \*    |  20 | 0.01000 | 5     |  31 | 0.00079 | \@    |  42 | 0.00006 | K     |
-|  10 | 0.10000 | \+    |  21 | 0.00794 | 6     |  32 | 0.00063 | A     |     |         |       |
+![](png/nanopore/nanopore1.png){.absolute width="95%"}
 
-## Read quality (Q) is encoded in ASCII format {.smaller}
+## Nanopores allow ssDNA to pass
 
-![](png/one_read_long_grey_Q_ASCII.png){width="100%"}
+![](png/nanopore/nanopore2.png){.absolute width="95%"}
 
-|   Q | P_error | ASCII |   Q | P_error | ASCII |   Q | P_error | ASCII |   Q | P_error | ASCII |
-|-----:|------|:-----|-----:|------|:-----|-----:|------|:-----|-----:|------|:-----|
-|   0 | 1.00000 | !     |  11 | 0.07943 | ,     |  22 | 0.00631 | 7     |  33 | 0.00050 | B     |
-|   1 | 0.79433 | "     |  12 | 0.06310 | \-    |  23 | 0.00501 | 8     |  34 | 0.00040 | C     |
-|   2 | 0.63096 | \#    |  13 | 0.05012 | .     |  24 | 0.00398 | 9     |  35 | 0.00032 | D     |
-|   3 | 0.50119 | \$    |  14 | 0.03981 | /     |  25 | 0.00316 | :     |  36 | 0.00025 | E     |
-|   4 | 0.39811 | \%    |  15 | 0.03162 | 0     |  26 | 0.00251 | ;     |  37 | 0.00020 | F     |
-|   5 | 0.31623 | &     |  16 | 0.02512 | 1     |  27 | 0.00200 | \<    |  38 | 0.00016 | G     |
-|   6 | 0.25119 | '     |  17 | 0.01995 | 2     |  28 | 0.00158 | =     |  39 | 0.00013 | H     |
-|   7 | 0.19953 | (     |  18 | 0.01585 | 3     |  29 | 0.00126 | \>    |  40 | 0.00010 | I     |
-|   8 | 0.15849 | )     |  19 | 0.01259 | 4     |  30 | 0.00100 | ?     |  41 | 0.00008 | J     |
-|   9 | 0.12589 | \*    |  20 | 0.01000 | 5     |  31 | 0.00079 | \@    |  42 | 0.00006 | K     |
+## Nanopores allow ssDNA to pass
 
-## FASTQ encoding: ASCI \<-\> Q score \<-\> read quality
+![](png/nanopore/nanopore3.png){.absolute width="95%"}
 
-![](png/read_quality_example.png){.absolute left="100" bottom="0" width="80%"}
+---
+
+![](png/nanopore/nanopore4.png){.absolute width="95%"}
+
+---
+
+![](png/nanopore/nanopore5.png){.absolute width="95%"}
+
+## The blockade of the ion current is detectable
+
+![](png/nanopore/nanopore6.png){.absolute width="95%"}
+
+## dsDNA preparation for Nanopore sequencing
+
+![](png/nanopore/nanopore_fragmentation.png){.absolute width="95%"}
+
+## Unwinding the dsDNA helix
+
+![](png/nanopore/nanopore_attach.png){.absolute width="95%"}
+
+## Long-reads with Nanopore
+
+\
+\
+
+  
+| Technique            | Max read length |
+|----------------------|-----------------|
+| Sanger sequencing    | ~1000 nt        |
+| Illumina sequencing  | 50–400 nt       |
+| Nanopore sequencing  | unlimited?      |
 
 ## Take-home message
 
--   Reads are stored in FASTQ format
--   One read has four lines
-    -   Identifier
-    -   Nucleotide sequence
-    -   Spacer
-    -   Nucleotide quality
--   Q score = measure of base call accuracy
--   Q is stored as ASCII characters (Phred+33)
--   Higher Q --> lower error probability
--   Quality profiles help to detect sequencing problems
+\
 
-![](assets/get_end_atgc.png){.absolute right="80" bottom="0" width="30%"}
+- Sequencing of single DNA molecules (no PCR amplification!)
+- Theoretically unlimited read length
+- Real-Time data
+- Portable device
+- But: Lower per-base accuracy (higher error rate)
+
+
+
+
+![](png/get_end_atgc.png){.absolute right="80" bottom="0" width="30%"}
