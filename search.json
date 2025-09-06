@@ -42,151 +42,137 @@
     "text": "Websites\n\nGalaxy Training Network https://training.galaxyproject.org"
   },
   {
-    "objectID": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html",
-    "href": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html",
-    "title": "Getting started with Galaxy",
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#does-this-look-familiar",
+    "href": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#does-this-look-familiar",
+    "title": "Courses, Tutorials and Slides",
+    "section": "Does this look familiar?",
+    "text": "Does this look familiar?"
+  },
+  {
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#desoxyribonucleic-acid-dna",
+    "href": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#desoxyribonucleic-acid-dna",
+    "title": "Courses, Tutorials and Slides",
+    "section": "Desoxyribonucleic acid (DNA)",
+    "text": "Desoxyribonucleic acid (DNA)\n\n\n\n\n5’-ATGCACAACTTTTACAACTACAGCCCCCGCCCTGGGGCAAAACCTACGTGACGACAAT-3’    ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\n3’-TACGTGTTGAAAATGTTGATGTCGGGGGCGGGACCCCGTTTTGGATGCACTGCTGTTA-5’\n\n\n\n\n\nBiopolymer that codes for genetic information\nMonomers = nucleotides\nBond types are phosphodiester bonds (3’-OH group)\nComplementary base pairing: (A=T; C≡G)\nTwo antiparallel strands (running in opposite directions)"
+  },
+  {
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#dna-replication-fork",
+    "href": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#dna-replication-fork",
+    "title": "Courses, Tutorials and Slides",
+    "section": "DNA replication fork",
+    "text": "DNA replication fork"
+  },
+  {
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#direction-of-dna",
+    "href": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#direction-of-dna",
+    "title": "Courses, Tutorials and Slides",
+    "section": "Direction of DNA",
+    "text": "Direction of DNA"
+  },
+  {
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#four-nucleotides",
+    "href": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#four-nucleotides",
+    "title": "Courses, Tutorials and Slides",
+    "section": "Four nucleotides",
+    "text": "Four nucleotides"
+  },
+  {
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#sanger-sequencing",
+    "href": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#sanger-sequencing",
+    "title": "Courses, Tutorials and Slides",
+    "section": "Sanger sequencing",
+    "text": "Sanger sequencing\n\n\n\nbased on modified nuclotides\n2’,3’dideoxyribosee nucleoside triphoshate\nwithout 3’-OH group\nchain termination method"
+  },
+  {
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#sanger-sequencing-1",
+    "href": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#sanger-sequencing-1",
+    "title": "Courses, Tutorials and Slides",
+    "section": "Sanger sequencing",
+    "text": "Sanger sequencing"
+  },
+  {
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#sanger-sequencing-chromatogram",
+    "href": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#sanger-sequencing-chromatogram",
+    "title": "Courses, Tutorials and Slides",
+    "section": "Sanger sequencing chromatogram",
+    "text": "Sanger sequencing chromatogram"
+  },
+  {
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#take-home-message",
+    "href": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#take-home-message",
+    "title": "Courses, Tutorials and Slides",
+    "section": "Take-home message",
+    "text": "Take-home message\n\n\n\nAdvantage of Sanger sequencing\n\nDevices are easy to use\nResults are obtained within couple of hours (overnight)\nRelatively cheep\n\nDisadvantage of Sanger sequencing\n\nFew sequences are generated = low throughput technology\nRead length is limited to about 1000 nucleotides"
+  },
+  {
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#illumina-sequencing-short-read-sequencing",
+    "href": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#illumina-sequencing-short-read-sequencing",
+    "title": "Courses, Tutorials and Slides",
+    "section": "Illumina sequencing (short read sequencing)",
+    "text": "Illumina sequencing (short read sequencing)\n\n\n\none of the Next Generation Sequencing (NGS) technologies\nMost widely applied sequencing technique\nGenerates not one but millions of sequences at the same time\nread = single sequence\nhigh accuracy (&gt;99.9%)"
+  },
+  {
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#nucleotides-with-reversible-terminated-3-oh-group",
+    "href": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#nucleotides-with-reversible-terminated-3-oh-group",
+    "title": "Courses, Tutorials and Slides",
+    "section": "Nucleotides with reversible terminated 3’-OH group",
+    "text": "Nucleotides with reversible terminated 3’-OH group\n\n\n\n\nBentley et al. (2008) Accurate whole human genome sequencing using reversible terminator chemistry, Nature, 456, 53-59 (DOI: https://doi.org/10.1038/nature07517)"
+  },
+  {
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#sequencing-by-synthesis---step-by-step",
+    "href": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#sequencing-by-synthesis---step-by-step",
+    "title": "Courses, Tutorials and Slides",
+    "section": "Sequencing by synthesis - step by step",
+    "text": "Sequencing by synthesis - step by step\n\n\n\n\n\n\n\nAssumptions:\n\nBlue: Single stranded temple = sequence of interest\nThe DNA strand is fixed to a surface at the 5’-OH end.\nTwo terminal adapters (of known sequence) are ligated to both ends of the DNA strand.\nA primer (oligonucleotide) is bound at one side.\nOligonucleotide as a free 3’ OH group."
+  },
+  {
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#which-bases-have-been-sequenced",
+    "href": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#which-bases-have-been-sequenced",
+    "title": "Courses, Tutorials and Slides",
+    "section": "Which bases have been sequenced?",
+    "text": "Which bases have been sequenced?"
+  },
+  {
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#from-top-we-see-only-the-emitted-light",
+    "href": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#from-top-we-see-only-the-emitted-light",
+    "title": "Courses, Tutorials and Slides",
+    "section": "From top we see only the emitted light",
+    "text": "From top we see only the emitted light"
+  },
+  {
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#dna-fragmentation-prior-to-sequencing",
+    "href": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#dna-fragmentation-prior-to-sequencing",
+    "title": "Courses, Tutorials and Slides",
+    "section": "DNA fragmentation prior to sequencing",
+    "text": "DNA fragmentation prior to sequencing\n\n\n\n\n\n\n\n\n\nUsually DNA is too large to be sequenced directly.\nDNA is fragmented (enzymatically/mechanically) into smaller pieces.\nFragment sizes differ depending on the applied protocol.\nAdapters with known sequences are added to the fragments."
+  },
+  {
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#sequencing-adapter",
+    "href": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#sequencing-adapter",
+    "title": "Courses, Tutorials and Slides",
+    "section": "Sequencing adapter",
+    "text": "Sequencing adapter"
+  },
+  {
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#binding-of-sequences-to-the-flow-cell",
+    "href": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#binding-of-sequences-to-the-flow-cell",
+    "title": "Courses, Tutorials and Slides",
+    "section": "Binding of sequences to the flow cell",
+    "text": "Binding of sequences to the flow cell\n\n\n\nFlow cell is a slide on which both capture sequences are attached.\nThe attached capture sequences complement the adapters that have been ligated to the insert."
+  },
+  {
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#take-home-message",
+    "href": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#take-home-message",
+    "title": "Courses, Tutorials and Slides",
+    "section": "Take-home message",
+    "text": "Take-home message\n\n\n\nIllumina uses sequencing by synthesis.\nBillions of DNA fragments (reads) are sequenced in parallel on a flow cell\nLarge number of reads! But reads are short: 50 to 300 nucleotides\nClusters are created through bridge PCR amplification\nBases are detected by fluorescent labeled nucleotides\nStrength: high accuracy\nLimitation: short read length"
+  },
+  {
+    "objectID": "topics/99_flyer/99_flyer.html",
+    "href": "topics/99_flyer/99_flyer.html",
+    "title": "Flyer",
     "section": "",
-    "text": "To get started with the Galaxy platform, complete the following tutorial. It takes about 40 minutes and will familiarize you with the interface and the most important Galaxy terms. You will also upload your first data.\n\nFirst steps with Galaxy\nGo through and finish the tutiral “A short introduction to Galaxy”!\nThe tutorial is available in several languages:\n Galaxy Introduction Tutorial (GTN)\n Galaxy Introduction Tutorial (GTN, automatic translation)\n\nReference This tutorial is from the Galaxy Training Network (GTN): Introduction to Galaxy Lizenz: CC BY 4.0."
-  },
-  {
-    "objectID": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#a-short-introduction-to-galaxy",
-    "href": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#a-short-introduction-to-galaxy",
-    "title": "Getting started with Galaxy",
-    "section": "",
-    "text": "To get started with the Galaxy platform, complete the following tutorial. It takes about 40 minutes and will familiarize you with the interface and the most important Galaxy terms. You will also upload your first data.\n\nFirst steps with Galaxy\nGo through and finish the tutiral “A short introduction to Galaxy”!\nThe tutorial is available in several languages:\n Galaxy Introduction Tutorial (GTN)\n Galaxy Introduction Tutorial (GTN, automatic translation)\n\nReference This tutorial is from the Galaxy Training Network (GTN): Introduction to Galaxy Lizenz: CC BY 4.0."
-  },
-  {
-    "objectID": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#starting-with-training-data",
-    "href": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#starting-with-training-data",
-    "title": "Getting started with Galaxy",
-    "section": "Starting with training data",
-    "text": "Starting with training data\nOnce the tutorial is complete, we can begin with our own data. I hope you enjoy it.\n\n Let’s get started!"
-  },
-  {
-    "objectID": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#create-a-new-history",
-    "href": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#create-a-new-history",
-    "title": "Getting started with Galaxy",
-    "section": "Create a new history",
-    "text": "Create a new history\nNow that the tutorial is complete, we can plan the work with our own data. To do this, we create a new, empty history. Then we rename the history to Data NCBI"
-  },
-  {
-    "objectID": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#rename-the-new-history",
-    "href": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#rename-the-new-history",
-    "title": "Getting started with Galaxy",
-    "section": "Rename the new history",
-    "text": "Rename the new history\nAfter creating the new history, we rename it. With the new name, it can be clearly identified and cannot be confused with previous analyses."
-  },
-  {
-    "objectID": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#download-sequencing-data",
-    "href": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#download-sequencing-data",
-    "title": "Getting started with Galaxy",
-    "section": "Download sequencing data",
-    "text": "Download sequencing data\nThe sequence data that provided here is taken from one of my publications and is intended to serve as an example. The sequence data has been published on NCBI SRA and is freely available. The sequenced sample is a large dsDNA virus and the data is small in size. The small size makes it perfect, easy and quick to handle.\n\nReference\n\n\n\nIsolate\nBioSample\nNCBI SRA (Illumina)\nNCBI SRA (Nanopore)\n\n\n\n\nBmNPV-My\nSAMN18849911\nSRR14313723\nSRR26992684\n\n\n\nWennmann, J.T., Lim, F.S., Senger, S., Gani, M., Jehle, J.A., Keilwagen, J (2024). Haplotype determination of the Bombyx mori nucleopolyhedrovirus by Nanopore sequencing and linkage of single nucleotide variants. Journal of General Virology. 105 (5), 001983. [https://doi.org/10.1099/jgv.0.001983]\n\nPlease download the sequence data directly and save it temporarily on your computer. We will then upload it directly to your newly created Galaxy history “Data NCBI.”\n\nDownloading sequencing data\n\nFollow this link to download the Illumina data and save it on your computer. You should download the forward and reverse reads in two separate files:\n💾 [Illumina forward reads]\n💾 [Illumina reverse reads]\nFollow the link to download the Nanopore reads:\n💾 [Nanopore reads]\n\n\nYou should now have three files saved on your computer."
-  },
-  {
-    "objectID": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#upload-your-data-to-galaxy",
-    "href": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#upload-your-data-to-galaxy",
-    "title": "Getting started with Galaxy",
-    "section": "Upload your data to Galaxy",
-    "text": "Upload your data to Galaxy\nSequence data is usually obtained directly in fastq or fastqsanger format. It is then uploaded to the Galaxy platform. We will do this in the next step.\n\nUpload your data to Galaxy\n\nYou have the three files.\n\nGo to the folder where you saved the files.\n\nGo to usegalaxy.eu and click on “Upload.”\n\nDrag your files into the upload window (drag and drop).\n\nClick on “Start.” The upload will begin.\n\nOnce all files have been uploaded, click on “Close.”\n\n\nNow you have to wait until all files are completely uploaded. This may take a moment. The upload is complete when the files appear green in the history."
-  },
-  {
-    "objectID": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#status-of-files-in-your-history",
-    "href": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#status-of-files-in-your-history",
-    "title": "Getting started with Galaxy",
-    "section": "Status of files in your history",
-    "text": "Status of files in your history\nFiles can have four statuses in your history. Only green files and files being processed can be worked on further.\n\n\n\n\n\n\n\n\nColor\nStatus\nMeaning\n\n\n\n\n🟩 Green\nReady\nFile is ready to use\n\n\n🟧 Orange\nRunning/Processing\nFile is being processed (job still running)\n\n\n⬜ Gray\nQueued\nFile is waiting to run\n\n\n🟥 Red\nError\nFile has failed (an error occurred)"
-  },
-  {
-    "objectID": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#run-your-first-galaxy-tools",
-    "href": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#run-your-first-galaxy-tools",
-    "title": "Getting started with Galaxy",
-    "section": "Run your first Galaxy tools",
-    "text": "Run your first Galaxy tools\nOnce the data has been uploaded, we want to do something with it. We want to analyse it, not just look at it. But before we analyse it, it’s important that we get to know the data well. It’s important to know whether the sequencing worked well. We also want to know how good the quality of the sequencing is.\nThere are two tools we can use for Illumina and Nanopore data.\n\nPractice tool selection\nPlease practice to select some tools. Go to web interface of usegalaxy.eu and click on tools. In the tools menu you can search for tools you would like to apply to your data. Please search for two tools and select them:\n\nfalco\nnanoplot"
-  },
-  {
-    "objectID": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#quality-check-of-nanopore-reads",
-    "href": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#quality-check-of-nanopore-reads",
-    "title": "Getting started with Galaxy",
-    "section": "Quality check of Nanopore reads",
-    "text": "Quality check of Nanopore reads\nAt first we start the tool nanoplot on the Nanopore data. The file’s name should be SRR26992684_nanopore.fastqsanger.gz and it is the input for the tool nanoplot.\n\nStart tool nanoplot on Nanopore data"
-  },
-  {
-    "objectID": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#quality-check-of-illumina-reads",
-    "href": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#quality-check-of-illumina-reads",
-    "title": "Getting started with Galaxy",
-    "section": "Quality check of Illumina reads",
-    "text": "Quality check of Illumina reads\nNext, we use the falco tool, which we run on the forward file of the Illumina data. Here we chose the file SRR14313726_forward_illumina.fastqsanger.gz.\n\nStart tool falco on Illumina data"
-  },
-  {
-    "objectID": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#the-correct-files-for-the-right-tools",
-    "href": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#the-correct-files-for-the-right-tools",
-    "title": "Getting started with Galaxy",
-    "section": "The correct files for the right tools",
-    "text": "The correct files for the right tools\nNot all files can be read, processed or analysed by all tools. You learn this over time and with increasing experience.\n\nChose the correct file!\nA common mistake is selecting the wrong files for the wrong tool. Falco is for short reads (Illumina data) and Nanoplot is for long reads. Therefore, the following combination must be selected:\n\nfalco = SRR14313726_forward_illumina.fastqsanger.gz\n\nfalco = SRR14313726_reverse_illumina.fastqsanger.gz\nnanoplot = SRR26992684_nanopore.fastqsanger.gz"
-  },
-  {
-    "objectID": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#reviewing-the-output-and-evaluating-the-quality",
-    "href": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#reviewing-the-output-and-evaluating-the-quality",
-    "title": "Getting started with Galaxy",
-    "section": "Reviewing the output and evaluating the quality",
-    "text": "Reviewing the output and evaluating the quality\nTo view the results of the tools, click on the eye icon next to the outputs. Make sure you select the correct output files. They are called html report for the nanoplot tool and webpage for the falco tool.\n\nLet’s discuss the results together!\nClick on the eye of one of the files. The results should open in the center panel.\n\n\n The results are discussed together in the group.\n\nSelf-study to interpret the results\nIf you would like to learn how to evaluate and analyse the output of falco (or fastqc, which is the predecessor of falco) and nanoplot yourself, you can do so in the following tutorial:\nGalaxy Training Tutorial - Quality Control.\nEnjoy reading!"
-  },
-  {
-    "objectID": "topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.html",
-    "href": "topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.html",
-    "title": "Where is the raw sequencing data stored publicly?",
-    "section": "",
-    "text": "Most peer-reviewed journals require studies dealing with bioinformatic data to include a data availability statement. This statement explains where the raw sequencing data and all important associated data sets are available. Publishing sequence data online is now mandatory and considered good practice, as it allows other scientists to repeat the analyses or use the data for their own studies.\n\nTypically, the Data Availability Statement is located at the end of the manuscript. Sometimes it is also located at the very beginning. The information can also be integrated into the Materials and Methods section."
-  },
-  {
-    "objectID": "topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.html#data-availability",
-    "href": "topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.html#data-availability",
-    "title": "Where is the raw sequencing data stored publicly?",
-    "section": "",
-    "text": "Most peer-reviewed journals require studies dealing with bioinformatic data to include a data availability statement. This statement explains where the raw sequencing data and all important associated data sets are available. Publishing sequence data online is now mandatory and considered good practice, as it allows other scientists to repeat the analyses or use the data for their own studies.\n\nTypically, the Data Availability Statement is located at the end of the manuscript. Sometimes it is also located at the very beginning. The information can also be integrated into the Materials and Methods section."
-  },
-  {
-    "objectID": "topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.html#sequence-read-archive-sra",
-    "href": "topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.html#sequence-read-archive-sra",
-    "title": "Where is the raw sequencing data stored publicly?",
-    "section": "Sequence Read Archive (SRA)",
-    "text": "Sequence Read Archive (SRA)\nSequence data is published as raw data. The world’s largest public database for raw sequence data from high-throughput sequencing is the Sequence Read Archive (SRA). The SRA was founded in 2007 and is now jointly operated by the NCBI (USA), the EBI/ENA (Europe), and the DDBJ (Japan).\nThe SRA is the world’s largest collection of sequence data.\n\nVisit the Sequence Read Archive (SRA)\n\nVisit https://www.ncbi.nlm.nih.gov/sra\nSearch for SRA data entry SRR14313721\n\n Next, you should see the SRA record entry.\nWhat information can you see?\nCan you find out the meaning of…\n\nBioProject\nBioSample\nRun"
-  },
-  {
-    "objectID": "topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.html#sra-entry-information",
-    "href": "topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.html#sra-entry-information",
-    "title": "Where is the raw sequencing data stored publicly?",
-    "section": "SRA entry information",
-    "text": "SRA entry information\nThe SRA offers the possibility to retrieve a lot of information about the sequencing. We will look at this in the next step. To do this, we click directly on the run entry SRR14313721.\n\nSRA entry up close\nClick on SRR14313721.\n\nThis should open the detailed view, which provides information on the number of sequenced bases, the quality of the sequencing, and the format of the sequence data."
-  },
-  {
-    "objectID": "topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.html#taxonomy-analysis-tool",
-    "href": "topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.html#taxonomy-analysis-tool",
-    "title": "Where is the raw sequencing data stored publicly?",
-    "section": "Taxonomy Analysis Tool",
-    "text": "Taxonomy Analysis Tool\nThe SRA web interface also offers a simple analysis of the taxonomy. This is helpful if you want to know what is included in the sequencing. It can provide an indication of whether there may be contamination in the sequencing.\n\nTaxonomy Analysis Tool - Window into the SRA dataset\nAt the bottom, there is a field called ‘View in Krona’, which we click on.\n The Taxonomy Browser window will then open. This analysis is performed automatically by NCBI SRA for every dataset that is uploaded there. It is a rough metagenomic analysis based on the information stored at NCBI itself. You can see which organisms (including viruses) were found in the sequence data.\n The web interface also offers an interactive way to analyse the composition. This tool is called Krona, which we will launch next.\n\nThe Krona tool for interactive analysis will then open. Play around with the interactive display to understand how Krona works!"
-  },
-  {
-    "objectID": "topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.html#search-sra-database",
-    "href": "topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.html#search-sra-database",
-    "title": "Where is the raw sequencing data stored publicly?",
-    "section": "Search SRA database",
-    "text": "Search SRA database\nIt’s time to put what you’ve learned into practice. How about searching the SRA database yourself? Can you think of any organisms that might have been sequenced?\nLet’s find out. Search for organisms you work with!\n\nYour own search\nWhich organism comes to your mind? Then search for it!\nExamples:\n\nAscovirus\nHomo sapiens\nBeauveria bassiana\nSilkworm\n\nVisit https://www.ncbi.nlm.nih.gov/sra to start your search.\nAlso use Krona to analyse your search!\n\n\nLet’s discuss your findings!\nWho found something interesing?\nCan you share your findings?"
-  },
-  {
-    "objectID": "topics/02_read_sequence_information/02_read_sequence_information.html",
-    "href": "topics/02_read_sequence_information/02_read_sequence_information.html",
-    "title": "How is sequence information stored?",
-    "section": "",
-    "text": "What is a read? The term is important in bioinformatics because a read carries so much information that it is essential for sequence analysis.\n    View slides in full screen"
-  },
-  {
-    "objectID": "topics/02_read_sequence_information/02_read_sequence_information.html#the-art-of-the-read",
-    "href": "topics/02_read_sequence_information/02_read_sequence_information.html#the-art-of-the-read",
-    "title": "How is sequence information stored?",
-    "section": "",
-    "text": "What is a read? The term is important in bioinformatics because a read carries so much information that it is essential for sequence analysis.\n    View slides in full screen"
+    "text": "TUAT - 18 - 19 September 2025\n\n\nYour browser cannot display the PDF file. Download.\n\n\nDownload flyer as PDF"
   },
   {
     "objectID": "topics/02_read_sequence_information/lecture/02_lecture_read_information.html#sequence-data-format-fastq",
@@ -280,10 +266,241 @@
     "text": "Take-home message\n\nReads are stored in FASTQ format\nOne read has four lines\n\nIdentifier\nNucleotide sequence\nSpacer\nNucleotide quality\n\nQ score = measure of base call accuracy\nQ is stored as ASCII characters (Phred+33)\nHigher Q –&gt; lower error probability\nQuality profiles help to detect sequencing problems"
   },
   {
-    "objectID": "topics/99_flyer/99_flyer.html",
-    "href": "topics/99_flyer/99_flyer.html",
-    "title": "Flyer",
+    "objectID": "topics/02_read_sequence_information/02_read_sequence_information.html",
+    "href": "topics/02_read_sequence_information/02_read_sequence_information.html",
+    "title": "How is sequence information stored?",
     "section": "",
-    "text": "TUAT - 18 - 19 September 2025\n\n\nYour browser cannot display the PDF file. Download.\n\n\nDownload flyer as PDF"
+    "text": "What is a read? The term is important in bioinformatics because a read carries so much information that it is essential for sequence analysis.\n\nPresentation (~12 min)\nBelow you can see a preview of the presentation. There is also a link to view the presentation in full screen mode. You can navigate through the presentation using the arrow keys:\n\nNext slide: →\nPrevious slide: ←\nJump to first/last slide: Shift +↑ / Shift + ↓ There is also a link to view the presentation in full screen mode.\nThe ☰ icon in the bottom left corner opens the presentation options.\n\n    View slides in full screen"
+  },
+  {
+    "objectID": "topics/02_read_sequence_information/02_read_sequence_information.html#the-art-of-the-read",
+    "href": "topics/02_read_sequence_information/02_read_sequence_information.html#the-art-of-the-read",
+    "title": "How is sequence information stored?",
+    "section": "",
+    "text": "What is a read? The term is important in bioinformatics because a read carries so much information that it is essential for sequence analysis.\n\nPresentation (~12 min)\nBelow you can see a preview of the presentation. There is also a link to view the presentation in full screen mode. You can navigate through the presentation using the arrow keys:\n\nNext slide: →\nPrevious slide: ←\nJump to first/last slide: Shift +↑ / Shift + ↓ There is also a link to view the presentation in full screen mode.\nThe ☰ icon in the bottom left corner opens the presentation options.\n\n    View slides in full screen"
+  },
+  {
+    "objectID": "topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.html",
+    "href": "topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.html",
+    "title": "Where is the raw sequencing data stored publicly?",
+    "section": "",
+    "text": "Most peer-reviewed journals require studies dealing with bioinformatic data to include a data availability statement. This statement explains where the raw sequencing data and all important associated data sets are available. Publishing sequence data online is now mandatory and considered good practice, as it allows other scientists to repeat the analyses or use the data for their own studies.\n\nTypically, the Data Availability Statement is located at the end of the manuscript. Sometimes it is also located at the very beginning. The information can also be integrated into the Materials and Methods section."
+  },
+  {
+    "objectID": "topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.html#data-availability",
+    "href": "topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.html#data-availability",
+    "title": "Where is the raw sequencing data stored publicly?",
+    "section": "",
+    "text": "Most peer-reviewed journals require studies dealing with bioinformatic data to include a data availability statement. This statement explains where the raw sequencing data and all important associated data sets are available. Publishing sequence data online is now mandatory and considered good practice, as it allows other scientists to repeat the analyses or use the data for their own studies.\n\nTypically, the Data Availability Statement is located at the end of the manuscript. Sometimes it is also located at the very beginning. The information can also be integrated into the Materials and Methods section."
+  },
+  {
+    "objectID": "topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.html#sequence-read-archive-sra",
+    "href": "topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.html#sequence-read-archive-sra",
+    "title": "Where is the raw sequencing data stored publicly?",
+    "section": "Sequence Read Archive (SRA)",
+    "text": "Sequence Read Archive (SRA)\nSequence data is published as raw data. The world’s largest public database for raw sequence data from high-throughput sequencing is the Sequence Read Archive (SRA). The SRA was founded in 2007 and is now jointly operated by the NCBI (USA), the EBI/ENA (Europe), and the DDBJ (Japan).\nThe SRA is the world’s largest collection of sequence data.\n\nVisit the Sequence Read Archive (SRA)\n\nVisit https://www.ncbi.nlm.nih.gov/sra\nSearch for SRA data entry SRR14313721\n\n Next, you should see the SRA record entry.\nWhat information can you see?\nCan you find out the meaning of…\n\nBioProject\nBioSample\nRun"
+  },
+  {
+    "objectID": "topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.html#sra-entry-information",
+    "href": "topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.html#sra-entry-information",
+    "title": "Where is the raw sequencing data stored publicly?",
+    "section": "SRA entry information",
+    "text": "SRA entry information\nThe SRA offers the possibility to retrieve a lot of information about the sequencing. We will look at this in the next step. To do this, we click directly on the run entry SRR14313721.\n\nSRA entry up close\nClick on SRR14313721.\n\nThis should open the detailed view, which provides information on the number of sequenced bases, the quality of the sequencing, and the format of the sequence data."
+  },
+  {
+    "objectID": "topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.html#taxonomy-analysis-tool",
+    "href": "topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.html#taxonomy-analysis-tool",
+    "title": "Where is the raw sequencing data stored publicly?",
+    "section": "Taxonomy Analysis Tool",
+    "text": "Taxonomy Analysis Tool\nThe SRA web interface also offers a simple analysis of the taxonomy. This is helpful if you want to know what is included in the sequencing. It can provide an indication of whether there may be contamination in the sequencing.\n\nTaxonomy Analysis Tool - Window into the SRA dataset\nAt the bottom, there is a field called ‘View in Krona’, which we click on.\n The Taxonomy Browser window will then open. This analysis is performed automatically by NCBI SRA for every dataset that is uploaded there. It is a rough metagenomic analysis based on the information stored at NCBI itself. You can see which organisms (including viruses) were found in the sequence data.\n The web interface also offers an interactive way to analyse the composition. This tool is called Krona, which we will launch next.\n\nThe Krona tool for interactive analysis will then open. Play around with the interactive display to understand how Krona works!"
+  },
+  {
+    "objectID": "topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.html#search-sra-database",
+    "href": "topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.html#search-sra-database",
+    "title": "Where is the raw sequencing data stored publicly?",
+    "section": "Search SRA database",
+    "text": "Search SRA database\nIt’s time to put what you’ve learned into practice. How about searching the SRA database yourself? Can you think of any organisms that might have been sequenced?\nLet’s find out. Search for organisms you work with!\n\nYour own search\nWhich organism comes to your mind? Then search for it!\nExamples:\n\nAscovirus\nHomo sapiens\nBeauveria bassiana\nSilkworm\n\nVisit https://www.ncbi.nlm.nih.gov/sra to start your search.\nAlso use Krona to analyse your search!\n\n\nLet’s discuss your findings!\nWho found something interesing?\nCan you share your findings?"
+  },
+  {
+    "objectID": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html",
+    "href": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html",
+    "title": "Getting started with Galaxy",
+    "section": "",
+    "text": "To get started with the Galaxy platform, complete the following tutorial. It takes about 40 minutes and will familiarize you with the interface and the most important Galaxy terms. You will also upload your first data.\n\nFirst steps with Galaxy\nGo through and finish the tutiral “A short introduction to Galaxy”!\nThe tutorial is available in several languages:\n Galaxy Introduction Tutorial (GTN)\n Galaxy Introduction Tutorial (GTN, automatic translation)\n\nReference This tutorial is from the Galaxy Training Network (GTN): Introduction to Galaxy Lizenz: CC BY 4.0."
+  },
+  {
+    "objectID": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#a-short-introduction-to-galaxy",
+    "href": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#a-short-introduction-to-galaxy",
+    "title": "Getting started with Galaxy",
+    "section": "",
+    "text": "To get started with the Galaxy platform, complete the following tutorial. It takes about 40 minutes and will familiarize you with the interface and the most important Galaxy terms. You will also upload your first data.\n\nFirst steps with Galaxy\nGo through and finish the tutiral “A short introduction to Galaxy”!\nThe tutorial is available in several languages:\n Galaxy Introduction Tutorial (GTN)\n Galaxy Introduction Tutorial (GTN, automatic translation)\n\nReference This tutorial is from the Galaxy Training Network (GTN): Introduction to Galaxy Lizenz: CC BY 4.0."
+  },
+  {
+    "objectID": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#starting-with-training-data",
+    "href": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#starting-with-training-data",
+    "title": "Getting started with Galaxy",
+    "section": "Starting with training data",
+    "text": "Starting with training data\nOnce the tutorial is complete, we can begin with our own data. I hope you enjoy it.\n\n Let’s get started!"
+  },
+  {
+    "objectID": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#create-a-new-history",
+    "href": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#create-a-new-history",
+    "title": "Getting started with Galaxy",
+    "section": "Create a new history",
+    "text": "Create a new history\nNow that the tutorial is complete, we can plan the work with our own data. To do this, we create a new, empty history. Then we rename the history to Data NCBI"
+  },
+  {
+    "objectID": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#rename-the-new-history",
+    "href": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#rename-the-new-history",
+    "title": "Getting started with Galaxy",
+    "section": "Rename the new history",
+    "text": "Rename the new history\nAfter creating the new history, we rename it. With the new name, it can be clearly identified and cannot be confused with previous analyses."
+  },
+  {
+    "objectID": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#download-sequencing-data",
+    "href": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#download-sequencing-data",
+    "title": "Getting started with Galaxy",
+    "section": "Download sequencing data",
+    "text": "Download sequencing data\nThe sequence data that provided here is taken from one of my publications and is intended to serve as an example. The sequence data has been published on NCBI SRA and is freely available. The sequenced sample is a large dsDNA virus and the data is small in size. The small size makes it perfect, easy and quick to handle.\n\nReference\n\n\n\nIsolate\nBioSample\nNCBI SRA (Illumina)\nNCBI SRA (Nanopore)\n\n\n\n\nBmNPV-My\nSAMN18849911\nSRR14313723\nSRR26992684\n\n\n\nWennmann, J.T., Lim, F.S., Senger, S., Gani, M., Jehle, J.A., Keilwagen, J (2024). Haplotype determination of the Bombyx mori nucleopolyhedrovirus by Nanopore sequencing and linkage of single nucleotide variants. Journal of General Virology. 105 (5), 001983. [https://doi.org/10.1099/jgv.0.001983]\n\nPlease download the sequence data directly and save it temporarily on your computer. We will then upload it directly to your newly created Galaxy history “Data NCBI.”\n\nDownloading sequencing data\n\nFollow this link to download the Illumina data and save it on your computer. You should download the forward and reverse reads in two separate files:\n💾 [Illumina forward reads]\n💾 [Illumina reverse reads]\nFollow the link to download the Nanopore reads:\n💾 [Nanopore reads]\n\n\nYou should now have three files saved on your computer."
+  },
+  {
+    "objectID": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#upload-your-data-to-galaxy",
+    "href": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#upload-your-data-to-galaxy",
+    "title": "Getting started with Galaxy",
+    "section": "Upload your data to Galaxy",
+    "text": "Upload your data to Galaxy\nSequence data is usually obtained directly in fastq or fastqsanger format. It is then uploaded to the Galaxy platform. We will do this in the next step.\n\nUpload your data to Galaxy\n\nYou have the three files.\n\nGo to the folder where you saved the files.\n\nGo to usegalaxy.eu and click on “Upload.”\n\nDrag your files into the upload window (drag and drop).\n\nClick on “Start.” The upload will begin.\n\nOnce all files have been uploaded, click on “Close.”\n\n\nNow you have to wait until all files are completely uploaded. This may take a moment. The upload is complete when the files appear green in the history."
+  },
+  {
+    "objectID": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#status-of-files-in-your-history",
+    "href": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#status-of-files-in-your-history",
+    "title": "Getting started with Galaxy",
+    "section": "Status of files in your history",
+    "text": "Status of files in your history\nFiles can have four statuses in your history. Only green files and files being processed can be worked on further.\n\n\n\n\n\n\n\n\nColor\nStatus\nMeaning\n\n\n\n\n🟩 Green\nReady\nFile is ready to use\n\n\n🟧 Orange\nRunning/Processing\nFile is being processed (job still running)\n\n\n⬜ Gray\nQueued\nFile is waiting to run\n\n\n🟥 Red\nError\nFile has failed (an error occurred)"
+  },
+  {
+    "objectID": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#run-your-first-galaxy-tools",
+    "href": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#run-your-first-galaxy-tools",
+    "title": "Getting started with Galaxy",
+    "section": "Run your first Galaxy tools",
+    "text": "Run your first Galaxy tools\nOnce the data has been uploaded, we want to do something with it. We want to analyse it, not just look at it. But before we analyse it, it’s important that we get to know the data well. It’s important to know whether the sequencing worked well. We also want to know how good the quality of the sequencing is.\nThere are two tools we can use for Illumina and Nanopore data.\n\nPractice tool selection\nPlease practice to select some tools. Go to web interface of usegalaxy.eu and click on tools. In the tools menu you can search for tools you would like to apply to your data. Please search for two tools and select them:\n\nfalco\nnanoplot"
+  },
+  {
+    "objectID": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#quality-check-of-nanopore-reads",
+    "href": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#quality-check-of-nanopore-reads",
+    "title": "Getting started with Galaxy",
+    "section": "Quality check of Nanopore reads",
+    "text": "Quality check of Nanopore reads\nAt first we start the tool nanoplot on the Nanopore data. The file’s name should be SRR26992684_nanopore.fastqsanger.gz and it is the input for the tool nanoplot.\n\nStart tool nanoplot on Nanopore data"
+  },
+  {
+    "objectID": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#quality-check-of-illumina-reads",
+    "href": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#quality-check-of-illumina-reads",
+    "title": "Getting started with Galaxy",
+    "section": "Quality check of Illumina reads",
+    "text": "Quality check of Illumina reads\nNext, we use the falco tool, which we run on the forward file of the Illumina data. Here we chose the file SRR14313726_forward_illumina.fastqsanger.gz.\n\nStart tool falco on Illumina data"
+  },
+  {
+    "objectID": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#the-correct-files-for-the-right-tools",
+    "href": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#the-correct-files-for-the-right-tools",
+    "title": "Getting started with Galaxy",
+    "section": "The correct files for the right tools",
+    "text": "The correct files for the right tools\nNot all files can be read, processed or analysed by all tools. You learn this over time and with increasing experience.\n\nChose the correct file!\nA common mistake is selecting the wrong files for the wrong tool. Falco is for short reads (Illumina data) and Nanoplot is for long reads. Therefore, the following combination must be selected:\n\nfalco = SRR14313726_forward_illumina.fastqsanger.gz\n\nfalco = SRR14313726_reverse_illumina.fastqsanger.gz\nnanoplot = SRR26992684_nanopore.fastqsanger.gz"
+  },
+  {
+    "objectID": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#reviewing-the-output-and-evaluating-the-quality",
+    "href": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#reviewing-the-output-and-evaluating-the-quality",
+    "title": "Getting started with Galaxy",
+    "section": "Reviewing the output and evaluating the quality",
+    "text": "Reviewing the output and evaluating the quality\nTo view the results of the tools, click on the eye icon next to the outputs. Make sure you select the correct output files. They are called html report for the nanoplot tool and webpage for the falco tool.\n\nLet’s discuss the results together!\nClick on the eye of one of the files. The results should open in the center panel.\n\n\n The results are discussed together in the group.\n\nSelf-study to interpret the results\nIf you would like to learn how to evaluate and analyse the output of falco (or fastqc, which is the predecessor of falco) and nanoplot yourself, you can do so in the following tutorial:\nGalaxy Training Tutorial - Quality Control.\nEnjoy reading!"
+  },
+  {
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#sequence-data-format-fastq",
+    "href": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#sequence-data-format-fastq",
+    "title": "Courses, Tutorials and Slides",
+    "section": "Sequence data format (fastq)",
+    "text": "Sequence data format (fastq)\n\n\n \nIllumina sequencing:\n\nMillions of sequences (= reads) are generated\n\nsingle-read sequencing = one file (R1)\n\npaired-read sequencing = two files (R1/R2)\n\nMinION:\n\nreads are not paired!\nBut saved in the same way!    \n\n\nIdentifier (run, cluster, …)\nSequence (A, T, G, C)\n“+” separator\nQuality (ASCII)"
+  },
+  {
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#for-row-format-fastq",
+    "href": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#for-row-format-fastq",
+    "title": "Courses, Tutorials and Slides",
+    "section": "For row format (fastq)",
+    "text": "For row format (fastq)\n \n\n\n\n\n\n\n\nRow\nDescription\n\n\n\n\n1st row\nIdentifier (run, cluster, location on flow cell, read number, etc.)\n\n\n2nd row\nNucleotide sequence (A, T, G, C, N)\n\n\n3rd row\nSeparator line (optionally repeats carries an identifier)\n\n\n4th row\nQuality scores for each base (ASCII-encoded Phred scores)"
+  },
+  {
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#read-format",
+    "href": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#read-format",
+    "title": "Courses, Tutorials and Slides",
+    "section": "Read format",
+    "text": "Read format\n\nExample: NCBI SRA GenBank entry: SRR5560266 (single read data)\n\n\n\nThe first row provides information about the cluster, read position, location, run, … https://help.basespace.illumina.com/articles/descriptive/fastq-files/\nNucleotide sequence\nSpacer\nBase call quality for each nucleotide"
+  },
+  {
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#read-format-paired-reads",
+    "href": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#read-format-paired-reads",
+    "title": "Courses, Tutorials and Slides",
+    "section": "Read format (paired reads)",
+    "text": "Read format (paired reads)\n\nPaired reads are saved in the same format as single read data\nUsually paired reads are stored in two separate files, each file with the same number and order of reads\nPaired reads have (almost) the same identifier"
+  },
+  {
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#read-quality-q-and-error-probability-p",
+    "href": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#read-quality-q-and-error-probability-p",
+    "title": "Courses, Tutorials and Slides",
+    "section": "Read quality (Q) and error probability (P)",
+    "text": "Read quality (Q) and error probability (P)\n\n\nquality = probability that a base is detected falsely\neach base gets its own quality score = Q score\nQ = Phred quality score\nP = base-calling error probability"
+  },
+  {
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#relationship-between-error-probability-p-and-phred-quality-score-q",
+    "href": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#relationship-between-error-probability-p-and-phred-quality-score-q",
+    "title": "Courses, Tutorials and Slides",
+    "section": "Relationship between error probability (P) and Phred quality score (Q)",
+    "text": "Relationship between error probability (P) and Phred quality score (Q)\nHere is the R code in case you want to create this graph by yourself in R…\nlibrary(ggplot2)\n\nP  &lt;- 10^seq(-4, 0, length.out = 1000)\ndf &lt;- data.frame(P = P, Q = -10 * log10(P))\n\nQvals  &lt;- c(10, 20, 30)\nguides &lt;- data.frame(\n  Q   = Qvals,\n  P   = 10^(-Qvals/10),\n  col = c(\"red\", \"forestgreen\", \"blue\"),\n  lty = c(\"dashed\", \"dotted\", \"dotdash\")\n)\n\np &lt;- ggplot(df, aes(x = P, y = Q)) +\n  geom_line(size = 1) +\n  geom_segment(data = guides,\n               aes(x = 1e-4, xend = P, y = Q, yend = Q,\n                   colour = col, linetype = lty),\n               inherit.aes = FALSE, size = 1) +\n  geom_segment(data = guides,\n               aes(x = P, xend = P, y = 0, yend = Q,\n                   colour = col, linetype = lty),\n               inherit.aes = FALSE, size = 1) +\n  geom_point(data = guides,\n             aes(x = P, y = Q, colour = col),\n             inherit.aes = FALSE, size = 3) +\n  scale_x_log10(\n    limits = c(1e-4, 1),\n    breaks = c(1e-4, 1e-3, 1e-2, 1e-1, 1),\n    labels = c(\"0.0001\", \"0.001\", \"0.01\", \"0.1\", \"1\")\n  ) +\n  scale_y_continuous(\n    limits = c(0, 45),\n    breaks = seq(0, 45, by = 5),\n    expand = expansion(mult = c(0, 0))\n  ) +\n  scale_colour_identity() +\n  scale_linetype_identity() +\n  labs(x = expression(P == 10^{-Q/10}), \n       y = expression(Q == -10 %.% log[10](P))) +\n  theme_minimal(base_size = 14) +\n  theme(\n    panel.border   = element_rect(color = \"black\", fill = NA),\n    panel.grid.major = element_blank(),\n    panel.grid.minor = element_blank(),\n    axis.ticks = element_line(color = \"black\", size = 0.5),\n    axis.ticks.length = unit(0.2, \"cm\")\n  )\n\nggsave(\"q_vs_p_plot.png\",\n       plot = p,\n       width = 1200*f, height = 1200*f, units = \"px\", dpi = 300, bg=\"white\")"
+  },
+  {
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#read-quality-illumina-vs-nanopore-data",
+    "href": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#read-quality-illumina-vs-nanopore-data",
+    "title": "Courses, Tutorials and Slides",
+    "section": "Read quality: Illumina vs Nanopore data",
+    "text": "Read quality: Illumina vs Nanopore data"
+  },
+  {
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#phred-quality-scores",
+    "href": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#phred-quality-scores",
+    "title": "Courses, Tutorials and Slides",
+    "section": "Phred quality scores",
+    "text": "Phred quality scores\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuality score (Q)\nProbability that a baseis called incorrectly\nAccuracy\nError probability\n\n\n\n\n10\n1 in 10\n90%\n10%\n\n\n20\n1 in 100\n99%\n1%\n\n\n30\n1 in 1000\n99.9%\n0.1%\n\n\n40\n1 in 10000\n99.99%\n0.01%"
+  },
+  {
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#read-quality-q-is-encoded-in-ascii-format",
+    "href": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#read-quality-q-is-encoded-in-ascii-format",
+    "title": "Courses, Tutorials and Slides",
+    "section": "Read quality (Q) is encoded in ASCII format",
+    "text": "Read quality (Q) is encoded in ASCII format\n\nEvery base in FASTQ has a quality score\nFASTQ does not store numbers but ASCII characters\nTo geht the character: calculate Q + 33 –&gt; position in ASCII table\nExample: Q = 4 –&gt; 37 –&gt; %\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQ\nP_error\nASCII\nQ\nP_error\nASCII\nQ\nP_error\nASCII\nQ\nP_error\nASCII\n\n\n\n\n0\n1.00000\n!\n11\n0.07943\n,\n22\n0.00631\n7\n33\n0.00050\nB\n\n\n1\n0.79433\n”\n12\n0.06310\n-\n23\n0.00501\n8\n34\n0.00040\nC\n\n\n2\n0.63096\n#\n13\n0.05012\n.\n24\n0.00398\n9\n35\n0.00032\nD\n\n\n3\n0.50119\n$\n14\n0.03981\n/\n25\n0.00316\n:\n36\n0.00025\nE\n\n\n4\n0.39811\n%\n15\n0.03162\n0\n26\n0.00251\n;\n37\n0.00020\nF\n\n\n5\n0.31623\n&\n16\n0.02512\n1\n27\n0.00200\n&lt;\n38\n0.00016\nG\n\n\n6\n0.25119\n’\n17\n0.01995\n2\n28\n0.00158\n=\n39\n0.00013\nH\n\n\n7\n0.19953\n(\n18\n0.01585\n3\n29\n0.00126\n&gt;\n40\n0.00010\nI\n\n\n8\n0.15849\n)\n19\n0.01259\n4\n30\n0.00100\n?\n41\n0.00008\nJ\n\n\n9\n0.12589\n*\n20\n0.01000\n5\n31\n0.00079\n@\n42\n0.00006\nK\n\n\n10\n0.10000\n+\n21\n0.00794\n6\n32\n0.00063\nA"
+  },
+  {
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#read-quality-q-is-encoded-in-ascii-format-1",
+    "href": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#read-quality-q-is-encoded-in-ascii-format-1",
+    "title": "Courses, Tutorials and Slides",
+    "section": "Read quality (Q) is encoded in ASCII format",
+    "text": "Read quality (Q) is encoded in ASCII format\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQ\nP_error\nASCII\nQ\nP_error\nASCII\nQ\nP_error\nASCII\nQ\nP_error\nASCII\n\n\n\n\n0\n1.00000\n!\n11\n0.07943\n,\n22\n0.00631\n7\n33\n0.00050\nB\n\n\n1\n0.79433\n”\n12\n0.06310\n-\n23\n0.00501\n8\n34\n0.00040\nC\n\n\n2\n0.63096\n#\n13\n0.05012\n.\n24\n0.00398\n9\n35\n0.00032\nD\n\n\n3\n0.50119\n$\n14\n0.03981\n/\n25\n0.00316\n:\n36\n0.00025\nE\n\n\n4\n0.39811\n%\n15\n0.03162\n0\n26\n0.00251\n;\n37\n0.00020\nF\n\n\n5\n0.31623\n&\n16\n0.02512\n1\n27\n0.00200\n&lt;\n38\n0.00016\nG\n\n\n6\n0.25119\n’\n17\n0.01995\n2\n28\n0.00158\n=\n39\n0.00013\nH\n\n\n7\n0.19953\n(\n18\n0.01585\n3\n29\n0.00126\n&gt;\n40\n0.00010\nI\n\n\n8\n0.15849\n)\n19\n0.01259\n4\n30\n0.00100\n?\n41\n0.00008\nJ\n\n\n9\n0.12589\n*\n20\n0.01000\n5\n31\n0.00079\n@\n42\n0.00006\nK\n\n\n10\n0.10000\n+\n21\n0.00794\n6\n32\n0.00063\nA"
+  },
+  {
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#read-quality-q-is-encoded-in-ascii-format-2",
+    "href": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#read-quality-q-is-encoded-in-ascii-format-2",
+    "title": "Courses, Tutorials and Slides",
+    "section": "Read quality (Q) is encoded in ASCII format",
+    "text": "Read quality (Q) is encoded in ASCII format\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQ\nP_error\nASCII\nQ\nP_error\nASCII\nQ\nP_error\nASCII\nQ\nP_error\nASCII\n\n\n\n\n0\n1.00000\n!\n11\n0.07943\n,\n22\n0.00631\n7\n33\n0.00050\nB\n\n\n1\n0.79433\n”\n12\n0.06310\n-\n23\n0.00501\n8\n34\n0.00040\nC\n\n\n2\n0.63096\n#\n13\n0.05012\n.\n24\n0.00398\n9\n35\n0.00032\nD\n\n\n3\n0.50119\n$\n14\n0.03981\n/\n25\n0.00316\n:\n36\n0.00025\nE\n\n\n4\n0.39811\n%\n15\n0.03162\n0\n26\n0.00251\n;\n37\n0.00020\nF\n\n\n5\n0.31623\n&\n16\n0.02512\n1\n27\n0.00200\n&lt;\n38\n0.00016\nG\n\n\n6\n0.25119\n’\n17\n0.01995\n2\n28\n0.00158\n=\n39\n0.00013\nH\n\n\n7\n0.19953\n(\n18\n0.01585\n3\n29\n0.00126\n&gt;\n40\n0.00010\nI\n\n\n8\n0.15849\n)\n19\n0.01259\n4\n30\n0.00100\n?\n41\n0.00008\nJ\n\n\n9\n0.12589\n*\n20\n0.01000\n5\n31\n0.00079\n@\n42\n0.00006\nK"
+  },
+  {
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#fastq-encoding-asci---q-score---read-quality",
+    "href": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#fastq-encoding-asci---q-score---read-quality",
+    "title": "Courses, Tutorials and Slides",
+    "section": "FASTQ encoding: ASCI <-> Q score <-> read quality",
+    "text": "FASTQ encoding: ASCI &lt;-&gt; Q score &lt;-&gt; read quality"
+  },
+  {
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#take-home-message",
+    "href": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#take-home-message",
+    "title": "Courses, Tutorials and Slides",
+    "section": "Take-home message",
+    "text": "Take-home message\n\nReads are stored in FASTQ format\nOne read has four lines\n\nIdentifier\nNucleotide sequence\nSpacer\nNucleotide quality\n\nQ score = measure of base call accuracy\nQ is stored as ASCII characters (Phred+33)\nHigher Q –&gt; lower error probability\nQuality profiles help to detect sequencing problems"
   }
 ]

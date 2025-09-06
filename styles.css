@@ -5,7 +5,8 @@ main { max-width: 1100px; margin-inline: auto; }
 comment-title,
 hands-on-title,
 warning-title,
-reference-title {
+reference-title,
+lecture-title{
   display: block;
   font-weight: bold;
   margin-bottom: 0.5em;
@@ -28,6 +29,10 @@ reference-title {
   color: #333333;
 }
 
+lecture-title {
+  color: #5a2a83;
+}
+
 
 /*---------------------------------------*/
 
@@ -48,6 +53,11 @@ warning-title::before {
 
 reference-title::before {
   content: "📖 : ";
+  margin-right: 0.3em;
+}
+
+lecture-title::before {
+  content: "🎓 Lecture: ";
   margin-right: 0.3em;
 }
 
@@ -86,6 +96,13 @@ reference-title::before {
   border-radius: 5px;
 }
 
+.lecture {
+  background: #f4e9f9;
+  padding: 1em;
+  margin: 1em 0;
+  border-left: 5px solid #5a2a83;
+  border-radius: 5px;
+}
 /*---------------------------------------*/
 
 .flag {
