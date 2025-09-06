@@ -6,4 +6,15 @@ title: "How is sequence information stored?"
 
 What is a `read`? The term is important in bioinformatics because a read carries so much information that it is essential for sequence analysis.
 
+::: lecture
+<lecture-title>Presentation (\~12 min)</lecture-title>
+
+Below you can see a preview of the presentation. There is also a link to view the presentation in full screen mode. You can navigate through the presentation using the arrow keys:
+
+-   Next slide: `→`
+-   Previous slide: `←`
+-   Jump to first/last slide: `Shift +↑` / `Shift + ↓` There is also a link to view the presentation in full screen mode.
+-   The `☰` icon in the bottom left corner opens the presentation options.
+
 {{< revealjs "lecture/02_lecture_read_information.html" >}}
+:::

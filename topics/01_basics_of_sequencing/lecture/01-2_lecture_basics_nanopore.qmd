@@ -5,10 +5,10 @@ format:
       side: left
       width: wide
     width: 1600
-    height: 900
-    margin: 0.08
+    height: 900   # 16:9
+    margin: 0.08  # (optional) Rand um den Slide-Inhalt
     slide-number: c
-    css: ../../lecture_styles.css
+    css: styles.css
 ---
 
 # reads - Storing Sequence Information {.smaller}
@@ -50,7 +50,7 @@ Quality (ASCII)
 <br> <br>
 
 | Row | Description |
-|--------------------|----------------------------------------------------|
+|-----------------|-------------------------------------------------------|
 | **1st row** | Identifier (run, cluster, location on flow cell, read number, etc.) |
 | **2nd row** | Nucleotide sequence (A, T, G, C, N) |
 | **3rd row** | Separator line (optionally repeats carries an identifier) |
@@ -173,7 +173,7 @@ ggsave("q_vs_p_plot.png",
 
 ::: {.column width="70%"}
 | Quality score (Q) | Probability that a base<br>is called incorrectly | Accuracy | Error probability |
-|:---------------:|:---------------------:|:---------------:|:---------------:|
+|:------------:|:------------------------------:|:------------:|:------------:|
 | 10 | 1 in 10 | 90% | 10% |
 | 20 | 1 in 100 | 99% | 1% |
 | 30 | 1 in 1000 | 99.9% | 0.1% |
@@ -255,7 +255,7 @@ ggsave("q_vs_p_plot.png",
     -   Nucleotide quality
 -   Q score = measure of base call accuracy
 -   Q is stored as ASCII characters (Phred+33)
--   Higher Q --\> lower error probability
+-   Higher Q --> lower error probability
 -   Quality profiles help to detect sequencing problems
 
 ![](assets/get_end_atgc.png){.absolute right="80" bottom="0" width="30%"}

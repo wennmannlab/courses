@@ -1,0 +1,311 @@
+---
+format:
+  revealjs:
+    menu:
+      side: left
+      width: wide
+    width: 1600
+    height: 900
+    margin: 0.08
+    slide-number: c
+    css: ../../lecture_styles.css
+---
+
+# Principle of Illumina sequencing
+
+------------------------------------------------------------------------
+
+## Illumina sequencing (short read sequencing)
+
+\
+
+-   one of the Next Generation Sequencing (NGS) technologies
+-   Most widely applied sequencing technique
+-   Generates not one but millions of sequences at the same time
+-   read = single sequence
+-   high accuracy (\>99.9%)
+
+## Nucleotides with reversible terminated 3'-OH group
+
+\
+![](png/reversible_termination_nucleotide.png){width="80%"}
+
+::: aside
+Bentley et al. (2008) Accurate whole human genome sequencing using reversible terminator chemistry, Nature, 456, 53-59 (DOI: https://doi.org/10.1038/nature07517)
+:::
+
+------------------------------------------------------------------------
+
+\
+![](png/reversible_termination_nucleotides.png){.absolute left="150" width="80%"}
+
+::: aside
+Chen et al. (2013) The history and advances of reversible terminators used in new generations of sequencing technology, Genomics Proteomics Bioinformatics, 11, 34-40
+:::
+
+## Sequencing by synthesis - step by step
+
+::::: columns
+::: {.column width="40%"}
+![](png/ill_step_0.png){width="60%"}
+:::
+
+::: {.column width="60%"}
+\
+\
+
+Assumptions:
+
+-   Blue: Single stranded temple = sequence of interest
+-   The DNA strand is fixed to a surface at the 5'-OH end.
+-   Two terminal adapters (of known sequence) are ligated to both ends of the DNA strand.
+-   A primer (oligonucleotide) is bound at one side.
+-   Oligonucleotide as a free 3' OH group.
+:::
+:::::
+
+------------------------------------------------------------------------
+
+![](png/ill_step_1.png){.absolute}
+
+![](png/ill_step_legend.png){.absolute right="0" top="0" width="10%"}
+
+::::: columns
+::: {.column width="50%"}
+:::
+
+::: {.column width="50%"}
+\
+\
+\
+\
+
+-   Nucleotides with reversiblee terminating groups are equally frequent in the reaction.
+-   DNA polymerase incorporates a single complementary nucleotide (matching wit the template).
+-   Fluorescent dye acts as a terminator of polymerization (=strand synthesis).
+-   Strand synthesis is terminated.
+:::
+:::::
+
+------------------------------------------------------------------------
+
+![](png/ill_step_2.png){.absolute}
+
+![](png/ill_step_legend.png){.absolute right="0" top="0" width="10%"}
+
+::::: columns
+::: {.column width="65%"}
+:::
+
+::: {.column width="35%"}
+\
+\
+\
+\
+
+-   The excitation of the fluorescent dye happen at a specific wavelength.
+-   The detection of the light emission can be used to identify the nucleotide.
+:::
+:::::
+
+------------------------------------------------------------------------
+
+![](png/ill_step_3.png){.absolute}
+
+![](png/ill_step_legend.png){.absolute right="0" top="0" width="10%"}
+
+::::: columns
+::: {.column width="73%"}
+:::
+
+::: {.column width="27%"}
+\
+\
+\
+\
+
+-   Next, the fluorescent dye is removed by enzymatic cleavage.
+-   The exposure of free 3' OH group enables the elongation with the next ddNTP.
+:::
+:::::
+
+------------------------------------------------------------------------
+
+![](png/ill_step_4.png){.absolute}
+
+![](png/ill_step_legend.png){.absolute right="0" top="0" width="10%"}
+
+::::: columns
+::: {.column width="73%"}
+:::
+
+::: {.column width="27%"}
+:::
+:::::
+
+## Which bases have been sequenced?
+
+![](png/ill_step_5.png){.absolute}
+
+![](png/ill_step_legend.png){.absolute right="0" top="500" width="10%"}
+
+::::: columns
+::: {.column width="73%"}
+:::
+
+::: {.column width="27%"}
+:::
+:::::
+
+## From top we see only the emitted light
+
+![](png/ill_step_top_view_single.png){.absolute left="0"}
+
+## DNA fragmentation prior to sequencing
+
+![](png/dna_fragmentation.png){.absolute left="0"}
+
+::::: columns
+::: {.column width="40%"}
+:::
+
+::: {.column width="60%"}
+\
+\
+
+-   Usually DNA is too large to be sequenced directly.
+-   DNA is fragmented (enzymatically/mechanically) into smaller pieces.
+-   Fragment sizes differ depending on the applied protocol.
+-   Adapters with known sequences are added to the fragments.
+:::
+:::::
+
+## Sequencing adapter
+
+![](png/sequencing_adapters.png)
+
+## Binding of sequences to the flow cell
+
+\
+
+-   Flow cell is a slide on which both capture sequences are attached.
+-   The attached capture sequences complement the adapters that have been ligated to the insert.
+
+![](png/flow_cell_side_empty.png)
+
+------------------------------------------------------------------------
+
+![](png/flow_cell_side_binding.png)
+
+------------------------------------------------------------------------
+
+![](png/Folie1.png){.absolute}
+
+------------------------------------------------------------------------
+
+![](png/Folie2.png){.absolute}
+
+------------------------------------------------------------------------
+
+![](png/Folie3.png){.absolute}
+
+------------------------------------------------------------------------
+
+![](png/Folie4.png){.absolute}
+
+------------------------------------------------------------------------
+
+![](png/Folie5.png){.absolute}
+
+------------------------------------------------------------------------
+
+![](png/Folie6.png){.absolute}
+
+------------------------------------------------------------------------
+
+![](png/Folie7.png){.absolute}
+
+------------------------------------------------------------------------
+
+![](png/Folie8.png){.absolute}
+
+------------------------------------------------------------------------
+
+![](png/Folie9.png){.absolute}
+
+------------------------------------------------------------------------
+
+![](png/Folie10.png){.absolute}
+
+------------------------------------------------------------------------
+
+![](png/Folie11.png){.absolute}
+
+------------------------------------------------------------------------
+
+![](png/Folie12.png){.absolute}
+
+------------------------------------------------------------------------
+
+![](png/Folie13.png){.absolute}
+
+------------------------------------------------------------------------
+
+![](png/Folie14.png){.absolute}
+
+------------------------------------------------------------------------
+
+![](png/Folie15.png){.absolute}
+
+------------------------------------------------------------------------
+
+![](png/Folie16.png){.absolute}
+
+------------------------------------------------------------------------
+
+![](png/Folie17.png){.absolute}
+
+------------------------------------------------------------------------
+
+![](png/Folie18.png){.absolute}
+
+------------------------------------------------------------------------
+
+![](png/Folie19.png){.absolute}
+
+------------------------------------------------------------------------
+
+::::: columns
+::: {.column width="50%"}
+![](../../../png/dot_illumina_ai_1.png){width="\"50%"}
+:::
+
+::: {.column width="50%"}
+\
+\
+
+The entire workflow as a video:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fCd6B5HRaZ8?si=8OsIM0wNR2n2lKiU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+
+</iframe>
+:::
+:::::
+
+::: aside
+The image on the left side was AI generated and is <u>not</u> a real image of the Illumina sequencing.
+:::
+
+## Take-home message
+
+\
+
+-   Illumina uses **sequencing by synthesis**.
+-   Billions of DNA fragments (**reads**) are sequenced in parallel on a flow cell
+-   Large number of reads! But reads are short: **50 to 300 nucleotides**
+-   Clusters are created through **bridge PCR** amplification
+-   Bases are detected by fluorescent labeled nucleotides
+-   Strength: **high accuracy**
+-   Limitation: **short read length**
+
+![](../../assets/get_end_atgc.png){.absolute right="0" bottom="0" width="25%"}
