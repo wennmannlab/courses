@@ -44,126 +44,126 @@
   {
     "objectID": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#does-this-look-familiar",
     "href": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#does-this-look-familiar",
-    "title": "Courses, Tutorials and Slides",
+    "title": "DNA and Sanger sequencing",
     "section": "Does this look familiar?",
     "text": "Does this look familiar?"
   },
   {
     "objectID": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#desoxyribonucleic-acid-dna",
     "href": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#desoxyribonucleic-acid-dna",
-    "title": "Courses, Tutorials and Slides",
+    "title": "DNA and Sanger sequencing",
     "section": "Desoxyribonucleic acid (DNA)",
     "text": "Desoxyribonucleic acid (DNA)\n\n\n\n\n5’-ATGCACAACTTTTACAACTACAGCCCCCGCCCTGGGGCAAAACCTACGTGACGACAAT-3’    ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\n3’-TACGTGTTGAAAATGTTGATGTCGGGGGCGGGACCCCGTTTTGGATGCACTGCTGTTA-5’\n\n\n\n\n\nBiopolymer that codes for genetic information\nMonomers = nucleotides\nBond types are phosphodiester bonds (3’-OH group)\nComplementary base pairing: (A=T; C≡G)\nTwo antiparallel strands (running in opposite directions)"
   },
   {
     "objectID": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#dna-replication-fork",
     "href": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#dna-replication-fork",
-    "title": "Courses, Tutorials and Slides",
+    "title": "DNA and Sanger sequencing",
     "section": "DNA replication fork",
     "text": "DNA replication fork"
   },
   {
     "objectID": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#direction-of-dna",
     "href": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#direction-of-dna",
-    "title": "Courses, Tutorials and Slides",
+    "title": "DNA and Sanger sequencing",
     "section": "Direction of DNA",
     "text": "Direction of DNA"
   },
   {
     "objectID": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#four-nucleotides",
     "href": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#four-nucleotides",
-    "title": "Courses, Tutorials and Slides",
+    "title": "DNA and Sanger sequencing",
     "section": "Four nucleotides",
     "text": "Four nucleotides"
   },
   {
     "objectID": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#sanger-sequencing",
     "href": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#sanger-sequencing",
-    "title": "Courses, Tutorials and Slides",
+    "title": "DNA and Sanger sequencing",
     "section": "Sanger sequencing",
     "text": "Sanger sequencing\n\n\n\nbased on modified nuclotides\n2’,3’dideoxyribosee nucleoside triphoshate\nwithout 3’-OH group\nchain termination method"
   },
   {
     "objectID": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#sanger-sequencing-1",
     "href": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#sanger-sequencing-1",
-    "title": "Courses, Tutorials and Slides",
+    "title": "DNA and Sanger sequencing",
     "section": "Sanger sequencing",
     "text": "Sanger sequencing"
   },
   {
     "objectID": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#sanger-sequencing-chromatogram",
     "href": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#sanger-sequencing-chromatogram",
-    "title": "Courses, Tutorials and Slides",
+    "title": "DNA and Sanger sequencing",
     "section": "Sanger sequencing chromatogram",
     "text": "Sanger sequencing chromatogram"
   },
   {
     "objectID": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#take-home-message",
     "href": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#take-home-message",
-    "title": "Courses, Tutorials and Slides",
+    "title": "DNA and Sanger sequencing",
     "section": "Take-home message",
     "text": "Take-home message\n\n\n\nAdvantage of Sanger sequencing\n\nDevices are easy to use\nResults are obtained within couple of hours (overnight)\nRelatively cheep\n\nDisadvantage of Sanger sequencing\n\nFew sequences are generated = low throughput technology\nRead length is limited to about 1000 nucleotides"
   },
   {
     "objectID": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#illumina-sequencing-short-read-sequencing",
     "href": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#illumina-sequencing-short-read-sequencing",
-    "title": "Courses, Tutorials and Slides",
+    "title": "Principle of Illumina sequencing",
     "section": "Illumina sequencing (short read sequencing)",
     "text": "Illumina sequencing (short read sequencing)\n\n\n\none of the Next Generation Sequencing (NGS) technologies\nMost widely applied sequencing technique\nGenerates not one but millions of sequences at the same time\nread = single sequence\nhigh accuracy (&gt;99.9%)"
   },
   {
     "objectID": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#nucleotides-with-reversible-terminated-3-oh-group",
     "href": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#nucleotides-with-reversible-terminated-3-oh-group",
-    "title": "Courses, Tutorials and Slides",
+    "title": "Principle of Illumina sequencing",
     "section": "Nucleotides with reversible terminated 3’-OH group",
     "text": "Nucleotides with reversible terminated 3’-OH group\n\n\n\n\nBentley et al. (2008) Accurate whole human genome sequencing using reversible terminator chemistry, Nature, 456, 53-59 (DOI: https://doi.org/10.1038/nature07517)"
   },
   {
     "objectID": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#sequencing-by-synthesis---step-by-step",
     "href": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#sequencing-by-synthesis---step-by-step",
-    "title": "Courses, Tutorials and Slides",
+    "title": "Principle of Illumina sequencing",
     "section": "Sequencing by synthesis - step by step",
     "text": "Sequencing by synthesis - step by step\n\n\n\n\n\n\n\nAssumptions:\n\nBlue: Single stranded temple = sequence of interest\nThe DNA strand is fixed to a surface at the 5’-OH end.\nTwo terminal adapters (of known sequence) are ligated to both ends of the DNA strand.\nA primer (oligonucleotide) is bound at one side.\nOligonucleotide as a free 3’ OH group."
   },
   {
     "objectID": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#which-bases-have-been-sequenced",
     "href": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#which-bases-have-been-sequenced",
-    "title": "Courses, Tutorials and Slides",
+    "title": "Principle of Illumina sequencing",
     "section": "Which bases have been sequenced?",
     "text": "Which bases have been sequenced?"
   },
   {
     "objectID": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#from-top-we-see-only-the-emitted-light",
     "href": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#from-top-we-see-only-the-emitted-light",
-    "title": "Courses, Tutorials and Slides",
+    "title": "Principle of Illumina sequencing",
     "section": "From top we see only the emitted light",
     "text": "From top we see only the emitted light"
   },
   {
     "objectID": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#dna-fragmentation-prior-to-sequencing",
     "href": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#dna-fragmentation-prior-to-sequencing",
-    "title": "Courses, Tutorials and Slides",
+    "title": "Principle of Illumina sequencing",
     "section": "DNA fragmentation prior to sequencing",
     "text": "DNA fragmentation prior to sequencing\n\n\n\n\n\n\n\n\n\nUsually DNA is too large to be sequenced directly.\nDNA is fragmented (enzymatically/mechanically) into smaller pieces.\nFragment sizes differ depending on the applied protocol.\nAdapters with known sequences are added to the fragments."
   },
   {
     "objectID": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#sequencing-adapter",
     "href": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#sequencing-adapter",
-    "title": "Courses, Tutorials and Slides",
+    "title": "Principle of Illumina sequencing",
     "section": "Sequencing adapter",
     "text": "Sequencing adapter"
   },
   {
     "objectID": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#binding-of-sequences-to-the-flow-cell",
     "href": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#binding-of-sequences-to-the-flow-cell",
-    "title": "Courses, Tutorials and Slides",
+    "title": "Principle of Illumina sequencing",
     "section": "Binding of sequences to the flow cell",
     "text": "Binding of sequences to the flow cell\n\n\n\nFlow cell is a slide on which both capture sequences are attached.\nThe attached capture sequences complement the adapters that have been ligated to the insert."
   },
   {
     "objectID": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#take-home-message",
     "href": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#take-home-message",
-    "title": "Courses, Tutorials and Slides",
+    "title": "Principle of Illumina sequencing",
     "section": "Take-home message",
     "text": "Take-home message\n\n\n\nIllumina uses sequencing by synthesis.\nBillions of DNA fragments (reads) are sequenced in parallel on a flow cell\nLarge number of reads! But reads are short: 50 to 300 nucleotides\nClusters are created through bridge PCR amplification\nBases are detected by fluorescent labeled nucleotides\nStrength: high accuracy\nLimitation: short read length"
   },
@@ -502,5 +502,33 @@
     "title": "Courses, Tutorials and Slides",
     "section": "Take-home message",
     "text": "Take-home message\n\nReads are stored in FASTQ format\nOne read has four lines\n\nIdentifier\nNucleotide sequence\nSpacer\nNucleotide quality\n\nQ score = measure of base call accuracy\nQ is stored as ASCII characters (Phred+33)\nHigher Q –&gt; lower error probability\nQuality profiles help to detect sequencing problems"
+  },
+  {
+    "objectID": "topics/01_basics_of_sequencing/01_basics_of_sequencing.html",
+    "href": "topics/01_basics_of_sequencing/01_basics_of_sequencing.html",
+    "title": "The basics of DNA sequencing",
+    "section": "",
+    "text": "To understand how DNA sequencing works, we first need to look at the basics of DNA replication. We also need to understand how DNA is extended and how science uses it for PCR. This is because PCR was the basis for the first method of DNA sequencing, known as Sanger sequencing.\n\nDNA and Sanger sequencing (~15 min)\nBelow you can see a preview of the presentation. There is also a link to view the presentation in full screen mode. You can navigate through the presentation using the arrow keys:\n\nNext slide: →\nPrevious slide: ←\nJump to first/last slide: Shift +↑ / Shift + ↓ There is also a link to view the presentation in full screen mode.\nThe ☰ icon in the bottom left corner opens the presentation options.\n\n    View slides in full screen"
+  },
+  {
+    "objectID": "topics/01_basics_of_sequencing/01_basics_of_sequencing.html#from-dna-to-pcr-to-sequencing",
+    "href": "topics/01_basics_of_sequencing/01_basics_of_sequencing.html#from-dna-to-pcr-to-sequencing",
+    "title": "The basics of DNA sequencing",
+    "section": "",
+    "text": "To understand how DNA sequencing works, we first need to look at the basics of DNA replication. We also need to understand how DNA is extended and how science uses it for PCR. This is because PCR was the basis for the first method of DNA sequencing, known as Sanger sequencing.\n\nDNA and Sanger sequencing (~15 min)\nBelow you can see a preview of the presentation. There is also a link to view the presentation in full screen mode. You can navigate through the presentation using the arrow keys:\n\nNext slide: →\nPrevious slide: ←\nJump to first/last slide: Shift +↑ / Shift + ↓ There is also a link to view the presentation in full screen mode.\nThe ☰ icon in the bottom left corner opens the presentation options.\n\n    View slides in full screen"
+  },
+  {
+    "objectID": "topics/01_basics_of_sequencing/01_basics_of_sequencing.html#next-generation-sequencing-ngs",
+    "href": "topics/01_basics_of_sequencing/01_basics_of_sequencing.html#next-generation-sequencing-ngs",
+    "title": "The basics of DNA sequencing",
+    "section": "Next generation sequencing (NGS)",
+    "text": "Next generation sequencing (NGS)\nThe most widely used sequencing method is Illumina sequencing, a high-throughput sequencing or massively parallel sequencing technique. It is one of the next generation sequencing techniques.\n\nPrinciple of Illumina sequencing (~40 min)\nBelow you can see a preview of the presentation. There is also a link to view the presentation in full screen mode. You can navigate through the presentation using the arrow keys:\n\nNext slide: →\nPrevious slide: ←\nJump to first/last slide: Shift +↑ / Shift + ↓ There is also a link to view the presentation in full screen mode.\nThe ☰ icon in the bottom left corner opens the presentation options.\n\n    View slides in full screen"
+  },
+  {
+    "objectID": "topics/01_basics_of_sequencing/01_basics_of_sequencing.html#nanopore-sequencing",
+    "href": "topics/01_basics_of_sequencing/01_basics_of_sequencing.html#nanopore-sequencing",
+    "title": "The basics of DNA sequencing",
+    "section": "Nanopore sequencing",
+    "text": "Nanopore sequencing\nto be done…\n\nNanopore sequencing (~15 min)\nBelow you can see a preview of the presentation. There is also a link to view the presentation in full screen mode. You can navigate through the presentation using the arrow keys:\n\nNext slide: →\nPrevious slide: ←\nJump to first/last slide: Shift +↑ / Shift + ↓ There is also a link to view the presentation in full screen mode.\nThe ☰ icon in the bottom left corner opens the presentation options.\n\n    View slides in full screen"
   }
 ]

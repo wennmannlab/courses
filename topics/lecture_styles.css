@@ -1,14 +1,3 @@
-/* Hintergrund außerhalb der Slides (der Margin-Bereich) */
-.reveal {
-  background-color:  #ffffff;
-}
-
-/* Folienfläche selbst bleibt weiß */
-.reveal .slides {
-  background-color: #ffffff;
-  /* box-shadow: 0 0 20px rgba(0,0,0,0.2); */
-  /* border-radius: 8px; */
-}
 
 .courier {
   font-family: "Courier New", monospace;
