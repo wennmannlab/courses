@@ -413,95 +413,81 @@
     "text": "Reviewing the output and evaluating the quality\nTo view the results of the tools, click on the eye icon next to the outputs. Make sure you select the correct output files. They are called html report for the nanoplot tool and webpage for the falco tool.\n\nLet’s discuss the results together!\nClick on the eye of one of the files. The results should open in the center panel.\n\n\n The results are discussed together in the group.\n\nSelf-study to interpret the results\nIf you would like to learn how to evaluate and analyse the output of falco (or fastqc, which is the predecessor of falco) and nanoplot yourself, you can do so in the following tutorial:\nGalaxy Training Tutorial - Quality Control.\nEnjoy reading!"
   },
   {
-    "objectID": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#sequence-data-format-fastq",
-    "href": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#sequence-data-format-fastq",
-    "title": "Courses, Tutorials and Slides",
-    "section": "Sequence data format (fastq)",
-    "text": "Sequence data format (fastq)\n\n\n \nIllumina sequencing:\n\nMillions of sequences (= reads) are generated\n\nsingle-read sequencing = one file (R1)\n\npaired-read sequencing = two files (R1/R2)\n\nMinION:\n\nreads are not paired!\nBut saved in the same way!    \n\n\nIdentifier (run, cluster, …)\nSequence (A, T, G, C)\n“+” separator\nQuality (ASCII)"
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#nano-pore",
+    "href": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#nano-pore",
+    "title": "Nanopore sequencing technology",
+    "section": "Nano? Pore?",
+    "text": "Nano? Pore?\n\n\nIdea: Push DNA through a small gap (pore) in a membrane and detect each nucleotide as it passes by."
   },
   {
-    "objectID": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#for-row-format-fastq",
-    "href": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#for-row-format-fastq",
-    "title": "Courses, Tutorials and Slides",
-    "section": "For row format (fastq)",
-    "text": "For row format (fastq)\n \n\n\n\n\n\n\n\nRow\nDescription\n\n\n\n\n1st row\nIdentifier (run, cluster, location on flow cell, read number, etc.)\n\n\n2nd row\nNucleotide sequence (A, T, G, C, N)\n\n\n3rd row\nSeparator line (optionally repeats carries an identifier)\n\n\n4th row\nQuality scores for each base (ASCII-encoded Phred scores)"
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#one-upon-a-time",
+    "href": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#one-upon-a-time",
+    "title": "Nanopore sequencing technology",
+    "section": "One upon a time …",
+    "text": "One upon a time …\n\n\nIdea for Nanopore sequenced in the 1980s…\n\n\n\n\n\n\n\nYear\n\n\n\n\n\n1980\nNobel prize for chain termination method (Sanger sequencing)\n\n\n1980 to mid 2000\nImprovement of Sanger sequencing technique\n\n\n1990\nIdea of using reversible fluorescent labeled nucleotides for sequencing\n\n\n1998\nFormatino of Solexa (sequencing by synthesis) and other companies\n\n\n2007\nIllumina acquires Solexa\n\n\n2021\nSequencing by synthesis is an essential technique and Illumina is market leader"
   },
   {
-    "objectID": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#read-format",
-    "href": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#read-format",
-    "title": "Courses, Tutorials and Slides",
-    "section": "Read format",
-    "text": "Read format\n\nExample: NCBI SRA GenBank entry: SRR5560266 (single read data)\n\n\n\nThe first row provides information about the cluster, read position, location, run, … https://help.basespace.illumina.com/articles/descriptive/fastq-files/\nNucleotide sequence\nSpacer\nBase call quality for each nucleotide"
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#first-pores-were-based-on-alpha-hemolysin",
+    "href": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#first-pores-were-based-on-alpha-hemolysin",
+    "title": "Nanopore sequencing technology",
+    "section": "First pores were based on alpha-hemolysin",
+    "text": "First pores were based on alpha-hemolysin\n…a cell toxin from Staphylococcus aureus"
   },
   {
-    "objectID": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#read-format-paired-reads",
-    "href": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#read-format-paired-reads",
-    "title": "Courses, Tutorials and Slides",
-    "section": "Read format (paired reads)",
-    "text": "Read format (paired reads)\n\nPaired reads are saved in the same format as single read data\nUsually paired reads are stored in two separate files, each file with the same number and order of reads\nPaired reads have (almost) the same identifier"
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#nanopores-allow-ssdna-to-pass",
+    "href": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#nanopores-allow-ssdna-to-pass",
+    "title": "Nanopore sequencing technology",
+    "section": "Nanopores allow ssDNA to pass",
+    "text": "Nanopores allow ssDNA to pass"
   },
   {
-    "objectID": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#read-quality-q-and-error-probability-p",
-    "href": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#read-quality-q-and-error-probability-p",
-    "title": "Courses, Tutorials and Slides",
-    "section": "Read quality (Q) and error probability (P)",
-    "text": "Read quality (Q) and error probability (P)\n\n\nquality = probability that a base is detected falsely\neach base gets its own quality score = Q score\nQ = Phred quality score\nP = base-calling error probability"
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#nanopores-allow-ssdna-to-pass-1",
+    "href": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#nanopores-allow-ssdna-to-pass-1",
+    "title": "Nanopore sequencing technology",
+    "section": "Nanopores allow ssDNA to pass",
+    "text": "Nanopores allow ssDNA to pass"
   },
   {
-    "objectID": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#relationship-between-error-probability-p-and-phred-quality-score-q",
-    "href": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#relationship-between-error-probability-p-and-phred-quality-score-q",
-    "title": "Courses, Tutorials and Slides",
-    "section": "Relationship between error probability (P) and Phred quality score (Q)",
-    "text": "Relationship between error probability (P) and Phred quality score (Q)\nHere is the R code in case you want to create this graph by yourself in R…\nlibrary(ggplot2)\n\nP  &lt;- 10^seq(-4, 0, length.out = 1000)\ndf &lt;- data.frame(P = P, Q = -10 * log10(P))\n\nQvals  &lt;- c(10, 20, 30)\nguides &lt;- data.frame(\n  Q   = Qvals,\n  P   = 10^(-Qvals/10),\n  col = c(\"red\", \"forestgreen\", \"blue\"),\n  lty = c(\"dashed\", \"dotted\", \"dotdash\")\n)\n\np &lt;- ggplot(df, aes(x = P, y = Q)) +\n  geom_line(size = 1) +\n  geom_segment(data = guides,\n               aes(x = 1e-4, xend = P, y = Q, yend = Q,\n                   colour = col, linetype = lty),\n               inherit.aes = FALSE, size = 1) +\n  geom_segment(data = guides,\n               aes(x = P, xend = P, y = 0, yend = Q,\n                   colour = col, linetype = lty),\n               inherit.aes = FALSE, size = 1) +\n  geom_point(data = guides,\n             aes(x = P, y = Q, colour = col),\n             inherit.aes = FALSE, size = 3) +\n  scale_x_log10(\n    limits = c(1e-4, 1),\n    breaks = c(1e-4, 1e-3, 1e-2, 1e-1, 1),\n    labels = c(\"0.0001\", \"0.001\", \"0.01\", \"0.1\", \"1\")\n  ) +\n  scale_y_continuous(\n    limits = c(0, 45),\n    breaks = seq(0, 45, by = 5),\n    expand = expansion(mult = c(0, 0))\n  ) +\n  scale_colour_identity() +\n  scale_linetype_identity() +\n  labs(x = expression(P == 10^{-Q/10}), \n       y = expression(Q == -10 %.% log[10](P))) +\n  theme_minimal(base_size = 14) +\n  theme(\n    panel.border   = element_rect(color = \"black\", fill = NA),\n    panel.grid.major = element_blank(),\n    panel.grid.minor = element_blank(),\n    axis.ticks = element_line(color = \"black\", size = 0.5),\n    axis.ticks.length = unit(0.2, \"cm\")\n  )\n\nggsave(\"q_vs_p_plot.png\",\n       plot = p,\n       width = 1200*f, height = 1200*f, units = \"px\", dpi = 300, bg=\"white\")"
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#nanopores-allow-ssdna-to-pass-2",
+    "href": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#nanopores-allow-ssdna-to-pass-2",
+    "title": "Nanopore sequencing technology",
+    "section": "Nanopores allow ssDNA to pass",
+    "text": "Nanopores allow ssDNA to pass"
   },
   {
-    "objectID": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#read-quality-illumina-vs-nanopore-data",
-    "href": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#read-quality-illumina-vs-nanopore-data",
-    "title": "Courses, Tutorials and Slides",
-    "section": "Read quality: Illumina vs Nanopore data",
-    "text": "Read quality: Illumina vs Nanopore data"
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#the-blockade-of-the-ion-current-is-detectable",
+    "href": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#the-blockade-of-the-ion-current-is-detectable",
+    "title": "Nanopore sequencing technology",
+    "section": "The blockade of the ion current is detectable",
+    "text": "The blockade of the ion current is detectable"
   },
   {
-    "objectID": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#phred-quality-scores",
-    "href": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#phred-quality-scores",
-    "title": "Courses, Tutorials and Slides",
-    "section": "Phred quality scores",
-    "text": "Phred quality scores\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQuality score (Q)\nProbability that a baseis called incorrectly\nAccuracy\nError probability\n\n\n\n\n10\n1 in 10\n90%\n10%\n\n\n20\n1 in 100\n99%\n1%\n\n\n30\n1 in 1000\n99.9%\n0.1%\n\n\n40\n1 in 10000\n99.99%\n0.01%"
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#dsdna-preparation-for-nanopore-sequencing",
+    "href": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#dsdna-preparation-for-nanopore-sequencing",
+    "title": "Nanopore sequencing technology",
+    "section": "dsDNA preparation for Nanopore sequencing",
+    "text": "dsDNA preparation for Nanopore sequencing"
   },
   {
-    "objectID": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#read-quality-q-is-encoded-in-ascii-format",
-    "href": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#read-quality-q-is-encoded-in-ascii-format",
-    "title": "Courses, Tutorials and Slides",
-    "section": "Read quality (Q) is encoded in ASCII format",
-    "text": "Read quality (Q) is encoded in ASCII format\n\nEvery base in FASTQ has a quality score\nFASTQ does not store numbers but ASCII characters\nTo geht the character: calculate Q + 33 –&gt; position in ASCII table\nExample: Q = 4 –&gt; 37 –&gt; %\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQ\nP_error\nASCII\nQ\nP_error\nASCII\nQ\nP_error\nASCII\nQ\nP_error\nASCII\n\n\n\n\n0\n1.00000\n!\n11\n0.07943\n,\n22\n0.00631\n7\n33\n0.00050\nB\n\n\n1\n0.79433\n”\n12\n0.06310\n-\n23\n0.00501\n8\n34\n0.00040\nC\n\n\n2\n0.63096\n#\n13\n0.05012\n.\n24\n0.00398\n9\n35\n0.00032\nD\n\n\n3\n0.50119\n$\n14\n0.03981\n/\n25\n0.00316\n:\n36\n0.00025\nE\n\n\n4\n0.39811\n%\n15\n0.03162\n0\n26\n0.00251\n;\n37\n0.00020\nF\n\n\n5\n0.31623\n&\n16\n0.02512\n1\n27\n0.00200\n&lt;\n38\n0.00016\nG\n\n\n6\n0.25119\n’\n17\n0.01995\n2\n28\n0.00158\n=\n39\n0.00013\nH\n\n\n7\n0.19953\n(\n18\n0.01585\n3\n29\n0.00126\n&gt;\n40\n0.00010\nI\n\n\n8\n0.15849\n)\n19\n0.01259\n4\n30\n0.00100\n?\n41\n0.00008\nJ\n\n\n9\n0.12589\n*\n20\n0.01000\n5\n31\n0.00079\n@\n42\n0.00006\nK\n\n\n10\n0.10000\n+\n21\n0.00794\n6\n32\n0.00063\nA"
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#unwinding-the-dsdna-helix",
+    "href": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#unwinding-the-dsdna-helix",
+    "title": "Nanopore sequencing technology",
+    "section": "Unwinding the dsDNA helix",
+    "text": "Unwinding the dsDNA helix"
   },
   {
-    "objectID": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#read-quality-q-is-encoded-in-ascii-format-1",
-    "href": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#read-quality-q-is-encoded-in-ascii-format-1",
-    "title": "Courses, Tutorials and Slides",
-    "section": "Read quality (Q) is encoded in ASCII format",
-    "text": "Read quality (Q) is encoded in ASCII format\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQ\nP_error\nASCII\nQ\nP_error\nASCII\nQ\nP_error\nASCII\nQ\nP_error\nASCII\n\n\n\n\n0\n1.00000\n!\n11\n0.07943\n,\n22\n0.00631\n7\n33\n0.00050\nB\n\n\n1\n0.79433\n”\n12\n0.06310\n-\n23\n0.00501\n8\n34\n0.00040\nC\n\n\n2\n0.63096\n#\n13\n0.05012\n.\n24\n0.00398\n9\n35\n0.00032\nD\n\n\n3\n0.50119\n$\n14\n0.03981\n/\n25\n0.00316\n:\n36\n0.00025\nE\n\n\n4\n0.39811\n%\n15\n0.03162\n0\n26\n0.00251\n;\n37\n0.00020\nF\n\n\n5\n0.31623\n&\n16\n0.02512\n1\n27\n0.00200\n&lt;\n38\n0.00016\nG\n\n\n6\n0.25119\n’\n17\n0.01995\n2\n28\n0.00158\n=\n39\n0.00013\nH\n\n\n7\n0.19953\n(\n18\n0.01585\n3\n29\n0.00126\n&gt;\n40\n0.00010\nI\n\n\n8\n0.15849\n)\n19\n0.01259\n4\n30\n0.00100\n?\n41\n0.00008\nJ\n\n\n9\n0.12589\n*\n20\n0.01000\n5\n31\n0.00079\n@\n42\n0.00006\nK\n\n\n10\n0.10000\n+\n21\n0.00794\n6\n32\n0.00063\nA"
-  },
-  {
-    "objectID": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#read-quality-q-is-encoded-in-ascii-format-2",
-    "href": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#read-quality-q-is-encoded-in-ascii-format-2",
-    "title": "Courses, Tutorials and Slides",
-    "section": "Read quality (Q) is encoded in ASCII format",
-    "text": "Read quality (Q) is encoded in ASCII format\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQ\nP_error\nASCII\nQ\nP_error\nASCII\nQ\nP_error\nASCII\nQ\nP_error\nASCII\n\n\n\n\n0\n1.00000\n!\n11\n0.07943\n,\n22\n0.00631\n7\n33\n0.00050\nB\n\n\n1\n0.79433\n”\n12\n0.06310\n-\n23\n0.00501\n8\n34\n0.00040\nC\n\n\n2\n0.63096\n#\n13\n0.05012\n.\n24\n0.00398\n9\n35\n0.00032\nD\n\n\n3\n0.50119\n$\n14\n0.03981\n/\n25\n0.00316\n:\n36\n0.00025\nE\n\n\n4\n0.39811\n%\n15\n0.03162\n0\n26\n0.00251\n;\n37\n0.00020\nF\n\n\n5\n0.31623\n&\n16\n0.02512\n1\n27\n0.00200\n&lt;\n38\n0.00016\nG\n\n\n6\n0.25119\n’\n17\n0.01995\n2\n28\n0.00158\n=\n39\n0.00013\nH\n\n\n7\n0.19953\n(\n18\n0.01585\n3\n29\n0.00126\n&gt;\n40\n0.00010\nI\n\n\n8\n0.15849\n)\n19\n0.01259\n4\n30\n0.00100\n?\n41\n0.00008\nJ\n\n\n9\n0.12589\n*\n20\n0.01000\n5\n31\n0.00079\n@\n42\n0.00006\nK"
-  },
-  {
-    "objectID": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#fastq-encoding-asci---q-score---read-quality",
-    "href": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#fastq-encoding-asci---q-score---read-quality",
-    "title": "Courses, Tutorials and Slides",
-    "section": "FASTQ encoding: ASCI <-> Q score <-> read quality",
-    "text": "FASTQ encoding: ASCI &lt;-&gt; Q score &lt;-&gt; read quality"
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#long-reads-with-nanopore",
+    "href": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#long-reads-with-nanopore",
+    "title": "Nanopore sequencing technology",
+    "section": "Long-reads with Nanopore",
+    "text": "Long-reads with Nanopore\n\n\n\n\n\n\nTechnique\nMax read length\n\n\n\n\nSanger sequencing\n~1000 nt\n\n\nIllumina sequencing\n50–400 nt\n\n\nNanopore sequencing\nunlimited?"
   },
   {
     "objectID": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#take-home-message",
     "href": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#take-home-message",
-    "title": "Courses, Tutorials and Slides",
+    "title": "Nanopore sequencing technology",
     "section": "Take-home message",
-    "text": "Take-home message\n\nReads are stored in FASTQ format\nOne read has four lines\n\nIdentifier\nNucleotide sequence\nSpacer\nNucleotide quality\n\nQ score = measure of base call accuracy\nQ is stored as ASCII characters (Phred+33)\nHigher Q –&gt; lower error probability\nQuality profiles help to detect sequencing problems"
+    "text": "Take-home message\n\n\n\nSequencing of single DNA molecules (no PCR amplification!)\nTheoretically unlimited read length\nReal-Time data\nPortable device\nBut: Lower per-base accuracy (higher error rate)"
   },
   {
     "objectID": "topics/01_basics_of_sequencing/01_basics_of_sequencing.html",

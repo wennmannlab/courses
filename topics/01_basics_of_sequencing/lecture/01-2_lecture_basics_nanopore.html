@@ -9,7 +9,7 @@
 <link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-c8ad9e5dbd60b7b70b38521ab19b7da4.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.7.34">
 
-  <title>Courses, Tutorials and Slides – lecture_basics_nanopore</title>
+  <title>Courses, Tutorials and Slides – Nanopore sequencing technology</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -27,75 +27,9 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-    /* CSS for syntax highlighting */
-    html { -webkit-text-size-adjust: 100%; }
-    pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-    pre > code.sourceCode > span:empty { height: 1.2em; }
-    .sourceCode { overflow: visible; }
-    code.sourceCode > span { color: inherit; text-decoration: inherit; }
-    div.sourceCode { margin: 1em 0; }
-    pre.sourceCode { margin: 0; }
-    @media screen {
-    div.sourceCode { overflow: auto; }
-    }
-    @media print {
-    pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-    }
-    pre.numberSource code
-      { counter-reset: source-line 0; }
-    pre.numberSource code > span
-      { position: relative; left: -4em; counter-increment: source-line; }
-    pre.numberSource code > span > a:first-child::before
-      { content: counter(source-line);
-        position: relative; left: -1em; text-align: right; vertical-align: baseline;
-        border: none; display: inline-block;
-        -webkit-touch-callout: none; -webkit-user-select: none;
-        -khtml-user-select: none; -moz-user-select: none;
-        -ms-user-select: none; user-select: none;
-        padding: 0 4px; width: 4em;
-        color: #aaaaaa;
-      }
-    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-    div.sourceCode
-      { color: #003b4f; background-color: #f1f3f5; }
-    @media screen {
-    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-    }
-    code span { color: #003b4f; } /* Normal */
-    code span.al { color: #ad0000; } /* Alert */
-    code span.an { color: #5e5e5e; } /* Annotation */
-    code span.at { color: #657422; } /* Attribute */
-    code span.bn { color: #ad0000; } /* BaseN */
-    code span.bu { } /* BuiltIn */
-    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
-    code span.ch { color: #20794d; } /* Char */
-    code span.cn { color: #8f5902; } /* Constant */
-    code span.co { color: #5e5e5e; } /* Comment */
-    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
-    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
-    code span.dt { color: #ad0000; } /* DataType */
-    code span.dv { color: #ad0000; } /* DecVal */
-    code span.er { color: #ad0000; } /* Error */
-    code span.ex { } /* Extension */
-    code span.fl { color: #ad0000; } /* Float */
-    code span.fu { color: #4758ab; } /* Function */
-    code span.im { color: #00769e; } /* Import */
-    code span.in { color: #5e5e5e; } /* Information */
-    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
-    code span.op { color: #5e5e5e; } /* Operator */
-    code span.ot { color: #003b4f; } /* Other */
-    code span.pp { color: #ad0000; } /* Preprocessor */
-    code span.sc { color: #5e5e5e; } /* SpecialChar */
-    code span.ss { color: #20794d; } /* SpecialString */
-    code span.st { color: #20794d; } /* String */
-    code span.va { color: #111111; } /* Variable */
-    code span.vs { color: #20794d; } /* VerbatimString */
-    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="../../../site_libs/revealjs/dist/theme/quarto-f563837468303362081e247dddd440d0.css">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="../../lecture_styles.css">
   <link href="../../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -192,821 +126,150 @@
   <div class="reveal">
     <div class="slides">
 
+<section id="title-slide" data-background-color="black" data-background-image="png/P4180044.jpg" class="quarto-title-block center">
+  <h1 class="title">Nanopore sequencing technology</h1>
 
-<section>
-<section id="reads---storing-sequence-information" class="title-slide slide level1 smaller center">
-<h1>reads - Storing Sequence Information</h1>
-
-</section>
-<section id="sequence-data-format-fastq" class="slide level2 smaller">
-<h2>Sequence data format (fastq)</h2>
-<div class="columns">
-<div class="column" style="width:65%;">
-<p><br> <br></p>
-<p><strong>Illumina sequencing:</strong></p>
-<ul>
-<li>Millions of sequences (= reads) are generated<br>
-</li>
-<li>single-read sequencing = one file (R1)<br>
-</li>
-<li>paired-read sequencing = two files (R1/R2)</li>
-</ul>
-<p><strong>MinION:</strong></p>
-<ul>
-<li>reads are not paired!</li>
-<li>But saved in the same way! <br> <br> <br> <br></li>
-</ul>
-<div style="margin-left: 6em;">
-<p>Identifier (run, cluster, …)<br>
-Sequence (A, T, G, C)<br>
-“+” separator<br>
-Quality (ASCII)</p>
+<div class="quarto-title-authors">
 </div>
-</div><div class="column" style="width:35%;">
-<p><img data-src="png/single_cluster_perspective.png" style="width:100.0%" data-align="right"> <img data-src="png/one_read_short_grey.png" class="absolute" style="bottom: 30px; right: 300px; width: 50%; "></p>
-</div></div>
+
 </section>
-<section id="for-row-format-fastq" class="slide level2 smaller">
-<h2>For row format (fastq)</h2>
-<p><br> <br></p>
+<section id="nano-pore" class="slide level2">
+<h2>Nano? Pore?</h2>
+<div class="columns">
+<div class="column" style="width:80%;">
+<p><strong>Idea</strong>: Push DNA through a small gap (pore) in a membrane and detect each nucleotide as it passes by.</p>
+</div><div class="column" style="width:20%;">
+
+</div></div>
+<p><img data-src="png/clipart_nanopore.png" class="absolute" style="bottom: 0px; right: 400px; width: 60%; "></p>
+</section>
+<section id="one-upon-a-time" class="slide level2">
+<h2>One upon a time …</h2>
+<div class="columns">
+<div class="column" style="width:70%;">
+<p>Idea for Nanopore sequenced in the 1980s…</p>
 <table class="caption-top">
 <colgroup>
-<col style="width: 23%">
-<col style="width: 76%">
+<col style="width: 27%">
+<col style="width: 72%">
 </colgroup>
 <thead>
 <tr class="header">
-<th>Row</th>
-<th>Description</th>
+<th>Year</th>
+<th></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>1st row</strong></td>
-<td>Identifier (run, cluster, location on flow cell, read number, etc.)</td>
+<td>1980</td>
+<td>Nobel prize for chain termination method (Sanger sequencing)</td>
 </tr>
 <tr class="even">
-<td><strong>2nd row</strong></td>
-<td>Nucleotide sequence (A, T, G, C, N)</td>
+<td>1980 to mid 2000</td>
+<td>Improvement of Sanger sequencing technique</td>
 </tr>
 <tr class="odd">
-<td><strong>3rd row</strong></td>
-<td>Separator line (optionally repeats carries an identifier)</td>
+<td>1990</td>
+<td>Idea of using reversible fluorescent labeled nucleotides for sequencing</td>
 </tr>
 <tr class="even">
-<td><strong>4th row</strong></td>
-<td>Quality scores for each base (ASCII-encoded Phred scores)</td>
+<td>1998</td>
+<td>Formatino of Solexa (sequencing by synthesis) and other companies</td>
+</tr>
+<tr class="odd">
+<td>2007</td>
+<td>Illumina acquires Solexa</td>
+</tr>
+<tr class="even">
+<td>2021</td>
+<td>Sequencing by synthesis is an essential technique and Illumina is market leader</td>
 </tr>
 </tbody>
 </table>
-<p><br><br>
-<br></p>
-<p><img data-src="png/one_read_short_grey.png" class="absolute" style="bottom: 100px; right: 240px; width: 70%; "></p>
+</div><div class="column" style="width:30%;">
+
+</div></div>
 </section>
-<section id="read-format" class="slide level2">
-<h2>Read format</h2>
+<section id="first-pores-were-based-on-alpha-hemolysin" class="slide level2">
+<h2>First pores were based on alpha-hemolysin</h2>
+<p>…a cell toxin from <em>Staphylococcus aureus</em></p>
+<p><img data-src="png/nanopore_membrane.png" class="absolute" style="bottom: 0px; "></p>
+</section>
+<section id="nanopores-allow-ssdna-to-pass" class="slide level2">
+<h2>Nanopores allow ssDNA to pass</h2>
+<p><img data-src="png/nanopore/nanopore1.png" class="absolute" style="width: 95%; "></p>
+</section>
+<section id="nanopores-allow-ssdna-to-pass-1" class="slide level2">
+<h2>Nanopores allow ssDNA to pass</h2>
+<p><img data-src="png/nanopore/nanopore2.png" class="absolute" style="width: 95%; "></p>
+</section>
+<section id="nanopores-allow-ssdna-to-pass-2" class="slide level2">
+<h2>Nanopores allow ssDNA to pass</h2>
+<p><img data-src="png/nanopore/nanopore3.png" class="absolute" style="width: 95%; "></p>
+</section>
+<section class="slide level2">
+
+<p><img data-src="png/nanopore/nanopore4.png" class="absolute" style="width: 95%; "></p>
+</section>
+<section class="slide level2">
+
+<p><img data-src="png/nanopore/nanopore5.png" class="absolute" style="width: 95%; "></p>
+</section>
+<section id="the-blockade-of-the-ion-current-is-detectable" class="slide level2">
+<h2>The blockade of the ion current is detectable</h2>
+<p><img data-src="png/nanopore/nanopore6.png" class="absolute" style="width: 95%; "></p>
+</section>
+<section id="dsdna-preparation-for-nanopore-sequencing" class="slide level2">
+<h2>dsDNA preparation for Nanopore sequencing</h2>
+<p><img data-src="png/nanopore/nanopore_fragmentation.png" class="absolute" style="width: 95%; "></p>
+</section>
+<section id="unwinding-the-dsdna-helix" class="slide level2">
+<h2>Unwinding the dsDNA helix</h2>
+<p><img data-src="png/nanopore/nanopore_attach.png" class="absolute" style="width: 95%; "></p>
+</section>
+<section id="long-reads-with-nanopore" class="slide level2">
+<h2>Long-reads with Nanopore</h2>
 <p><br>
-Example: NCBI SRA GenBank entry: SRR5560266 (single read data)<br>
-<br>
-<img data-src="png/one_read_long_grey.png"></p>
-<ul>
-<li>The first row provides information about the cluster, read position, location, run, … <a href="https://help.basespace.illumina.com/articles/descriptive/fastq-files/" class="uri">https://help.basespace.illumina.com/articles/descriptive/fastq-files/</a></li>
-<li>Nucleotide sequence</li>
-<li>Spacer</li>
-<li>Base call quality for each nucleotide</li>
-</ul>
-</section>
-<section id="read-format-paired-reads" class="slide level2">
-<h2>Read format (paired reads)</h2>
-<ul>
-<li>Paired reads are saved in the same format as single read data</li>
-<li>Usually paired reads are stored in two separate files, each file with the same number and order of reads</li>
-<li>Paired reads have (almost) the same identifier</li>
-</ul>
-<p><img data-src="png/paired_reads_grey.png" class="absolute" style="bottom: 100px; right: 0px; width: 70%; " data-bottom="0"></p>
-</section>
-<section id="read-quality-q-and-error-probability-p" class="slide level2">
-<h2>Read quality (Q) and error probability (P)</h2>
-<p><img data-src="png/one_read_long_grey.png" style="width:100.0%"></p>
-<ul>
-<li>quality = probability that a base is detected falsely</li>
-<li>each base gets its own quality score = Q score</li>
-<li><strong>Q</strong> = Phred quality score</li>
-<li><strong>P</strong> = base-calling error probability</li>
-</ul>
-<p><img data-src="png/q_to_p_calculation.png" class="absolute" style="left: 100px; bottom: 150px; width: 40%; "></p>
-<p><img data-src="png/q_vs_p_plot.png" class="absolute" style="bottom: 0px; right: 0px; width: 37%; "></p>
-</section>
-<section id="relationship-between-error-probability-p-and-phred-quality-score-q" class="slide level2">
-<h2>Relationship between error probability (P) and Phred quality score (Q)</h2>
-<p>Here is the R code in case you want to create this graph by yourself in R…</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb1-2"><a></a></span>
-<span id="cb1-3"><a></a>P  <span class="ot">&lt;-</span> <span class="dv">10</span><span class="sc">^</span><span class="fu">seq</span>(<span class="sc">-</span><span class="dv">4</span>, <span class="dv">0</span>, <span class="at">length.out =</span> <span class="dv">1000</span>)</span>
-<span id="cb1-4"><a></a>df <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">P =</span> P, <span class="at">Q =</span> <span class="sc">-</span><span class="dv">10</span> <span class="sc">*</span> <span class="fu">log10</span>(P))</span>
-<span id="cb1-5"><a></a></span>
-<span id="cb1-6"><a></a>Qvals  <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">10</span>, <span class="dv">20</span>, <span class="dv">30</span>)</span>
-<span id="cb1-7"><a></a>guides <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
-<span id="cb1-8"><a></a>  <span class="at">Q   =</span> Qvals,</span>
-<span id="cb1-9"><a></a>  <span class="at">P   =</span> <span class="dv">10</span><span class="sc">^</span>(<span class="sc">-</span>Qvals<span class="sc">/</span><span class="dv">10</span>),</span>
-<span id="cb1-10"><a></a>  <span class="at">col =</span> <span class="fu">c</span>(<span class="st">"red"</span>, <span class="st">"forestgreen"</span>, <span class="st">"blue"</span>),</span>
-<span id="cb1-11"><a></a>  <span class="at">lty =</span> <span class="fu">c</span>(<span class="st">"dashed"</span>, <span class="st">"dotted"</span>, <span class="st">"dotdash"</span>)</span>
-<span id="cb1-12"><a></a>)</span>
-<span id="cb1-13"><a></a></span>
-<span id="cb1-14"><a></a>p <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(df, <span class="fu">aes</span>(<span class="at">x =</span> P, <span class="at">y =</span> Q)) <span class="sc">+</span></span>
-<span id="cb1-15"><a></a>  <span class="fu">geom_line</span>(<span class="at">size =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
-<span id="cb1-16"><a></a>  <span class="fu">geom_segment</span>(<span class="at">data =</span> guides,</span>
-<span id="cb1-17"><a></a>               <span class="fu">aes</span>(<span class="at">x =</span> <span class="fl">1e-4</span>, <span class="at">xend =</span> P, <span class="at">y =</span> Q, <span class="at">yend =</span> Q,</span>
-<span id="cb1-18"><a></a>                   <span class="at">colour =</span> col, <span class="at">linetype =</span> lty),</span>
-<span id="cb1-19"><a></a>               <span class="at">inherit.aes =</span> <span class="cn">FALSE</span>, <span class="at">size =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
-<span id="cb1-20"><a></a>  <span class="fu">geom_segment</span>(<span class="at">data =</span> guides,</span>
-<span id="cb1-21"><a></a>               <span class="fu">aes</span>(<span class="at">x =</span> P, <span class="at">xend =</span> P, <span class="at">y =</span> <span class="dv">0</span>, <span class="at">yend =</span> Q,</span>
-<span id="cb1-22"><a></a>                   <span class="at">colour =</span> col, <span class="at">linetype =</span> lty),</span>
-<span id="cb1-23"><a></a>               <span class="at">inherit.aes =</span> <span class="cn">FALSE</span>, <span class="at">size =</span> <span class="dv">1</span>) <span class="sc">+</span></span>
-<span id="cb1-24"><a></a>  <span class="fu">geom_point</span>(<span class="at">data =</span> guides,</span>
-<span id="cb1-25"><a></a>             <span class="fu">aes</span>(<span class="at">x =</span> P, <span class="at">y =</span> Q, <span class="at">colour =</span> col),</span>
-<span id="cb1-26"><a></a>             <span class="at">inherit.aes =</span> <span class="cn">FALSE</span>, <span class="at">size =</span> <span class="dv">3</span>) <span class="sc">+</span></span>
-<span id="cb1-27"><a></a>  <span class="fu">scale_x_log10</span>(</span>
-<span id="cb1-28"><a></a>    <span class="at">limits =</span> <span class="fu">c</span>(<span class="fl">1e-4</span>, <span class="dv">1</span>),</span>
-<span id="cb1-29"><a></a>    <span class="at">breaks =</span> <span class="fu">c</span>(<span class="fl">1e-4</span>, <span class="fl">1e-3</span>, <span class="fl">1e-2</span>, <span class="fl">1e-1</span>, <span class="dv">1</span>),</span>
-<span id="cb1-30"><a></a>    <span class="at">labels =</span> <span class="fu">c</span>(<span class="st">"0.0001"</span>, <span class="st">"0.001"</span>, <span class="st">"0.01"</span>, <span class="st">"0.1"</span>, <span class="st">"1"</span>)</span>
-<span id="cb1-31"><a></a>  ) <span class="sc">+</span></span>
-<span id="cb1-32"><a></a>  <span class="fu">scale_y_continuous</span>(</span>
-<span id="cb1-33"><a></a>    <span class="at">limits =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">45</span>),</span>
-<span id="cb1-34"><a></a>    <span class="at">breaks =</span> <span class="fu">seq</span>(<span class="dv">0</span>, <span class="dv">45</span>, <span class="at">by =</span> <span class="dv">5</span>),</span>
-<span id="cb1-35"><a></a>    <span class="at">expand =</span> <span class="fu">expansion</span>(<span class="at">mult =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">0</span>))</span>
-<span id="cb1-36"><a></a>  ) <span class="sc">+</span></span>
-<span id="cb1-37"><a></a>  <span class="fu">scale_colour_identity</span>() <span class="sc">+</span></span>
-<span id="cb1-38"><a></a>  <span class="fu">scale_linetype_identity</span>() <span class="sc">+</span></span>
-<span id="cb1-39"><a></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="fu">expression</span>(P <span class="sc">==</span> <span class="dv">10</span><span class="sc">^</span>{<span class="sc">-</span>Q<span class="sc">/</span><span class="dv">10</span>}), </span>
-<span id="cb1-40"><a></a>       <span class="at">y =</span> <span class="fu">expression</span>(Q <span class="sc">==</span> <span class="sc">-</span><span class="dv">10</span> <span class="sc">%.%</span> log[<span class="dv">10</span>](P))) <span class="sc">+</span></span>
-<span id="cb1-41"><a></a>  <span class="fu">theme_minimal</span>(<span class="at">base_size =</span> <span class="dv">14</span>) <span class="sc">+</span></span>
-<span id="cb1-42"><a></a>  <span class="fu">theme</span>(</span>
-<span id="cb1-43"><a></a>    <span class="at">panel.border   =</span> <span class="fu">element_rect</span>(<span class="at">color =</span> <span class="st">"black"</span>, <span class="at">fill =</span> <span class="cn">NA</span>),</span>
-<span id="cb1-44"><a></a>    <span class="at">panel.grid.major =</span> <span class="fu">element_blank</span>(),</span>
-<span id="cb1-45"><a></a>    <span class="at">panel.grid.minor =</span> <span class="fu">element_blank</span>(),</span>
-<span id="cb1-46"><a></a>    <span class="at">axis.ticks =</span> <span class="fu">element_line</span>(<span class="at">color =</span> <span class="st">"black"</span>, <span class="at">size =</span> <span class="fl">0.5</span>),</span>
-<span id="cb1-47"><a></a>    <span class="at">axis.ticks.length =</span> <span class="fu">unit</span>(<span class="fl">0.2</span>, <span class="st">"cm"</span>)</span>
-<span id="cb1-48"><a></a>  )</span>
-<span id="cb1-49"><a></a></span>
-<span id="cb1-50"><a></a><span class="fu">ggsave</span>(<span class="st">"q_vs_p_plot.png"</span>,</span>
-<span id="cb1-51"><a></a>       <span class="at">plot =</span> p,</span>
-<span id="cb1-52"><a></a>       <span class="at">width =</span> <span class="dv">1200</span><span class="sc">*</span>f, <span class="at">height =</span> <span class="dv">1200</span><span class="sc">*</span>f, <span class="at">units =</span> <span class="st">"px"</span>, <span class="at">dpi =</span> <span class="dv">300</span>, <span class="at">bg=</span><span class="st">"white"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="read-quality-illumina-vs-nanopore-data" class="slide level2">
-<h2>Read quality: Illumina vs Nanopore data</h2>
-<p><br>
-<br>
-<br>
-<img data-src="png/q_vs_p_ill_vs_nano.png"></p>
-</section>
-<section id="phred-quality-scores" class="slide level2">
-<h2>Phred quality scores</h2>
-<p><br>
-<br>
 <br>
 </p>
-<div class="columns">
-<div class="column" style="width:15%;">
-<!-- emtpy column -->
-</div><div class="column" style="width:70%;">
-<table class="caption-top" style="width:100%;">
-<colgroup>
-<col style="width: 18%">
-<col style="width: 43%">
-<col style="width: 18%">
-<col style="width: 18%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: center;">Quality score (Q)</th>
-<th style="text-align: center;">Probability that a base<br>is called incorrectly</th>
-<th style="text-align: center;">Accuracy</th>
-<th style="text-align: center;">Error probability</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: center;">10</td>
-<td style="text-align: center;">1 in 10</td>
-<td style="text-align: center;">90%</td>
-<td style="text-align: center;">10%</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">20</td>
-<td style="text-align: center;">1 in 100</td>
-<td style="text-align: center;">99%</td>
-<td style="text-align: center;">1%</td>
-</tr>
-<tr class="odd">
-<td style="text-align: center;">30</td>
-<td style="text-align: center;">1 in 1000</td>
-<td style="text-align: center;">99.9%</td>
-<td style="text-align: center;">0.1%</td>
-</tr>
-<tr class="even">
-<td style="text-align: center;">40</td>
-<td style="text-align: center;">1 in 10000</td>
-<td style="text-align: center;">99.99%</td>
-<td style="text-align: center;">0.01%</td>
-</tr>
-</tbody>
-</table>
-</div><div class="column" style="width:15%;">
-<!-- emtpy column -->
-</div></div>
-</section>
-<section id="read-quality-q-is-encoded-in-ascii-format" class="slide level2 smaller">
-<h2>Read quality (Q) is encoded in ASCII format</h2>
-<ul>
-<li>Every base in FASTQ has a quality score</li>
-<li>FASTQ does not store numbers but ASCII characters</li>
-<li>To geht the character: calculate Q + 33 –&gt; position in ASCII table</li>
-<li>Example: Q = 4 –&gt; 37 –&gt; %</li>
-</ul>
 <table class="caption-top">
-<colgroup>
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 8%">
-</colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: right;">Q</th>
-<th>P_error</th>
-<th style="text-align: left;">ASCII</th>
-<th style="text-align: right;">Q</th>
-<th>P_error</th>
-<th style="text-align: left;">ASCII</th>
-<th style="text-align: right;">Q</th>
-<th>P_error</th>
-<th style="text-align: left;">ASCII</th>
-<th style="text-align: right;">Q</th>
-<th>P_error</th>
-<th style="text-align: left;">ASCII</th>
+<th>Technique</th>
+<th>Max read length</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: right;">0</td>
-<td>1.00000</td>
-<td style="text-align: left;">!</td>
-<td style="text-align: right;">11</td>
-<td>0.07943</td>
-<td style="text-align: left;">,</td>
-<td style="text-align: right;">22</td>
-<td>0.00631</td>
-<td style="text-align: left;">7</td>
-<td style="text-align: right;">33</td>
-<td>0.00050</td>
-<td style="text-align: left;">B</td>
+<td>Sanger sequencing</td>
+<td>~1000 nt</td>
 </tr>
 <tr class="even">
-<td style="text-align: right;">1</td>
-<td>0.79433</td>
-<td style="text-align: left;">”</td>
-<td style="text-align: right;">12</td>
-<td>0.06310</td>
-<td style="text-align: left;">-</td>
-<td style="text-align: right;">23</td>
-<td>0.00501</td>
-<td style="text-align: left;">8</td>
-<td style="text-align: right;">34</td>
-<td>0.00040</td>
-<td style="text-align: left;">C</td>
+<td>Illumina sequencing</td>
+<td>50–400 nt</td>
 </tr>
 <tr class="odd">
-<td style="text-align: right;">2</td>
-<td>0.63096</td>
-<td style="text-align: left;">#</td>
-<td style="text-align: right;">13</td>
-<td>0.05012</td>
-<td style="text-align: left;">.</td>
-<td style="text-align: right;">24</td>
-<td>0.00398</td>
-<td style="text-align: left;">9</td>
-<td style="text-align: right;">35</td>
-<td>0.00032</td>
-<td style="text-align: left;">D</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">3</td>
-<td>0.50119</td>
-<td style="text-align: left;">$</td>
-<td style="text-align: right;">14</td>
-<td>0.03981</td>
-<td style="text-align: left;">/</td>
-<td style="text-align: right;">25</td>
-<td>0.00316</td>
-<td style="text-align: left;">:</td>
-<td style="text-align: right;">36</td>
-<td>0.00025</td>
-<td style="text-align: left;">E</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">4</td>
-<td>0.39811</td>
-<td style="text-align: left;">%</td>
-<td style="text-align: right;">15</td>
-<td>0.03162</td>
-<td style="text-align: left;">0</td>
-<td style="text-align: right;">26</td>
-<td>0.00251</td>
-<td style="text-align: left;">;</td>
-<td style="text-align: right;">37</td>
-<td>0.00020</td>
-<td style="text-align: left;">F</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">5</td>
-<td>0.31623</td>
-<td style="text-align: left;">&amp;</td>
-<td style="text-align: right;">16</td>
-<td>0.02512</td>
-<td style="text-align: left;">1</td>
-<td style="text-align: right;">27</td>
-<td>0.00200</td>
-<td style="text-align: left;">&lt;</td>
-<td style="text-align: right;">38</td>
-<td>0.00016</td>
-<td style="text-align: left;">G</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">6</td>
-<td>0.25119</td>
-<td style="text-align: left;">’</td>
-<td style="text-align: right;">17</td>
-<td>0.01995</td>
-<td style="text-align: left;">2</td>
-<td style="text-align: right;">28</td>
-<td>0.00158</td>
-<td style="text-align: left;">=</td>
-<td style="text-align: right;">39</td>
-<td>0.00013</td>
-<td style="text-align: left;">H</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">7</td>
-<td>0.19953</td>
-<td style="text-align: left;">(</td>
-<td style="text-align: right;">18</td>
-<td>0.01585</td>
-<td style="text-align: left;">3</td>
-<td style="text-align: right;">29</td>
-<td>0.00126</td>
-<td style="text-align: left;">&gt;</td>
-<td style="text-align: right;">40</td>
-<td>0.00010</td>
-<td style="text-align: left;">I</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">8</td>
-<td>0.15849</td>
-<td style="text-align: left;">)</td>
-<td style="text-align: right;">19</td>
-<td>0.01259</td>
-<td style="text-align: left;">4</td>
-<td style="text-align: right;">30</td>
-<td>0.00100</td>
-<td style="text-align: left;">?</td>
-<td style="text-align: right;">41</td>
-<td>0.00008</td>
-<td style="text-align: left;">J</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">9</td>
-<td>0.12589</td>
-<td style="text-align: left;">*</td>
-<td style="text-align: right;">20</td>
-<td>0.01000</td>
-<td style="text-align: left;">5</td>
-<td style="text-align: right;">31</td>
-<td>0.00079</td>
-<td style="text-align: left;">@</td>
-<td style="text-align: right;">42</td>
-<td>0.00006</td>
-<td style="text-align: left;">K</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">10</td>
-<td>0.10000</td>
-<td style="text-align: left;">+</td>
-<td style="text-align: right;">21</td>
-<td>0.00794</td>
-<td style="text-align: left;">6</td>
-<td style="text-align: right;">32</td>
-<td>0.00063</td>
-<td style="text-align: left;">A</td>
-<td style="text-align: right;"></td>
-<td></td>
-<td style="text-align: left;"></td>
+<td>Nanopore sequencing</td>
+<td>unlimited?</td>
 </tr>
 </tbody>
 </table>
-</section>
-<section id="read-quality-q-is-encoded-in-ascii-format-1" class="slide level2 smaller">
-<h2>Read quality (Q) is encoded in ASCII format</h2>
-
-<img data-src="png/one_read_long_grey.png" style="width:100.0%" class="r-stretch"><table class="caption-top">
-<colgroup>
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 8%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: right;">Q</th>
-<th>P_error</th>
-<th style="text-align: left;">ASCII</th>
-<th style="text-align: right;">Q</th>
-<th>P_error</th>
-<th style="text-align: left;">ASCII</th>
-<th style="text-align: right;">Q</th>
-<th>P_error</th>
-<th style="text-align: left;">ASCII</th>
-<th style="text-align: right;">Q</th>
-<th>P_error</th>
-<th style="text-align: left;">ASCII</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: right;">0</td>
-<td>1.00000</td>
-<td style="text-align: left;">!</td>
-<td style="text-align: right;">11</td>
-<td>0.07943</td>
-<td style="text-align: left;">,</td>
-<td style="text-align: right;">22</td>
-<td>0.00631</td>
-<td style="text-align: left;">7</td>
-<td style="text-align: right;">33</td>
-<td>0.00050</td>
-<td style="text-align: left;">B</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">1</td>
-<td>0.79433</td>
-<td style="text-align: left;">”</td>
-<td style="text-align: right;">12</td>
-<td>0.06310</td>
-<td style="text-align: left;">-</td>
-<td style="text-align: right;">23</td>
-<td>0.00501</td>
-<td style="text-align: left;">8</td>
-<td style="text-align: right;">34</td>
-<td>0.00040</td>
-<td style="text-align: left;">C</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">2</td>
-<td>0.63096</td>
-<td style="text-align: left;">#</td>
-<td style="text-align: right;">13</td>
-<td>0.05012</td>
-<td style="text-align: left;">.</td>
-<td style="text-align: right;">24</td>
-<td>0.00398</td>
-<td style="text-align: left;">9</td>
-<td style="text-align: right;">35</td>
-<td>0.00032</td>
-<td style="text-align: left;">D</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">3</td>
-<td>0.50119</td>
-<td style="text-align: left;">$</td>
-<td style="text-align: right;">14</td>
-<td>0.03981</td>
-<td style="text-align: left;">/</td>
-<td style="text-align: right;">25</td>
-<td>0.00316</td>
-<td style="text-align: left;">:</td>
-<td style="text-align: right;">36</td>
-<td>0.00025</td>
-<td style="text-align: left;">E</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">4</td>
-<td>0.39811</td>
-<td style="text-align: left;">%</td>
-<td style="text-align: right;">15</td>
-<td>0.03162</td>
-<td style="text-align: left;">0</td>
-<td style="text-align: right;">26</td>
-<td>0.00251</td>
-<td style="text-align: left;">;</td>
-<td style="text-align: right;">37</td>
-<td>0.00020</td>
-<td style="text-align: left;">F</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">5</td>
-<td>0.31623</td>
-<td style="text-align: left;">&amp;</td>
-<td style="text-align: right;">16</td>
-<td>0.02512</td>
-<td style="text-align: left;">1</td>
-<td style="text-align: right;">27</td>
-<td>0.00200</td>
-<td style="text-align: left;">&lt;</td>
-<td style="text-align: right;">38</td>
-<td>0.00016</td>
-<td style="text-align: left;">G</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">6</td>
-<td>0.25119</td>
-<td style="text-align: left;">’</td>
-<td style="text-align: right;">17</td>
-<td>0.01995</td>
-<td style="text-align: left;">2</td>
-<td style="text-align: right;">28</td>
-<td>0.00158</td>
-<td style="text-align: left;">=</td>
-<td style="text-align: right;">39</td>
-<td>0.00013</td>
-<td style="text-align: left;">H</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">7</td>
-<td>0.19953</td>
-<td style="text-align: left;">(</td>
-<td style="text-align: right;">18</td>
-<td>0.01585</td>
-<td style="text-align: left;">3</td>
-<td style="text-align: right;">29</td>
-<td>0.00126</td>
-<td style="text-align: left;">&gt;</td>
-<td style="text-align: right;">40</td>
-<td>0.00010</td>
-<td style="text-align: left;">I</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">8</td>
-<td>0.15849</td>
-<td style="text-align: left;">)</td>
-<td style="text-align: right;">19</td>
-<td>0.01259</td>
-<td style="text-align: left;">4</td>
-<td style="text-align: right;">30</td>
-<td>0.00100</td>
-<td style="text-align: left;">?</td>
-<td style="text-align: right;">41</td>
-<td>0.00008</td>
-<td style="text-align: left;">J</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">9</td>
-<td>0.12589</td>
-<td style="text-align: left;">*</td>
-<td style="text-align: right;">20</td>
-<td>0.01000</td>
-<td style="text-align: left;">5</td>
-<td style="text-align: right;">31</td>
-<td>0.00079</td>
-<td style="text-align: left;">@</td>
-<td style="text-align: right;">42</td>
-<td>0.00006</td>
-<td style="text-align: left;">K</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">10</td>
-<td>0.10000</td>
-<td style="text-align: left;">+</td>
-<td style="text-align: right;">21</td>
-<td>0.00794</td>
-<td style="text-align: left;">6</td>
-<td style="text-align: right;">32</td>
-<td>0.00063</td>
-<td style="text-align: left;">A</td>
-<td style="text-align: right;"></td>
-<td></td>
-<td style="text-align: left;"></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="read-quality-q-is-encoded-in-ascii-format-2" class="slide level2 smaller">
-<h2>Read quality (Q) is encoded in ASCII format</h2>
-
-<img data-src="png/one_read_long_grey_Q_ASCII.png" style="width:100.0%" class="r-stretch"><table class="caption-top">
-<colgroup>
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 8%">
-<col style="width: 8%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: right;">Q</th>
-<th>P_error</th>
-<th style="text-align: left;">ASCII</th>
-<th style="text-align: right;">Q</th>
-<th>P_error</th>
-<th style="text-align: left;">ASCII</th>
-<th style="text-align: right;">Q</th>
-<th>P_error</th>
-<th style="text-align: left;">ASCII</th>
-<th style="text-align: right;">Q</th>
-<th>P_error</th>
-<th style="text-align: left;">ASCII</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: right;">0</td>
-<td>1.00000</td>
-<td style="text-align: left;">!</td>
-<td style="text-align: right;">11</td>
-<td>0.07943</td>
-<td style="text-align: left;">,</td>
-<td style="text-align: right;">22</td>
-<td>0.00631</td>
-<td style="text-align: left;">7</td>
-<td style="text-align: right;">33</td>
-<td>0.00050</td>
-<td style="text-align: left;">B</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">1</td>
-<td>0.79433</td>
-<td style="text-align: left;">”</td>
-<td style="text-align: right;">12</td>
-<td>0.06310</td>
-<td style="text-align: left;">-</td>
-<td style="text-align: right;">23</td>
-<td>0.00501</td>
-<td style="text-align: left;">8</td>
-<td style="text-align: right;">34</td>
-<td>0.00040</td>
-<td style="text-align: left;">C</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">2</td>
-<td>0.63096</td>
-<td style="text-align: left;">#</td>
-<td style="text-align: right;">13</td>
-<td>0.05012</td>
-<td style="text-align: left;">.</td>
-<td style="text-align: right;">24</td>
-<td>0.00398</td>
-<td style="text-align: left;">9</td>
-<td style="text-align: right;">35</td>
-<td>0.00032</td>
-<td style="text-align: left;">D</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">3</td>
-<td>0.50119</td>
-<td style="text-align: left;">$</td>
-<td style="text-align: right;">14</td>
-<td>0.03981</td>
-<td style="text-align: left;">/</td>
-<td style="text-align: right;">25</td>
-<td>0.00316</td>
-<td style="text-align: left;">:</td>
-<td style="text-align: right;">36</td>
-<td>0.00025</td>
-<td style="text-align: left;">E</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">4</td>
-<td>0.39811</td>
-<td style="text-align: left;">%</td>
-<td style="text-align: right;">15</td>
-<td>0.03162</td>
-<td style="text-align: left;">0</td>
-<td style="text-align: right;">26</td>
-<td>0.00251</td>
-<td style="text-align: left;">;</td>
-<td style="text-align: right;">37</td>
-<td>0.00020</td>
-<td style="text-align: left;">F</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">5</td>
-<td>0.31623</td>
-<td style="text-align: left;">&amp;</td>
-<td style="text-align: right;">16</td>
-<td>0.02512</td>
-<td style="text-align: left;">1</td>
-<td style="text-align: right;">27</td>
-<td>0.00200</td>
-<td style="text-align: left;">&lt;</td>
-<td style="text-align: right;">38</td>
-<td>0.00016</td>
-<td style="text-align: left;">G</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">6</td>
-<td>0.25119</td>
-<td style="text-align: left;">’</td>
-<td style="text-align: right;">17</td>
-<td>0.01995</td>
-<td style="text-align: left;">2</td>
-<td style="text-align: right;">28</td>
-<td>0.00158</td>
-<td style="text-align: left;">=</td>
-<td style="text-align: right;">39</td>
-<td>0.00013</td>
-<td style="text-align: left;">H</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">7</td>
-<td>0.19953</td>
-<td style="text-align: left;">(</td>
-<td style="text-align: right;">18</td>
-<td>0.01585</td>
-<td style="text-align: left;">3</td>
-<td style="text-align: right;">29</td>
-<td>0.00126</td>
-<td style="text-align: left;">&gt;</td>
-<td style="text-align: right;">40</td>
-<td>0.00010</td>
-<td style="text-align: left;">I</td>
-</tr>
-<tr class="odd">
-<td style="text-align: right;">8</td>
-<td>0.15849</td>
-<td style="text-align: left;">)</td>
-<td style="text-align: right;">19</td>
-<td>0.01259</td>
-<td style="text-align: left;">4</td>
-<td style="text-align: right;">30</td>
-<td>0.00100</td>
-<td style="text-align: left;">?</td>
-<td style="text-align: right;">41</td>
-<td>0.00008</td>
-<td style="text-align: left;">J</td>
-</tr>
-<tr class="even">
-<td style="text-align: right;">9</td>
-<td>0.12589</td>
-<td style="text-align: left;">*</td>
-<td style="text-align: right;">20</td>
-<td>0.01000</td>
-<td style="text-align: left;">5</td>
-<td style="text-align: right;">31</td>
-<td>0.00079</td>
-<td style="text-align: left;">@</td>
-<td style="text-align: right;">42</td>
-<td>0.00006</td>
-<td style="text-align: left;">K</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="fastq-encoding-asci---q-score---read-quality" class="slide level2">
-<h2>FASTQ encoding: ASCI &lt;-&gt; Q score &lt;-&gt; read quality</h2>
-<p><img data-src="png/read_quality_example.png" class="absolute" style="left: 100px; bottom: 0px; width: 80%; "></p>
 </section>
 <section id="take-home-message" class="slide level2">
 <h2>Take-home message</h2>
+<p><br>
+</p>
 <ul>
-<li>Reads are stored in FASTQ format</li>
-<li>One read has four lines
-<ul>
-<li>Identifier</li>
-<li>Nucleotide sequence</li>
-<li>Spacer</li>
-<li>Nucleotide quality</li>
-</ul></li>
-<li>Q score = measure of base call accuracy</li>
-<li>Q is stored as ASCII characters (Phred+33)</li>
-<li>Higher Q –&gt; lower error probability</li>
-<li>Quality profiles help to detect sequencing problems</li>
+<li>Sequencing of single DNA molecules (no PCR amplification!)</li>
+<li>Theoretically unlimited read length</li>
+<li>Real-Time data</li>
+<li>Portable device</li>
+<li>But: Lower per-base accuracy (higher error rate)</li>
 </ul>
-<p><img data-src="assets/get_end_atgc.png" class="absolute" style="bottom: 0px; right: 80px; width: 30%; "></p>
+<p><img data-src="png/get_end_atgc.png" class="absolute" style="bottom: 0px; right: 80px; width: 30%; "></p>
 
 
-</section></section>
+</section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
