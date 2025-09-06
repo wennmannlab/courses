@@ -494,27 +494,27 @@
     "href": "topics/01_basics_of_sequencing/01_basics_of_sequencing.html",
     "title": "The basics of DNA sequencing",
     "section": "",
-    "text": "To understand how DNA sequencing works, we first need to look at the basics of DNA replication. We also need to understand how DNA is extended and how science uses it for PCR. This is because PCR was the basis for the first method of DNA sequencing, known as Sanger sequencing.\n\nDNA and Sanger sequencing (~15 min)\nBelow you can see a preview of the presentation. There is also a link to view the presentation in full screen mode. You can navigate through the presentation using the arrow keys:\n\nNext slide: →\nPrevious slide: ←\nJump to first/last slide: Shift +↑ / Shift + ↓ There is also a link to view the presentation in full screen mode.\nThe ☰ icon in the bottom left corner opens the presentation options.\n\n    View slides in full screen"
+    "text": "To understand how DNA sequencing works, we first need to look at the basics of DNA replication. We also need to understand how DNA is extended and how science uses it for PCR. This is because PCR was the basis for the first method of DNA sequencing, known as Sanger sequencing.\n\nHow to view the presentations Below you can see a preview of presentations. There is also a link to view the presentation in full screen mode. You can navigate through the presentation using the arrow keys:\nNext slide: →\nPrevious slide: ←\nJump to first/last slide: Shift +↑ / Shift + ↓ There is also a link to view the presentation in full screen mode.\nThe ☰ icon in the bottom left corner opens the presentation options.\n\n\nDNA and Sanger sequencing (~15 min)\n    View slides in full screen"
   },
   {
     "objectID": "topics/01_basics_of_sequencing/01_basics_of_sequencing.html#from-dna-to-pcr-to-sequencing",
     "href": "topics/01_basics_of_sequencing/01_basics_of_sequencing.html#from-dna-to-pcr-to-sequencing",
     "title": "The basics of DNA sequencing",
     "section": "",
-    "text": "To understand how DNA sequencing works, we first need to look at the basics of DNA replication. We also need to understand how DNA is extended and how science uses it for PCR. This is because PCR was the basis for the first method of DNA sequencing, known as Sanger sequencing.\n\nDNA and Sanger sequencing (~15 min)\nBelow you can see a preview of the presentation. There is also a link to view the presentation in full screen mode. You can navigate through the presentation using the arrow keys:\n\nNext slide: →\nPrevious slide: ←\nJump to first/last slide: Shift +↑ / Shift + ↓ There is also a link to view the presentation in full screen mode.\nThe ☰ icon in the bottom left corner opens the presentation options.\n\n    View slides in full screen"
+    "text": "To understand how DNA sequencing works, we first need to look at the basics of DNA replication. We also need to understand how DNA is extended and how science uses it for PCR. This is because PCR was the basis for the first method of DNA sequencing, known as Sanger sequencing.\n\nHow to view the presentations Below you can see a preview of presentations. There is also a link to view the presentation in full screen mode. You can navigate through the presentation using the arrow keys:\nNext slide: →\nPrevious slide: ←\nJump to first/last slide: Shift +↑ / Shift + ↓ There is also a link to view the presentation in full screen mode.\nThe ☰ icon in the bottom left corner opens the presentation options.\n\n\nDNA and Sanger sequencing (~15 min)\n    View slides in full screen"
   },
   {
     "objectID": "topics/01_basics_of_sequencing/01_basics_of_sequencing.html#next-generation-sequencing-ngs",
     "href": "topics/01_basics_of_sequencing/01_basics_of_sequencing.html#next-generation-sequencing-ngs",
     "title": "The basics of DNA sequencing",
     "section": "Next generation sequencing (NGS)",
-    "text": "Next generation sequencing (NGS)\nThe most widely used sequencing method is Illumina sequencing, a high-throughput sequencing or massively parallel sequencing technique. It is one of the next generation sequencing techniques.\n\nPrinciple of Illumina sequencing (~40 min)\nBelow you can see a preview of the presentation. There is also a link to view the presentation in full screen mode. You can navigate through the presentation using the arrow keys:\n\nNext slide: →\nPrevious slide: ←\nJump to first/last slide: Shift +↑ / Shift + ↓ There is also a link to view the presentation in full screen mode.\nThe ☰ icon in the bottom left corner opens the presentation options.\n\n    View slides in full screen"
+    "text": "Next generation sequencing (NGS)\nThe most widely used sequencing method is Illumina sequencing, a high-throughput sequencing or massively parallel sequencing technique. It is one of the next generation sequencing techniques.\n\nPrinciple of Illumina sequencing (~40 min)\n    View slides in full screen"
   },
   {
     "objectID": "topics/01_basics_of_sequencing/01_basics_of_sequencing.html#nanopore-sequencing",
     "href": "topics/01_basics_of_sequencing/01_basics_of_sequencing.html#nanopore-sequencing",
     "title": "The basics of DNA sequencing",
     "section": "Nanopore sequencing",
-    "text": "Nanopore sequencing\nto be done…\n\nNanopore sequencing (~15 min)\nBelow you can see a preview of the presentation. There is also a link to view the presentation in full screen mode. You can navigate through the presentation using the arrow keys:\n\nNext slide: →\nPrevious slide: ←\nJump to first/last slide: Shift +↑ / Shift + ↓ There is also a link to view the presentation in full screen mode.\nThe ☰ icon in the bottom left corner opens the presentation options.\n\n    View slides in full screen"
+    "text": "Nanopore sequencing\nOne of the latest technologies for DNA sequencing is nanopore sequencing. Here, single-stranded DNA is passed through a pore. The resulting voltage changes are measured and converted into ATGC.\n\nNanopore sequencing (~15 min)\n    View slides in full screen"
   }
 ]
