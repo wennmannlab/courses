@@ -1,4 +1,9 @@
 ---
+title: "Principle of Illumina sequencing"
+title-slide-attributes: 
+  data-background-image: ../../../png/dot_illumina_ai_1.png
+  data-background-color: black
+
 format:
   revealjs:
     menu:
@@ -9,11 +14,8 @@ format:
     margin: 0.08
     slide-number: c
     css: ../../lecture_styles.css
+
 ---
-
-# Principle of Illumina sequencing
-
-------------------------------------------------------------------------
 
 ## Illumina sequencing (short read sequencing)
 

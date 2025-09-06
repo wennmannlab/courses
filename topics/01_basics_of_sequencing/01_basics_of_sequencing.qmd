@@ -1,5 +1,54 @@
 ---
-title: "How sequencing works"
+title: "The basics of DNA sequencing"
 ---
 
-## to be done
+## From DNA to PCR to Sequencing
+
+To understand how DNA sequencing works, we first need to look at the basics of DNA replication. We also need to understand how DNA is extended and how science uses it for PCR. This is because PCR was the basis for the first method of DNA sequencing, known as Sanger sequencing.
+
+::: lecture
+<lecture-title>DNA and Sanger sequencing (\~15 min)</lecture-title>
+
+Below you can see a preview of the presentation. There is also a link to view the presentation in full screen mode. You can navigate through the presentation using the arrow keys:
+
+-   Next slide: `→`
+-   Previous slide: `←`
+-   Jump to first/last slide: `Shift +↑` / `Shift + ↓` There is also a link to view the presentation in full screen mode.
+-   The `☰` icon in the bottom left corner opens the presentation options.
+
+{{< revealjs "lecture/01-0_lecture_basics_Sanger.html" >}}
+:::
+
+## Next generation sequencing (NGS)
+
+The most widely used sequencing method is Illumina sequencing, a high-throughput sequencing or massively parallel sequencing technique. It is one of the next generation sequencing techniques.
+
+::: lecture
+<lecture-title>Principle of Illumina sequencing (\~40 min)</lecture-title>
+
+Below you can see a preview of the presentation. There is also a link to view the presentation in full screen mode. You can navigate through the presentation using the arrow keys:
+
+-   Next slide: `→`
+-   Previous slide: `←`
+-   Jump to first/last slide: `Shift +↑` / `Shift + ↓` There is also a link to view the presentation in full screen mode.
+-   The `☰` icon in the bottom left corner opens the presentation options.
+
+{{< revealjs "lecture/01-1_lecture_basics_illumina.html" >}}
+:::
+
+## Nanopore sequencing
+
+to be done...
+
+::: lecture
+<lecture-title>Nanopore sequencing (\~15 min)</lecture-title>
+
+Below you can see a preview of the presentation. There is also a link to view the presentation in full screen mode. You can navigate through the presentation using the arrow keys:
+
+-   Next slide: `→`
+-   Previous slide: `←`
+-   Jump to first/last slide: `Shift +↑` / `Shift + ↓` There is also a link to view the presentation in full screen mode.
+-   The `☰` icon in the bottom left corner opens the presentation options.
+
+{{< revealjs "lecture/01-1_lecture_basics_nanopore.html" >}}
+:::

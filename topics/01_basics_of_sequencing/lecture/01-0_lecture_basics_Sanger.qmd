@@ -1,4 +1,10 @@
 ---
+title: "DNA and Sanger sequencing"
+title-slide-attributes: 
+  data-background-image: png/sanger_chrom_complete.png
+  data-background-color: black
+  data-background-opacity: "0.6"
+
 format:
   revealjs:
     menu:
@@ -11,27 +17,21 @@ format:
     css: ../../lecture_styles.css
 ---
 
-# DNA and Sanger sequencing
-
-------------------------------------------------------------------------
-
 ## Does this look familiar?
+
 \
 \
 
 ![](png/sanger_chrom.png){width="100%"}
 
-
 ## Desoxyribonucleic acid (DNA)
+
 \
 \
 
-::: { .courier }
-  
-5'-ATGCACAACTTTTACAACTACAGCCCCCGCCCTGGGGCAAAACCTACGTGACGACAAT-3'
-&nbsp;&nbsp;&nbsp;||||||||||||||||||||||||||||||||||||||||||||||||||||||||||  
+::: courier
+5'-ATGCACAACTTTTACAACTACAGCCCCCGCCCTGGGGCAAAACCTACGTGACGACAAT-3'    \|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\|\
 3'-TACGTGTTGAAAATGTTGATGTCGGGGGCGGGACCCCGTTTTGGATGCACTGCTGTTA-5'
-
 :::
 
 \
@@ -43,65 +43,55 @@ format:
 -   Complementary base pairing: (A=T; C≡G)
 -   Two antiparallel strands (running in opposite directions)
 
-
-
 ## DNA replication fork
+
 \
 ![](png/dna_replication_fork.png){width="100%"}
 
 ## Direction of DNA
-  
+
 ![](png/dna_close_up.png){.absolute left="100"}
-
-
 
 ## Four nucleotides
 
 ![](png/dna_nucleotides.png){.absolute left="100"}
 
----
+------------------------------------------------------------------------
 
 \
 
-:::: {.columns}
-
+:::::: columns
 ::: {.column width="40%"}
 2'deoxyribose nucleoside triphosphate (dNTP)
 :::
 
 ::: {.column width="20%"}
-
 :::
 
 ::: {.column width="40%"}
 2',3'dideoxyribose nucleoside triphosphate (ddNTP)
 :::
-
-::::
+::::::
 
 ![](png/dna_nucleotides_deoxy.png){.absolute bottom="230"}
 
-
----
-
+------------------------------------------------------------------------
 
 ![](png/dna_synth_termination.png){width="100"}
 
-
 ## Sanger sequencing
+
 \
 
 -   based on modified nuclotides
 -   2',3'dideoxyribosee nucleoside triphoshate
 -   without 3'-OH group
--   chain termination method
-\
-\
-
+-   chain termination method\
+    \
 
 ![](png/sanger_chrom_long.png){width="100"}
 
----
+------------------------------------------------------------------------
 
 ![](png/dna_nucleotide_close_up_termination.png){width="100"}
 
@@ -111,11 +101,10 @@ format:
 
 ## Sanger sequencing chromatogram
 
-
 ![](png/sanger_chrom_complete.png){.absolute left="100"}
 
-
 ## Take-home message
+
 \
 \
 
@@ -131,7 +120,3 @@ format:
 -   Read length is limited to about 1000 nucleotides
 
 ![](../../assets/get_end_atgc.png){.absolute right="80" bottom="0" width="30%"}
-
-
-
-
