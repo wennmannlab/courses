@@ -6,15 +6,21 @@ title: "The basics of DNA sequencing"
 
 To understand how DNA sequencing works, we first need to look at the basics of DNA replication. We also need to understand how DNA is extended and how science uses it for PCR. This is because PCR was the basis for the first method of DNA sequencing, known as Sanger sequencing.
 
+::: comment
+<comment-title>How to view the presentations</comment-title>
+Below you can see a preview of presentations. There is also a link to view the presentation in full screen mode. You can navigate through the presentation using the arrow keys:
+
+Next slide: →
+
+Previous slide: ←
+
+Jump to first/last slide: Shift +↑ / Shift + ↓ There is also a link to view the presentation in full screen mode.
+
+The ☰ icon in the bottom left corner opens the presentation options.
+:::
+
 ::: lecture
 <lecture-title>DNA and Sanger sequencing (\~15 min)</lecture-title>
-
-Below you can see a preview of the presentation. There is also a link to view the presentation in full screen mode. You can navigate through the presentation using the arrow keys:
-
--   Next slide: `→`
--   Previous slide: `←`
--   Jump to first/last slide: `Shift +↑` / `Shift + ↓` There is also a link to view the presentation in full screen mode.
--   The `☰` icon in the bottom left corner opens the presentation options.
 
 {{< revealjs "lecture/01-0_lecture_basics_Sanger.html" >}}
 :::
@@ -26,29 +32,17 @@ The most widely used sequencing method is Illumina sequencing, a high-throughput
 ::: lecture
 <lecture-title>Principle of Illumina sequencing (\~40 min)</lecture-title>
 
-Below you can see a preview of the presentation. There is also a link to view the presentation in full screen mode. You can navigate through the presentation using the arrow keys:
-
--   Next slide: `→`
--   Previous slide: `←`
--   Jump to first/last slide: `Shift +↑` / `Shift + ↓` There is also a link to view the presentation in full screen mode.
--   The `☰` icon in the bottom left corner opens the presentation options.
-
 {{< revealjs "lecture/01-1_lecture_basics_illumina.html" >}}
 :::
 
 ## Nanopore sequencing
 
-to be done...
+One of the latest technologies for DNA sequencing is nanopore sequencing.
+Here, single-stranded DNA is passed through a pore.
+The resulting voltage changes are measured and converted into ATGC.
 
 ::: lecture
 <lecture-title>Nanopore sequencing (\~15 min)</lecture-title>
 
-Below you can see a preview of the presentation. There is also a link to view the presentation in full screen mode. You can navigate through the presentation using the arrow keys:
-
--   Next slide: `→`
--   Previous slide: `←`
--   Jump to first/last slide: `Shift +↑` / `Shift + ↓` There is also a link to view the presentation in full screen mode.
--   The `☰` icon in the bottom left corner opens the presentation options.
-
-{{< revealjs "lecture/01-1_lecture_basics_nanopore.html" >}}
+{{< revealjs "lecture/01-2_lecture_basics_nanopore.html" >}}
 :::
