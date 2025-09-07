@@ -2,7 +2,25 @@
 title: "Getting started with Galaxy"
 ---
 
-## A short introduction to Galaxy
+## Introduction
+
+::: lecture
+<lecture-title>Galaxy (\~20 min)</lecture-title>
+
+Below you can see a preview of a presentation from the Galaxy Training Network (GTN). You can navigate through the presentation using the arrow keys: Next slide: `→`; Previous slide: `←`.
+
+[![日本語](assets/jp.svg){.flag width="25px"} Japanese version](https://training-galaxyproject-org.translate.goog/training-material/topics/introduction/tutorials/introduction/slides.html?_x_tr_sl=en&_x_tr_tl=ja&_x_tr_hl=en&_x_tr_pto=wapp)
+
+{{< revealjs "https://training.galaxyproject.org/training-material/topics/introduction/tutorials/introduction/slides.html" >}}
+
+::: reference
+<reference-title>Reference</reference-title> This presentation is from the Galaxy Training Network (GTN): [*Introduction to Galaxy*](https://training.galaxyproject.org/training-material/topics/introduction/) Lizenz: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+:::
+
+:::
+
+
+## First steps in Galaxy
 
 To get started with the Galaxy platform, complete the following tutorial. It takes about 40 minutes and will familiarize you with the interface and the most important Galaxy terms. You will also upload your first data.
 
@@ -94,7 +112,7 @@ Now you have to wait until all files are completely uploaded. This may take a mo
 Files can have four statuses in your history. Only green files and files being processed can be worked on further.
 
 | Color     | Status             | Meaning                                     |
-|------------------|------------------|-------------------------------------|
+|------------------|------------------|------------------------------------|
 | 🟩 Green  | Ready              | File is ready to use                        |
 | 🟧 Orange | Running/Processing | File is being processed (job still running) |
 | ⬜ Gray   | Queued             | File is waiting to run                      |
