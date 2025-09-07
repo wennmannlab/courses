@@ -168,11 +168,60 @@
     "text": "Take-home message\n\n\n\nIllumina uses sequencing by synthesis.\nBillions of DNA fragments (reads) are sequenced in parallel on a flow cell\nLarge number of reads! But reads are short: 50 to 300 nucleotides\nClusters are created through bridge PCR amplification\nBases are detected by fluorescent labeled nucleotides\nStrength: high accuracy\nLimitation: short read length"
   },
   {
-    "objectID": "topics/99_flyer/99_flyer.html",
-    "href": "topics/99_flyer/99_flyer.html",
-    "title": "Flyer",
+    "objectID": "topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.html",
+    "href": "topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.html",
+    "title": "Where is the raw sequencing data stored publicly?",
     "section": "",
-    "text": "TUAT - 18 - 19 September 2025\n\n\nYour browser cannot display the PDF file. Download.\n\n\nDownload flyer as PDF"
+    "text": "Most peer-reviewed journals require studies dealing with bioinformatic data to include a data availability statement. This statement explains where the raw sequencing data and all important associated data sets are available. Publishing sequence data online is now mandatory and considered good practice, as it allows other scientists to repeat the analyses or use the data for their own studies.\n\nTypically, the Data Availability Statement is located at the end of the manuscript. Sometimes it is also located at the very beginning. The information can also be integrated into the Materials and Methods section."
+  },
+  {
+    "objectID": "topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.html#data-availability",
+    "href": "topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.html#data-availability",
+    "title": "Where is the raw sequencing data stored publicly?",
+    "section": "",
+    "text": "Most peer-reviewed journals require studies dealing with bioinformatic data to include a data availability statement. This statement explains where the raw sequencing data and all important associated data sets are available. Publishing sequence data online is now mandatory and considered good practice, as it allows other scientists to repeat the analyses or use the data for their own studies.\n\nTypically, the Data Availability Statement is located at the end of the manuscript. Sometimes it is also located at the very beginning. The information can also be integrated into the Materials and Methods section."
+  },
+  {
+    "objectID": "topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.html#sequence-read-archive-sra",
+    "href": "topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.html#sequence-read-archive-sra",
+    "title": "Where is the raw sequencing data stored publicly?",
+    "section": "Sequence Read Archive (SRA)",
+    "text": "Sequence Read Archive (SRA)\nSequence data is published as raw data. The world’s largest public database for raw sequence data from high-throughput sequencing is the Sequence Read Archive (SRA). The SRA was founded in 2007 and is now jointly operated by the NCBI (USA), the EBI/ENA (Europe), and the DDBJ (Japan).\nThe SRA is the world’s largest collection of sequence data.\n\nVisit the Sequence Read Archive (SRA)\n\nVisit https://www.ncbi.nlm.nih.gov/sra\nSearch for SRA data entry SRR14313721\n\n Next, you should see the SRA record entry.\nWhat information can you see?\nCan you find out the meaning of…\n\nBioProject\nBioSample\nRun"
+  },
+  {
+    "objectID": "topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.html#sra-entry-information",
+    "href": "topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.html#sra-entry-information",
+    "title": "Where is the raw sequencing data stored publicly?",
+    "section": "SRA entry information",
+    "text": "SRA entry information\nThe SRA offers the possibility to retrieve a lot of information about the sequencing. We will look at this in the next step. To do this, we click directly on the run entry SRR14313721.\n\nSRA entry up close\nClick on SRR14313721.\n\nThis should open the detailed view, which provides information on the number of sequenced bases, the quality of the sequencing, and the format of the sequence data."
+  },
+  {
+    "objectID": "topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.html#taxonomy-analysis-tool",
+    "href": "topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.html#taxonomy-analysis-tool",
+    "title": "Where is the raw sequencing data stored publicly?",
+    "section": "Taxonomy Analysis Tool",
+    "text": "Taxonomy Analysis Tool\nThe SRA web interface also offers a simple analysis of the taxonomy. This is helpful if you want to know what is included in the sequencing. It can provide an indication of whether there may be contamination in the sequencing.\n\nTaxonomy Analysis Tool - Window into the SRA dataset\nAt the bottom, there is a field called ‘View in Krona’, which we click on.\n The Taxonomy Browser window will then open. This analysis is performed automatically by NCBI SRA for every dataset that is uploaded there. It is a rough metagenomic analysis based on the information stored at NCBI itself. You can see which organisms (including viruses) were found in the sequence data.\n The web interface also offers an interactive way to analyse the composition. This tool is called Krona, which we will launch next.\n\nThe Krona tool for interactive analysis will then open. Play around with the interactive display to understand how Krona works!"
+  },
+  {
+    "objectID": "topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.html#search-sra-database",
+    "href": "topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.html#search-sra-database",
+    "title": "Where is the raw sequencing data stored publicly?",
+    "section": "Search SRA database",
+    "text": "Search SRA database\nIt’s time to put what you’ve learned into practice. How about searching the SRA database yourself? Can you think of any organisms that might have been sequenced?\nLet’s find out. Search for organisms you work with!\n\nYour own search\nWhich organism comes to your mind? Then search for it!\nExamples:\n\nAscovirus\nHomo sapiens\nBeauveria bassiana\nSilkworm\n\nVisit https://www.ncbi.nlm.nih.gov/sra to start your search.\nAlso use Krona to analyse your search!\n\n\nLet’s discuss your findings!\nWho found something interesing?\nCan you share your findings?"
+  },
+  {
+    "objectID": "topics/02_read_sequence_information/02_read_sequence_information.html",
+    "href": "topics/02_read_sequence_information/02_read_sequence_information.html",
+    "title": "How is sequence information stored?",
+    "section": "",
+    "text": "What is a read? The term is important in bioinformatics because a read carries so much information that it is essential for sequence analysis.\n\nPresentation (~12 min)\nBelow you can see a preview of the presentation. There is also a link to view the presentation in full screen mode. You can navigate through the presentation using the arrow keys:\n\nNext slide: →\nPrevious slide: ←\nJump to first/last slide: Shift +↑ / Shift + ↓ There is also a link to view the presentation in full screen mode.\nThe ☰ icon in the bottom left corner opens the presentation options.\n\n    View slides in full screen"
+  },
+  {
+    "objectID": "topics/02_read_sequence_information/02_read_sequence_information.html#the-art-of-the-read",
+    "href": "topics/02_read_sequence_information/02_read_sequence_information.html#the-art-of-the-read",
+    "title": "How is sequence information stored?",
+    "section": "",
+    "text": "What is a read? The term is important in bioinformatics because a read carries so much information that it is essential for sequence analysis.\n\nPresentation (~12 min)\nBelow you can see a preview of the presentation. There is also a link to view the presentation in full screen mode. You can navigate through the presentation using the arrow keys:\n\nNext slide: →\nPrevious slide: ←\nJump to first/last slide: Shift +↑ / Shift + ↓ There is also a link to view the presentation in full screen mode.\nThe ☰ icon in the bottom left corner opens the presentation options.\n\n    View slides in full screen"
   },
   {
     "objectID": "topics/02_read_sequence_information/lecture/02_lecture_read_information.html#sequence-data-format-fastq",
@@ -266,74 +315,32 @@
     "text": "Take-home message\n\nReads are stored in FASTQ format\nOne read has four lines\n\nIdentifier\nNucleotide sequence\nSpacer\nNucleotide quality\n\nQ score = measure of base call accuracy\nQ is stored as ASCII characters (Phred+33)\nHigher Q –&gt; lower error probability\nQuality profiles help to detect sequencing problems"
   },
   {
-    "objectID": "topics/02_read_sequence_information/02_read_sequence_information.html",
-    "href": "topics/02_read_sequence_information/02_read_sequence_information.html",
-    "title": "How is sequence information stored?",
+    "objectID": "topics/99_flyer/99_flyer.html",
+    "href": "topics/99_flyer/99_flyer.html",
+    "title": "Flyer",
     "section": "",
-    "text": "What is a read? The term is important in bioinformatics because a read carries so much information that it is essential for sequence analysis.\n\nPresentation (~12 min)\nBelow you can see a preview of the presentation. There is also a link to view the presentation in full screen mode. You can navigate through the presentation using the arrow keys:\n\nNext slide: →\nPrevious slide: ←\nJump to first/last slide: Shift +↑ / Shift + ↓ There is also a link to view the presentation in full screen mode.\nThe ☰ icon in the bottom left corner opens the presentation options.\n\n    View slides in full screen"
-  },
-  {
-    "objectID": "topics/02_read_sequence_information/02_read_sequence_information.html#the-art-of-the-read",
-    "href": "topics/02_read_sequence_information/02_read_sequence_information.html#the-art-of-the-read",
-    "title": "How is sequence information stored?",
-    "section": "",
-    "text": "What is a read? The term is important in bioinformatics because a read carries so much information that it is essential for sequence analysis.\n\nPresentation (~12 min)\nBelow you can see a preview of the presentation. There is also a link to view the presentation in full screen mode. You can navigate through the presentation using the arrow keys:\n\nNext slide: →\nPrevious slide: ←\nJump to first/last slide: Shift +↑ / Shift + ↓ There is also a link to view the presentation in full screen mode.\nThe ☰ icon in the bottom left corner opens the presentation options.\n\n    View slides in full screen"
-  },
-  {
-    "objectID": "topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.html",
-    "href": "topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.html",
-    "title": "Where is the raw sequencing data stored publicly?",
-    "section": "",
-    "text": "Most peer-reviewed journals require studies dealing with bioinformatic data to include a data availability statement. This statement explains where the raw sequencing data and all important associated data sets are available. Publishing sequence data online is now mandatory and considered good practice, as it allows other scientists to repeat the analyses or use the data for their own studies.\n\nTypically, the Data Availability Statement is located at the end of the manuscript. Sometimes it is also located at the very beginning. The information can also be integrated into the Materials and Methods section."
-  },
-  {
-    "objectID": "topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.html#data-availability",
-    "href": "topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.html#data-availability",
-    "title": "Where is the raw sequencing data stored publicly?",
-    "section": "",
-    "text": "Most peer-reviewed journals require studies dealing with bioinformatic data to include a data availability statement. This statement explains where the raw sequencing data and all important associated data sets are available. Publishing sequence data online is now mandatory and considered good practice, as it allows other scientists to repeat the analyses or use the data for their own studies.\n\nTypically, the Data Availability Statement is located at the end of the manuscript. Sometimes it is also located at the very beginning. The information can also be integrated into the Materials and Methods section."
-  },
-  {
-    "objectID": "topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.html#sequence-read-archive-sra",
-    "href": "topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.html#sequence-read-archive-sra",
-    "title": "Where is the raw sequencing data stored publicly?",
-    "section": "Sequence Read Archive (SRA)",
-    "text": "Sequence Read Archive (SRA)\nSequence data is published as raw data. The world’s largest public database for raw sequence data from high-throughput sequencing is the Sequence Read Archive (SRA). The SRA was founded in 2007 and is now jointly operated by the NCBI (USA), the EBI/ENA (Europe), and the DDBJ (Japan).\nThe SRA is the world’s largest collection of sequence data.\n\nVisit the Sequence Read Archive (SRA)\n\nVisit https://www.ncbi.nlm.nih.gov/sra\nSearch for SRA data entry SRR14313721\n\n Next, you should see the SRA record entry.\nWhat information can you see?\nCan you find out the meaning of…\n\nBioProject\nBioSample\nRun"
-  },
-  {
-    "objectID": "topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.html#sra-entry-information",
-    "href": "topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.html#sra-entry-information",
-    "title": "Where is the raw sequencing data stored publicly?",
-    "section": "SRA entry information",
-    "text": "SRA entry information\nThe SRA offers the possibility to retrieve a lot of information about the sequencing. We will look at this in the next step. To do this, we click directly on the run entry SRR14313721.\n\nSRA entry up close\nClick on SRR14313721.\n\nThis should open the detailed view, which provides information on the number of sequenced bases, the quality of the sequencing, and the format of the sequence data."
-  },
-  {
-    "objectID": "topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.html#taxonomy-analysis-tool",
-    "href": "topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.html#taxonomy-analysis-tool",
-    "title": "Where is the raw sequencing data stored publicly?",
-    "section": "Taxonomy Analysis Tool",
-    "text": "Taxonomy Analysis Tool\nThe SRA web interface also offers a simple analysis of the taxonomy. This is helpful if you want to know what is included in the sequencing. It can provide an indication of whether there may be contamination in the sequencing.\n\nTaxonomy Analysis Tool - Window into the SRA dataset\nAt the bottom, there is a field called ‘View in Krona’, which we click on.\n The Taxonomy Browser window will then open. This analysis is performed automatically by NCBI SRA for every dataset that is uploaded there. It is a rough metagenomic analysis based on the information stored at NCBI itself. You can see which organisms (including viruses) were found in the sequence data.\n The web interface also offers an interactive way to analyse the composition. This tool is called Krona, which we will launch next.\n\nThe Krona tool for interactive analysis will then open. Play around with the interactive display to understand how Krona works!"
-  },
-  {
-    "objectID": "topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.html#search-sra-database",
-    "href": "topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.html#search-sra-database",
-    "title": "Where is the raw sequencing data stored publicly?",
-    "section": "Search SRA database",
-    "text": "Search SRA database\nIt’s time to put what you’ve learned into practice. How about searching the SRA database yourself? Can you think of any organisms that might have been sequenced?\nLet’s find out. Search for organisms you work with!\n\nYour own search\nWhich organism comes to your mind? Then search for it!\nExamples:\n\nAscovirus\nHomo sapiens\nBeauveria bassiana\nSilkworm\n\nVisit https://www.ncbi.nlm.nih.gov/sra to start your search.\nAlso use Krona to analyse your search!\n\n\nLet’s discuss your findings!\nWho found something interesing?\nCan you share your findings?"
+    "text": "TUAT - 18 - 19 September 2025\n\n\nYour browser cannot display the PDF file. Download.\n\n\nDownload flyer as PDF"
   },
   {
     "objectID": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html",
     "href": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html",
     "title": "Getting started with Galaxy",
     "section": "",
-    "text": "To get started with the Galaxy platform, complete the following tutorial. It takes about 40 minutes and will familiarize you with the interface and the most important Galaxy terms. You will also upload your first data.\n\nFirst steps with Galaxy\nGo through and finish the tutiral “A short introduction to Galaxy”!\nThe tutorial is available in several languages:\n Galaxy Introduction Tutorial (GTN)\n Galaxy Introduction Tutorial (GTN, automatic translation)\n\nReference This tutorial is from the Galaxy Training Network (GTN): Introduction to Galaxy Lizenz: CC BY 4.0."
+    "text": "Galaxy (~20 min)\nBelow you can see a preview of a presentation from the Galaxy Training Network (GTN). You can navigate through the presentation using the arrow keys: Next slide: →; Previous slide: ←.\n Japanese version\n    View slides in full screen\n       \n      \n    \n  \n\nReference This presentation is from the Galaxy Training Network (GTN): Introduction to Galaxy Lizenz: CC BY 4.0."
   },
   {
-    "objectID": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#a-short-introduction-to-galaxy",
-    "href": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#a-short-introduction-to-galaxy",
+    "objectID": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#introduction",
+    "href": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#introduction",
     "title": "Getting started with Galaxy",
     "section": "",
-    "text": "To get started with the Galaxy platform, complete the following tutorial. It takes about 40 minutes and will familiarize you with the interface and the most important Galaxy terms. You will also upload your first data.\n\nFirst steps with Galaxy\nGo through and finish the tutiral “A short introduction to Galaxy”!\nThe tutorial is available in several languages:\n Galaxy Introduction Tutorial (GTN)\n Galaxy Introduction Tutorial (GTN, automatic translation)\n\nReference This tutorial is from the Galaxy Training Network (GTN): Introduction to Galaxy Lizenz: CC BY 4.0."
+    "text": "Galaxy (~20 min)\nBelow you can see a preview of a presentation from the Galaxy Training Network (GTN). You can navigate through the presentation using the arrow keys: Next slide: →; Previous slide: ←.\n Japanese version\n    View slides in full screen\n       \n      \n    \n  \n\nReference This presentation is from the Galaxy Training Network (GTN): Introduction to Galaxy Lizenz: CC BY 4.0."
+  },
+  {
+    "objectID": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#first-steps-in-galaxy",
+    "href": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#first-steps-in-galaxy",
+    "title": "Getting started with Galaxy",
+    "section": "First steps in Galaxy",
+    "text": "First steps in Galaxy\nTo get started with the Galaxy platform, complete the following tutorial. It takes about 40 minutes and will familiarize you with the interface and the most important Galaxy terms. You will also upload your first data.\n\nFirst steps with Galaxy\nGo through and finish the tutiral “A short introduction to Galaxy”!\nThe tutorial is available in several languages:\n Galaxy Introduction Tutorial (GTN)\n Galaxy Introduction Tutorial (GTN, automatic translation)\n\nReference This tutorial is from the Galaxy Training Network (GTN): Introduction to Galaxy Lizenz: CC BY 4.0."
   },
   {
     "objectID": "topics/05_galaxy_first_steps/05_galaxy_first_steps.html#starting-with-training-data",

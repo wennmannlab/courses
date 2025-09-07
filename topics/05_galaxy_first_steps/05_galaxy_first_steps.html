@@ -67,6 +67,14 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+ 
+  <style>
+  .slide-deck {
+      border: 3px solid #dee2e6;
+      width: 100%;
+  }
+  </style>
+  
 
 
 <link rel="stylesheet" href="../../styles.css">
@@ -95,7 +103,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../topics/01_basics_of_sequencing/01_basics_of_sequencing.html"> 
-<span class="menu-text">Sequencing Basics</span></a>
+<span class="menu-text">Technology</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../topics/02_read_sequence_information/02_read_sequence_information.html"> 
@@ -104,10 +112,6 @@ ul.task-list li input[type="checkbox"] {
   <li class="nav-item">
     <a class="nav-link" href="../../topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.html"> 
 <span class="menu-text">NCBI SRA</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../topics/04_intro_to_galaxy/04_intro_to_galaxy.html"> 
-<span class="menu-text">Galaxy Introduction</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="../../topics/05_galaxy_first_steps/05_galaxy_first_steps.html" aria-current="page"> 
@@ -133,7 +137,8 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#a-short-introduction-to-galaxy" id="toc-a-short-introduction-to-galaxy" class="nav-link active" data-scroll-target="#a-short-introduction-to-galaxy">A short introduction to Galaxy</a></li>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#first-steps-in-galaxy" id="toc-first-steps-in-galaxy" class="nav-link" data-scroll-target="#first-steps-in-galaxy">First steps in Galaxy</a></li>
   <li><a href="#starting-with-training-data" id="toc-starting-with-training-data" class="nav-link" data-scroll-target="#starting-with-training-data">Starting with training data</a></li>
   <li><a href="#create-a-new-history" id="toc-create-a-new-history" class="nav-link" data-scroll-target="#create-a-new-history">Create a new history</a></li>
   <li><a href="#rename-the-new-history" id="toc-rename-the-new-history" class="nav-link" data-scroll-target="#rename-the-new-history">Rename the new history</a></li>
@@ -170,8 +175,24 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="a-short-introduction-to-galaxy" class="level2">
-<h2 class="anchored" data-anchor-id="a-short-introduction-to-galaxy">A short introduction to Galaxy</h2>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<div class="lecture">
+<p><lecture-title>Galaxy (~20 min)</lecture-title></p>
+<p>Below you can see a preview of a presentation from the Galaxy Training Network (GTN). You can navigate through the presentation using the arrow keys: Next slide: <code>→</code>; Previous slide: <code>←</code>.</p>
+<p><a href="https://training-galaxyproject-org.translate.goog/training-material/topics/introduction/tutorials/introduction/slides.html?_x_tr_sl=en&amp;_x_tr_tl=ja&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp"><img src="assets/jp.svg" class="flag img-fluid" width="25" alt="日本語"> Japanese version</a></p>
+    <p><a href="https://training.galaxyproject.org/training-material/topics/introduction/tutorials/introduction/slides.html" target="_blank">View slides in full screen</a></p>
+       <div>
+      <iframe class="slide-deck" src="https://training.galaxyproject.org/training-material/topics/introduction/tutorials/introduction/slides.html" height="475px"></iframe>
+    </div>
+  
+<div class="reference">
+<p><reference-title>Reference</reference-title> This presentation is from the Galaxy Training Network (GTN): <a href="https://training.galaxyproject.org/training-material/topics/introduction/"><em>Introduction to Galaxy</em></a> Lizenz: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
+</div>
+</div>
+</section>
+<section id="first-steps-in-galaxy" class="level2">
+<h2 class="anchored" data-anchor-id="first-steps-in-galaxy">First steps in Galaxy</h2>
 <p>To get started with the Galaxy platform, complete the following tutorial. It takes about 40 minutes and will familiarize you with the interface and the most important Galaxy terms. You will also upload your first data.</p>
 <div class="hands-on">
 <p><hands-on-title>First steps with Galaxy</hands-on-title></p>
@@ -266,8 +287,8 @@ The tutorial is available in several languages:</p>
 <p>Files can have four statuses in your history. Only green files and files being processed can be worked on further.</p>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 24%">
-<col style="width: 24%">
+<col style="width: 25%">
+<col style="width: 25%">
 <col style="width: 50%">
 </colgroup>
 <thead>
