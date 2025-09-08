@@ -52,7 +52,7 @@ warning-title::before {
 }
 
 reference-title::before {
-  content: "📖 : ";
+  content: "📖  ";
   margin-right: 0.3em;
 }
 
