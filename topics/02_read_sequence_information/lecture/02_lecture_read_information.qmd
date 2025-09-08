@@ -50,7 +50,7 @@ Quality (ASCII)
 <br> <br>
 
 | Row | Description |
-|--------------------|----------------------------------------------------|
+|---------------------|---------------------------------------------------|
 | **1st row** | Identifier (run, cluster, location on flow cell, read number, etc.) |
 | **2nd row** | Nucleotide sequence (A, T, G, C, N) |
 | **3rd row** | Separator line (optionally repeats carries an identifier) |
@@ -173,7 +173,7 @@ ggsave("q_vs_p_plot.png",
 
 ::: {.column width="70%"}
 | Quality score (Q) | Probability that a base<br>is called incorrectly | Accuracy | Error probability |
-|:---------------:|:---------------------:|:---------------:|:---------------:|
+|:---------------:|:-------------------:|:---------------:|:---------------:|
 | 10 | 1 in 10 | 90% | 10% |
 | 20 | 1 in 100 | 99% | 1% |
 | 30 | 1 in 1000 | 99.9% | 0.1% |

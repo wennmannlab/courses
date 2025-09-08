@@ -1,7 +1,7 @@
 ---
 title: "Nanopore sequencing technology"
 title-slide-attributes: 
-  data-background-image: png/P4180044.jpg
+  data-background-image: png/nanopore/nanopore_title.jpg
   data-background-color: black
 
 format:
@@ -36,7 +36,7 @@ format:
 Idea for Nanopore sequenced in the 1980s...
 
 | Year |   |
-|--------------------|----------------------------------------------------|
+|---------------------|---------------------------------------------------|
 | 1980 | Nobel prize for chain termination method (Sanger sequencing) |
 | 1980 to mid 2000 | Improvement of Sanger sequencing technique |
 | 1990 | Idea of using reversible fluorescent labeled nucleotides for sequencing |
@@ -55,7 +55,6 @@ Idea for Nanopore sequenced in the 1980s...
 
 ![](png/nanopore_membrane.png){.absolute bottom="0"}
 
-
 ## Nanopores allow ssDNA to pass
 
 ![](png/nanopore/nanopore1.png){.absolute width="95%"}
@@ -68,11 +67,11 @@ Idea for Nanopore sequenced in the 1980s...
 
 ![](png/nanopore/nanopore3.png){.absolute width="95%"}
 
----
+------------------------------------------------------------------------
 
 ![](png/nanopore/nanopore4.png){.absolute width="95%"}
 
----
+------------------------------------------------------------------------
 
 ![](png/nanopore/nanopore5.png){.absolute width="95%"}
 
@@ -93,24 +92,20 @@ Idea for Nanopore sequenced in the 1980s...
 \
 \
 
-  
-| Technique            | Max read length |
-|----------------------|-----------------|
-| Sanger sequencing    | ~1000 nt        |
-| Illumina sequencing  | 50–400 nt       |
-| Nanopore sequencing  | unlimited?      |
+| Technique           | Max read length |
+|---------------------|-----------------|
+| Sanger sequencing   | \~1000 nt       |
+| Illumina sequencing | 50–400 nt       |
+| Nanopore sequencing | unlimited?      |
 
 ## Take-home message
 
 \
 
-- Sequencing of single DNA molecules (no PCR amplification!)
-- Theoretically unlimited read length
-- Real-Time data
-- Portable device
-- But: Lower per-base accuracy (higher error rate)
-
-
-
+-   Sequencing of single DNA molecules (no PCR amplification!)
+-   Theoretically unlimited read length
+-   Real-Time data
+-   Portable device
+-   But: Lower per-base accuracy (higher error rate)
 
 ![](png/get_end_atgc.png){.absolute right="80" bottom="0" width="30%"}
