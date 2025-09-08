@@ -19,6 +19,8 @@ website:
         text: First steps in Galaxy
       - href: topics/05_read_quality/05_read_quality.qmd
         text: Quality filter
+      - href: topics/06_galaxy_workflow/06_quality_workflow.qmd
+        text: Workflows
       - href: topics/99_flyer/99_flyer.qmd
         text: Flyer
       
