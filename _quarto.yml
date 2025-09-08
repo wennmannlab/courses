@@ -15,8 +15,10 @@ website:
         text: Reads
       - href: topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.qmd
         text: NCBI SRA
-      - href: topics/05_galaxy_first_steps/05_galaxy_first_steps.qmd
+      - href: topics/04_galaxy_first_steps/04_galaxy_first_steps.qmd
         text: First steps in Galaxy
+      - href: topics/05_read_quality/05_read_quality.qmd
+        text: Quality filter
       - href: topics/99_flyer/99_flyer.qmd
         text: Flyer
       

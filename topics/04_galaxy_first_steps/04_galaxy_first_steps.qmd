@@ -4,7 +4,7 @@ title: "Getting started with Galaxy"
 
 ## Introduction
 
-::: lecture
+:::: lecture
 <lecture-title>Galaxy (\~20 min)</lecture-title>
 
 Below you can see a preview of a presentation from the Galaxy Training Network (GTN). You can navigate through the presentation using the arrow keys: Next slide: `→`; Previous slide: `←`.
@@ -16,9 +16,7 @@ Below you can see a preview of a presentation from the Galaxy Training Network (
 ::: reference
 <reference-title>Reference</reference-title> This presentation is from the Galaxy Training Network (GTN): [*Introduction to Galaxy*](https://training.galaxyproject.org/training-material/topics/introduction/) Lizenz: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).
 :::
-
-:::
-
+::::
 
 ## First steps in Galaxy
 
@@ -112,7 +110,7 @@ Now you have to wait until all files are completely uploaded. This may take a mo
 Files can have four statuses in your history. Only green files and files being processed can be worked on further.
 
 | Color     | Status             | Meaning                                     |
-|------------------|------------------|------------------------------------|
+|-------------------|-------------------|-----------------------------------|
 | 🟩 Green  | Ready              | File is ready to use                        |
 | 🟧 Orange | Running/Processing | File is being processed (job still running) |
 | ⬜ Gray   | Queued             | File is waiting to run                      |
@@ -190,4 +188,14 @@ If you would like to learn how to evaluate and analyse the output of `falco`{.to
 [Galaxy Training Tutorial - Quality Control](https://training.galaxyproject.org/topics/sequence-analysis/tutorials/quality-control/tutorial.html).
 
 Enjoy reading!
+:::
+
+## Upload data from NCBI to Galaxy
+
+It is also possible to upload data directly to NCBI without first storing it on your own PCR. To do this, we will look at two new data sets: `SRR25338386` und `SRR27030578`.
+
+::: hands-on
+<hands-on-title>Find out what kind of data it is!</hands-on-title>
+
+Du kannst diese Informationen nutzen, um herauszufinden um was es sich für Daten handelt: [NCBI SRA](https://wennmannlab.github.io/courses/topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.html).
 :::
