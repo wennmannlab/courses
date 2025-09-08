@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Flyer – Courses, Tutorials and Slides</title>
+<title>Accessing read quality – Courses, Tutorials and Slides</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -67,6 +67,14 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+ 
+  <style>
+  .slide-deck {
+      border: 3px solid #dee2e6;
+      width: 100%;
+  }
+  </style>
+  
 
 
 <link rel="stylesheet" href="../../styles.css">
@@ -118,7 +126,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Workflows</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../../topics/99_flyer/99_flyer.html" aria-current="page"> 
+    <a class="nav-link" href="../../topics/99_flyer/99_flyer.html"> 
 <span class="menu-text">Flyer</span></a>
   </li>  
 </ul>
@@ -129,7 +137,7 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
@@ -137,21 +145,32 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#tuat---18---19-september-2025" id="toc-tuat---18---19-september-2025" class="nav-link active" data-scroll-target="#tuat---18---19-september-2025">TUAT - 18 - 19 September 2025</a></li>
+  <li><a href="#check-new-illumina-and-nanopore-data" id="toc-check-new-illumina-and-nanopore-data" class="nav-link active" data-scroll-target="#check-new-illumina-and-nanopore-data">Check new Illumina and Nanopore data</a></li>
+  <li><a href="#create-a-new-history" id="toc-create-a-new-history" class="nav-link" data-scroll-target="#create-a-new-history">Create a new history</a></li>
+  <li><a href="#upload-ncbi-sra-data-directly-to-galaxy." id="toc-upload-ncbi-sra-data-directly-to-galaxy." class="nav-link" data-scroll-target="#upload-ncbi-sra-data-directly-to-galaxy.">Upload NCBI SRA data directly to Galaxy.</a></li>
+  <li><a href="#quality-check---nanopore-reads" id="toc-quality-check---nanopore-reads" class="nav-link" data-scroll-target="#quality-check---nanopore-reads">Quality check - Nanopore reads</a></li>
+  <li><a href="#quality-check-illumina-reads" id="toc-quality-check-illumina-reads" class="nav-link" data-scroll-target="#quality-check-illumina-reads">Quality check Illumina reads</a>
+  <ul class="collapse">
+  <li><a href="#per-base-sequence-quality-falco" id="toc-per-base-sequence-quality-falco" class="nav-link" data-scroll-target="#per-base-sequence-quality-falco">Per Base Sequence Quality (Falco)</a></li>
+  <li><a href="#adapter-content-falco" id="toc-adapter-content-falco" class="nav-link" data-scroll-target="#adapter-content-falco">Adapter content (Falco)</a></li>
+  </ul></li>
+  <li><a href="#quality-and-adapter-trimming" id="toc-quality-and-adapter-trimming" class="nav-link" data-scroll-target="#quality-and-adapter-trimming">Quality and adapter trimming</a></li>
+  <li><a href="#checking-the-quality-filteradapter-removel-step" id="toc-checking-the-quality-filteradapter-removel-step" class="nav-link" data-scroll-target="#checking-the-quality-filteradapter-removel-step">Checking the quality filter/adapter removel step</a></li>
+  <li><a href="#comparison-before-and-after-filtering" id="toc-comparison-before-and-after-filtering" class="nav-link" data-scroll-target="#comparison-before-and-after-filtering">Comparison before and after filtering</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Flyer</h1>
+<h1 class="title">Accessing read quality</h1>
 </div>
 
 
 
-<div class="quarto-title-meta column-page-left">
+<div class="quarto-title-meta">
 
     
   
@@ -163,14 +182,263 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="tuat---18---19-september-2025" class="level1">
-<h1>TUAT - 18 - 19 September 2025</h1>
-<object data="flyer.pdf" type="application/pdf" width="100%" height="800px">
-<p>
-Your browser cannot display the PDF file. <a href="flyer.pdf">Download</a>.
-</p>
-</object>
-<p><a href="flyer.pdf">Download flyer as PDF</a></p>
+<p>Here, we would like to focus a little more on the topic of assessing read quality. We will see why this is so important when we look at the next dataset, which we will load directly from NCBI SRA to Galaxy.</p>
+<section id="check-new-illumina-and-nanopore-data" class="level2">
+<h2 class="anchored" data-anchor-id="check-new-illumina-and-nanopore-data">Check new Illumina and Nanopore data</h2>
+<p>It is also possible to upload data directly to NCBI without first storing it on your own PCR. To do this, we will look at two new data sets: <code>SRR25338386</code> und <code>SRR27030578</code>.</p>
+<div class="hands-on">
+<p><hands-on-title>Find out what kind of data it is!</hands-on-title></p>
+<p>Du kannst diese Informationen nutzen, um herauszufinden um was es sich für Daten handelt: <a href="https://wennmannlab.github.io/courses/topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.html">NCBI SRA</a>.</p>
+</div>
+</section>
+<section id="create-a-new-history" class="level2">
+<h2 class="anchored" data-anchor-id="create-a-new-history">Create a new history</h2>
+<p>Create a new empty history and rename it to <strong>Quality Check</strong>.</p>
+<p><img src="png/history_new.png" class="img-fluid" style="width:60.0%"></p>
+</section>
+<section id="upload-ncbi-sra-data-directly-to-galaxy." class="level2">
+<h2 class="anchored" data-anchor-id="upload-ncbi-sra-data-directly-to-galaxy.">Upload NCBI SRA data directly to Galaxy.</h2>
+<p>Hier wie lern how to get the data directly from SRA to a new history.</p>
+<div class="hands-on">
+<p><hands-on-title>Upload SRA data to Galaxy</hands-on-title></p>
+<p>First, we select the <code class="tool">Download and Extract Reads in FASTQ</code>.</p>
+<p><img src="png/tool_ncbi_sra_download.png" class="img-fluid" style="width:70.0%"></p>
+<p>Now enter both SRA Accession numbers (<code>SRR25338386</code> und <code>SRR27030578</code>) and start the tool. We leave all other parameters at their default settings.</p>
+<p><img src="png/tool_ncbi_sra_accessions.png" class="img-fluid" style="width:60.0%"></p>
+<p>An active job should then appear in your history, displayed in grey/orange. This means that the data is being downloaded from NCBI SRA.</p>
+<p><img src="png/tool_ncbi_sra_active.png" class="img-fluid" style="width:60.0%"></p>
+<p>When the download is complete, both items should be green in the history. We have received two <code>Collection</code> containing the sequence data. Collections are useful for preventing the history from becoming overloaded with files. Collections can contain multiple files. Play around with the Collections a little and try to understand what they are all about.</p>
+<p><img src="png/tool_ncbi_sra_finished.png" class="img-fluid" style="width:40.0%"></p>
+</div>
+</section>
+<section id="quality-check---nanopore-reads" class="level2">
+<h2 class="anchored" data-anchor-id="quality-check---nanopore-reads">Quality check - Nanopore reads</h2>
+<p>Before we start working with data, we always check its quality. You should always be sure about the data you are working with.</p>
+<div class="hands-on">
+<p><hands-on-title>Quality of Nanopore reads</hands-on-title></p>
+<p>Run the tool <code class="tool">nanoplot</code> on the Nanopore data.</p>
+<p><img src="png/nanoplot_nanopore_settings.png" class="img-fluid" style="width:100.0%"></p>
+<p>When the <code class="tool">nanoplot</code> tool has finished running (turned green), do the following:</p>
+<ul>
+<li>Click on the NanoStat file: <img src="png/nanoplot_result_history.png" class="img-fluid" style="width:50.0%"></li>
+<li>Click on the eye to see the result: <img src="png/nanoplot_result_history2.png" class="img-fluid" style="width:50.0%"></li>
+</ul>
+<p>You should get this view of the results for the nanopore reads:</p>
+<p><img src="png/nanoplot_result.png" class="img-fluid" style="width:100.0%"></p>
+<div class="comment">
+<p><comment-title>Can you answer the following questions?</comment-title></p>
+<ul>
+<li>How long are the Nanopore reads?<br>
+</li>
+<li>What is the avarge read quality (Q)?<br>
+</li>
+<li>Can you determine the average error probability (P)?</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="quality-check-illumina-reads" class="level2">
+<h2 class="anchored" data-anchor-id="quality-check-illumina-reads">Quality check Illumina reads</h2>
+<p>Since Illumina reads are the most widely used, it is most likely that you will be working with this data. Therefore, we will take a closer look at the quality of Illumina data.</p>
+<div class="hands-on">
+<p><hands-on-title>Quality of Illumina reads</hands-on-title></p>
+<p>Run the tool <code class="tool">falco</code> on the Nanopore data.</p>
+<p><img src="png/falco_illumina_settings.png" class="img-fluid" style="width:100.0%"></p>
+<p>When the <code class="tool">falco</code> tool has finished running (turned green), do the following:</p>
+<ul>
+<li><p>Click on the <code>Falco on X: Website</code> file: <img src="png/faclo_result1.png" class="img-fluid" style="width:50.0%"></p></li>
+<li><p>Click on the collection: <img src="png/faclo_result2.png" class="img-fluid" style="width:50.0%"></p></li>
+<li><p>Click on the forward file: <img src="png/faclo_result3.png" class="img-fluid" style="width:50.0%"></p></li>
+<li><p>Save the file on your computer: <img src="png/faclo_result4.png" class="img-fluid" style="width:50.0%"></p></li>
+<li><p><code>Unzip</code> the downloaded file.</p></li>
+<li><p>Open the <code>html</code> file.</p></li>
+</ul>
+<div class="comment">
+<p><comment-title>Can you answer the following questions?</comment-title></p>
+<p>The output should look like the example below. Can you answer the following questions?</p>
+<ul>
+<li>How long are the Illumina reads?<br>
+</li>
+<li>What is the avarge read quality (Q)?<br>
+</li>
+<li>Can you say something about the error probability (P)?</li>
+</ul>
+    <p><a href="html_falco/Falco_on_rawReads.html" target="_blank">View slides in full screen</a></p>
+       <div>
+      <iframe class="slide-deck" src="html_falco/Falco_on_rawReads.html" height="475px"></iframe>
+    </div>
+  
+</div>
+</div>
+<section id="per-base-sequence-quality-falco" class="level3">
+<h3 class="anchored" data-anchor-id="per-base-sequence-quality-falco">Per Base Sequence Quality (Falco)</h3>
+<p>We pay particular attention to the quality of the sequencing, as this tells us what level of accuracy or error probability we can expect. This can be decisive for the next steps.</p>
+<p>The <code class="tool">falco</code> tool provides us with a quality plot (base sequence quality plot) that shows us how well individual bases were determined during sequencing.</p>
+<ul>
+<li>X-axis: Position of the base on the read.</li>
+<li>Y-axis: Quality value (Q; Phred score). High value = higher quality = base was determined more accurately.</li>
+</ul>
+<p>The plot can be interpreted as follows: At the beginning of the reads (left), the sequencing is more accurate. Further along at the end of the reads (right), the quality tends to decrease. In other words, accuracy decreases with increasing length.</p>
+<p><img src="png/falco_PerBaseSequenceQuality.png" class="img-fluid" style="width:100.0%"></p>
+</section>
+<section id="adapter-content-falco" class="level3">
+<h3 class="anchored" data-anchor-id="adapter-content-falco">Adapter content (Falco)</h3>
+<p>We recall that Illumina sequencing uses adapters that are ligated to the DNA fragments. They serve as primer binding sites and for binding the fragments to the FlowCell. They are, of course, contaminants and are not desired in the subsequent analysis of the sequence data.</p>
+<p>Contamination of the sequence data with adapters is also shown in the <code class="tool">falco</code> tool. The Illumina adapters used for sequencing are correctly recognized in our dataset:</p>
+<p><img src="png/falco_AdapterContent.png" class="img-fluid" style="width:100.0%"></p>
+</section>
+</section>
+<section id="quality-and-adapter-trimming" class="level2">
+<h2 class="anchored" data-anchor-id="quality-and-adapter-trimming">Quality and adapter trimming</h2>
+<p>A very important step in read processing is to filter the reads according to quality and adapters. This is usually/always done after receiving the raw sequencing data and before further analyzing (e.g.&nbsp;genome assembly, metagenomic analysis) the data. So now we have to address two important points:</p>
+<ul>
+<li>How can we improve the quality of the sequencing retrospectively?</li>
+<li>How do we get rid of the adapters from each read?</li>
+</ul>
+<p>Of course, there are a number of tools available for filtering reads, e.g.&nbsp;<code class="tool">trimmomatic</code> or <code class="tool">Trim Galore!</code>.</p>
+<p>In this course, I will continue working with the tool <code class="tool">Trim Galore!</code>.</p>
+<div class="hands-on">
+<p><hands-on-title>Removing bad quality bases and adapters (Illumina data)</hands-on-title></p>
+<p>To filter the quality and remove the adapters, we use the tool <code class="tool">Trim Galore!</code>. By now, you should be familiar with selecting tools in Galaxy. You should also know how to select the parameters of the tools in the <code>Centre Panel</code>.</p>
+<p>Can you start the tool <code class="tool">Trim Galore!</code>. with the following parameters?</p>
+<ul>
+<li>Chose <code class="tool">Trim Galore!</code> from the tools panel.</li>
+<li>Click on <code class="tool">Trim Galore!</code></li>
+<li>Set the following parameters (<em>leave everything else as default</em>):
+<ul>
+<li>Is this library paired- or single-end: <code>Paired Collection</code></li>
+<li>Select a paired collection: <code>Paired-end data (fastq-dump)</code></li>
+<li>Adapter sequence to be trimmed: <code>Automatic detection</code></li>
+<li><strong>Advanced settings</strong> = <code>Full parameter list</code>:
+<ul>
+<li>Trim low-quality ends from reads in addition to adapter removal (Enter phred quality score thresold): <code>30</code></li>
+<li>Discard reads that became shorter than length N: <code>50</code></li>
+</ul></li>
+</ul></li>
+<li>Click on <code>Run Tool</code> to filter your Illumina paired-end dataset.</li>
+</ul>
+<p><img src="png/trimGalore_tool.png" class="img-fluid" style="width:40.0%"></p>
+<div class="callout callout-style-default callout-note callout-titled" title="I need help! *(Click here)*">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+I need help! <em>(Click here)</em>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Set the <code class="tool">Trim Galore!</code> options as follows:</p>
+<p><img src="png/trimGalore_help1.PNG" class="img-fluid" style="width:100.0%"></p>
+<p><img src="png/trimGalore_help2.PNG" class="img-fluid" style="width:100.0%"></p>
+</div>
+</div>
+</div>
+</div>
+<p>After clicking on <code>Run Tool</code> to start <code class="tool">Trim Galore!</code>, the result should look like this after a short while (click through the collection to see the structure):</p>
+<p><img src="png/trimGalore_result_collection1.png" class="img-fluid" style="width:50.0%"></p>
+</section>
+<section id="checking-the-quality-filteradapter-removel-step" class="level2">
+<h2 class="anchored" data-anchor-id="checking-the-quality-filteradapter-removel-step">Checking the quality filter/adapter removel step</h2>
+<p>How can we see whether quality filtering and removing the adapters has worked? We need to make sure that our parameters have been set correctly and that the tool has worked properly.</p>
+<p>Fortunately, there is a simple solution for this: we start the <code class="tool">falco</code> tool again, only this time the input is <code>Trim Galore! on collectoin 1: paired reads</code>.</p>
+<div class="hands-on">
+<p><hands-on-title>Checking the quality/adapter filtered output</hands-on-title></p>
+<ul>
+<li>Chose <code class="tool">Falco</code> from the tools panel.</li>
+<li>Click on <code class="tool">Falco</code></li>
+<li>Set the following parameters (<em>leave everything else as default</em>):
+<ul>
+<li>Raw read data from your current history –&gt; switch to Dataset Collection as input</li>
+<li>Raw read data from your current history: <code>Trim Galore! on collection x: paired reads</code> (x = it can be any number depending on the file position in your history)</li>
+</ul></li>
+<li>Click on <code>Run Tool</code> to filter your Illumina paired-end dataset.</li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled" title="I need help! *(Click here)*">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+I need help! <em>(Click here)</em>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Set the <code class="tool">Trim Galore!</code> options as follows:</p>
+<p><img src="png/falco_trimGalore_collection1.png" class="img-fluid" style="width:100.0%"></p>
+</div>
+</div>
+</div>
+<p>Wait until the tool has finished running and open the result.</p>
+<p><img src="png/falco_trimGalore_green.png" class="img-fluid" style="width:50.0%"></p>
+<p>Do you remember how to open up the result?</p>
+<div class="callout callout-style-default callout-note callout-titled" title="I need help! *(Click here)*">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+I need help! <em>(Click here)</em>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<ul>
+<li>Click on <code>Falco on collection xx: Webpage</code></li>
+<li>Click on <code>SRR25338386</code></li>
+<li>Click on <code>forward</code> once to open it up.</li>
+<li>Click on the disk symbol to download the result: <img src="png/falco_trimGalore_download.png" class="img-fluid" style="width:60.0%"></li>
+<li>Save the ZIP file on your computer.</li>
+<li>Unzip the file.</li>
+<li>Open the Html document to see the results.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="comment">
+<p><comment-title>What has changed after Trim Galore! ?</comment-title></p>
+<p>The output should look like the example below.</p>
+<ul>
+<li>Did the length of the Illumina reads change?<br>
+</li>
+<li>Did the quality (Q) change?</li>
+</ul>
+    <p><a href="html_falco/Falco_on_trimGalore.html" target="_blank">View slides in full screen</a></p>
+       <div>
+      <iframe class="slide-deck" src="html_falco/Falco_on_trimGalore.html" height="475px"></iframe>
+    </div>
+  
+</div>
+</div>
+</section>
+<section id="comparison-before-and-after-filtering" class="level2">
+<h2 class="anchored" data-anchor-id="comparison-before-and-after-filtering">Comparison before and after filtering</h2>
+<p>You have now looked at the Illumina Reads before and after filtering (quality and adapter). Think about what has changed. Can you describe it in your own words?</p>
+<div class="comment">
+<p><comment-title>Per Base Sequence Quality</comment-title></p>
+<p><img src="png/falco_PerBaseSequenceQuality.png" class="img-fluid" style="width:100.0%"></p>
+<p><img src="png/falco_trimGalore_PerBaseSequenceQuality.png" class="img-fluid" style="width:100.0%"></p>
+</div>
+<div class="comment">
+<p><comment-title>Adapter content</comment-title></p>
+<p><img src="png/falco_AdapterContent.png" class="img-fluid" style="width:100.0%"></p>
+<p><img src="png/falco_trimGalore_AdapterContent.png" class="img-fluid" style="width:100.0%"></p>
+</div>
+<p>Have other parameters changed? Compare <code class="tool">falco</code> HTML document from the original and filtered reads!</p>
+<div class="hands-on">
+<p><hands-on-title>Compare the read length before and after filtering</hands-on-title></p>
+<p>Check both hmtl files and compare the <code>Sequence length distribution</code> of the original and filtered reads.</p>
+<p><img src="png/falco_report_menu.PNG" class="img-fluid" style="width:40.0%"></p>
+<div class="comment">
+<p><comment-title>What has changed?</comment-title></p>
+<p>Can you guess what has changed and why?</p>
+</div>
+</div>
 
 
 </section>
