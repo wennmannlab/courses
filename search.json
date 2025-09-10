@@ -11,7 +11,7 @@
     "href": "index.html#time-schedule",
     "title": "Welcome",
     "section": "Time Schedule",
-    "text": "Time Schedule\n\n\n\n\n\n\n\n\nTime\nDay 1 (18 Sep)\nDay 2 (19 Sep)\n\n\n\n\n13:00–13:15\nWelcome & Introduction\nLecture: Assembly basics\n\n\n13:15–14:30\nLecture: Introduction to NGS\n\n\n\n14:30–14:45\nCoffee break\nBreak\n\n\n14:45–16:30\nHands-on: Quality control\nHands-on: Assembly\n\n\n16:30–17:00\nWrap-up & Q&A\nDiscussion & Closing"
+    "text": "Time Schedule\n\n\n\n\n18 Sept\nSession\n\n\n\n\n13:00–13:30\nWelcome & Introduction\n\n\n13:30–14:30\nLecture: Introduction to sequencing techniques\n\n\n14:30–14:50\nBreak\n\n\n14:50–15:15\nLecture: Storage of sequence information\n\n\n15:15–15:45\nHands-on: NCBI SRA\n\n\n15:45–16:00\nLecture: Introduction to Galaxy\n\n\n16:00–16:15\nBreak\n\n\n16:15–17:00\nHands-on: First steps with Galaxy\n\n\n\n\n\n\n\n\n\n19 Sept\nSession\n\n\n\n\n13:00–13:15\nRecap & Questions\n\n\n13:15–14:00\nHands-on: Upload Data, Read Quality and Trimming\n\n\n14:00–14:30\nHands-on: Workflows in Galaxy\n\n\n14:30–14:50\nBreak\n\n\n14:50–15:40\nHands-on: Metagenomics\n\n\n15:40–16:00\nLecture: Genome Assembly\n\n\n16:00–16:15\nBreak\n\n\n16:15–17:00\nHands-on: Genome Assembly"
   },
   {
     "objectID": "index.html#required-items",
