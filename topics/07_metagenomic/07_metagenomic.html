@@ -145,7 +145,19 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#metagenomics" id="toc-metagenomics" class="nav-link active" data-scroll-target="#metagenomics">Metagenomics</a></li>
+  <li><a href="#what-is-inside-your-data" id="toc-what-is-inside-your-data" class="nav-link active" data-scroll-target="#what-is-inside-your-data">What is inside your data?</a></li>
+  <li><a href="#create-a-new-history" id="toc-create-a-new-history" class="nav-link" data-scroll-target="#create-a-new-history">Create a new history</a></li>
+  <li><a href="#upload-data-from-zenodo-to-galaxy" id="toc-upload-data-from-zenodo-to-galaxy" class="nav-link" data-scroll-target="#upload-data-from-zenodo-to-galaxy">Upload data from Zenodo to Galaxy</a></li>
+  <li><a href="#read-classication-with-kraken2" id="toc-read-classication-with-kraken2" class="nav-link" data-scroll-target="#read-classication-with-kraken2">Read classication with <em>kraken2</em></a></li>
+  <li><a href="#kraken2-report-file" id="toc-kraken2-report-file" class="nav-link" data-scroll-target="#kraken2-report-file"><em>kraken2</em> report file</a></li>
+  <li><a href="#visualization-using-krona" id="toc-visualization-using-krona" class="nav-link" data-scroll-target="#visualization-using-krona">Visualization using <em>krona</em></a>
+  <ul class="collapse">
+  <li><a href="#convert-kraken-report-file" id="toc-convert-kraken-report-file" class="nav-link" data-scroll-target="#convert-kraken-report-file">Convert kraken report file</a></li>
+  <li><a href="#running-krona" id="toc-running-krona" class="nav-link" data-scroll-target="#running-krona">Running krona</a></li>
+  <li><a href="#challenge-advanced-kraken2-workflow" id="toc-challenge-advanced-kraken2-workflow" class="nav-link" data-scroll-target="#challenge-advanced-kraken2-workflow">Challenge: Advanced kraken2 workflow</a></li>
+  </ul></li>
+  <li><a href="#visualization-using-sankey-plot" id="toc-visualization-using-sankey-plot" class="nav-link" data-scroll-target="#visualization-using-sankey-plot">Visualization using <em>Sankey Plot</em></a></li>
+  <li><a href="#extraction-of-classified-reads" id="toc-extraction-of-classified-reads" class="nav-link" data-scroll-target="#extraction-of-classified-reads">Extraction of classified reads</a></li>
   </ul>
 </nav>
     </div>
@@ -171,8 +183,343 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="metagenomics" class="level2">
-<h2 class="anchored" data-anchor-id="metagenomics">Metagenomics</h2>
+<section id="what-is-inside-your-data" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-inside-your-data">What is inside your data?</h2>
+<p>There are many reasons to perform metagenomic analysis. One reason is to check the quality of the sequencing in terms of its composition. Sometimes you want to sequence a specific organism, but the sample is contaminated with DNA from other organisms (including viruses). This can be due to natural causes or indicate a problem with sample preparation. A metagenomic study is usually performed to determine the taxonomic composition of a sample, i.e., which organisms are present in a sample and in what quantities.</p>
+<p>Here we will look at nanopore sequencing <code>SRR27030578</code>. This is the sequencing of the silkworm baculovirus (Bombyx mori nucleopolyhedrovirus; BmNPV). The question is whether the sample is pure or whether other viruses or bacteria are also present in the sample. A metagenomic approach that classifies the sequence information is particularly well suited for this purpose.</p>
+<p>After classification, we not only obtain information about what the sample might contain, but also have the option of continuing to work only with the desired reads.</p>
+</section>
+<section id="create-a-new-history" class="level2">
+<h2 class="anchored" data-anchor-id="create-a-new-history">Create a new history</h2>
+<p>Create a new history and give it a suitable name for metagenomic analysis, e.g., <code>Metagenomic approach</code>.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="I need help! *(Click here)*">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+I need help! <em>(Click here)</em>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><img src="png/history_new.png" class="img-fluid" style="width:50.0%"></p>
+</div>
+</div>
+</div>
+</section>
+<section id="upload-data-from-zenodo-to-galaxy" class="level2">
+<h2 class="anchored" data-anchor-id="upload-data-from-zenodo-to-galaxy">Upload data from Zenodo to Galaxy</h2>
+<p>There are many ways to upload data to Galaxy. Often, the data is stored externally and not on your own PC to avoid unnecessary downloads and uploads. Here, we will practice transferring data directly from Zenodo, a public data repository, to Galaxy.</p>
+<div class="hands-on">
+<p><hands-on-title>New history</hands-on-title></p>
+<p>We load the data directly from a data repository called Zenodo into Galaxy. The dataset has the following link: <code>https://zenodo.org/records/17092436/files/SRR27030578_nanopore.fastqsanger.gz</code>.</p>
+<p>Just before you upload the data, you have the option to name the data set. We will name it <code>BmNPV-Th2 ONT (SRR27030578)</code> so that the names are identical for you and in the tutorial.</p>
+<p><img src="png/zenodo_upload.png" class="img-fluid" style="width:80.0%"></p>
+<p>Wait until the data has been uploaded. It shouldn’t take long, as the file is only 44 MB in size.</p>
+</div>
+</section>
+<section id="read-classication-with-kraken2" class="level2">
+<h2 class="anchored" data-anchor-id="read-classication-with-kraken2">Read classication with <em>kraken2</em></h2>
+<p>The first step in metagenomic analysis is to classify the reads. This is done using the <code class="tool">kraken2</code> tool.</p>
+<div class="hands-on">
+<p><hands-on-title>Read classification</hands-on-title></p>
+<p>By now, you should be familiar with how to search for and launch a tool. Search for <code class="tool">kraken2</code> and open it so that the panel with the settings options opens in the middle.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="I need help! *(Click here)*">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+I need help! <em>(Click here)</em>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><img src="png/kraken_tool.png" class="img-fluid" style="width:80.0%"></p>
+</div>
+</div>
+</div>
+<p>Set the following options/parameters:</p>
+<ul>
+<li>Single or paired reads: <code>single</code></li>
+<li>Input sequences: <code>BmNPV-Th2 ONT (SRR27030578)</code></li>
+</ul>
+<p><img src="png/kraken_singleRead.png" class="img-fluid" style="width:80.0%"></p>
+<p>After that, there are two more options to set for our tutorial:</p>
+<ul>
+<li>Scroll down until you see the <code>Create Report</code> option.</li>
+<li>Click on <code>Create Report</code> to open the submenu
+<ul>
+<li>Print a report with aggregrates counts/clade to file: <code>Yes</code></li>
+</ul></li>
+</ul>
+<p><img src="png/kraken_createReport.png" class="img-fluid" style="width:50.0%"></p>
+<div class="callout callout-style-default callout-note callout-titled" title="I need help! *(Click here)*">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+I need help! <em>(Click here)</em>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><img src="png/kraken_createReport.gif" class="img-fluid" style="width:50.0%"></p>
+</div>
+</div>
+</div>
+<p>For classification, kraken2 requires a database based on previously sequenced sequences of organisms. Select the following database:</p>
+<ul>
+<li>Select a Kraken2 database: `Prebuilt Refseq indexes: PlusPF (Standard plus protozoa and fugni) (Version: 2024-01-12 - Downloaded: 2024-07-15T185612Z)</li>
+</ul>
+<p><img src="png/kraken_selectDatabase.png" class="img-fluid" style="width:50.0%"></p>
+<p>Once the parameters have been set, we can start the program.</p>
+<ul>
+<li>Click on run tool <img src="png/kraken_runTool.png" class="img-fluid" style="width:15.0%"></li>
+</ul>
+<p>It takes a little while for the kraken2 tool to complete the analysis (5 to 10 min).</p>
+<p><img src="png/kraken_running.png" class="img-fluid" style="width:50.0%"></p>
+</div>
+<div class="warning">
+<p><warning-title>Parameters for kraken2</warning-title></p>
+<p>There are many parameters that can be set in <code>kraken2</code> that can have a significant impact on the result. The <code>Confidence</code> parameter is particularly important and should be chosen with care. If you are interested in learning more about this topic, find out more about <a href="https://github.com/DerrickWood/kraken2">kraken2</a>.</p>
+</div>
+</section>
+<section id="kraken2-report-file" class="level2">
+<h2 class="anchored" data-anchor-id="kraken2-report-file"><em>kraken2</em> report file</h2>
+<p>After kraken2 has run, we download the report file. We will now take a closer look at it in order to evaluate the data.</p>
+<div class="hands-on">
+<p><hands-on-title>Report download </hands-on-title></p>
+<p>Open the report file by clicking on it in your history. Then download the file by clicking on the disk icon.</p>
+<p><img src="png/kraken_saveResult.png" class="img-fluid" style="width:70.0%"></p>
+<p>Open the report file using the Windows <code class="tool">Editor</code>.</p>
+<p><img src="png/report_editor.PNG" class="img-fluid" style="width:70.0%"></p>
+</div>
+<p>The report file is organized in six columns according to a specific format:</p>
+<ul>
+<li><p>Percent (percentage of reads)<br>
+Percentage of reads (or k-mers) in this taxonomic clade including all its subclades.</p></li>
+<li><p>Number of reads per clade Number of reads assigned to this clade or any of its subclades.</p></li>
+<li><p>Number of reads per taxon only Number of reads assigned directly to this taxon only (not including children).</p></li>
+<li><p>Rank code<br>
+Taxonomic rank:</p>
+<ul>
+<li>U = unclassified<br>
+</li>
+<li>R = root<br>
+</li>
+<li>D = domain<br>
+</li>
+<li>K = kingdom<br>
+</li>
+<li>P = phylum<br>
+</li>
+<li>C = class<br>
+</li>
+<li>O = order<br>
+</li>
+<li>F = family<br>
+</li>
+<li>G = genus<br>
+</li>
+<li>S = species<br>
+</li>
+<li>S1, S2, … = lower ranks (strain, subspecies)</li>
+</ul></li>
+<li><p>NCBI taxon ID<br>
+Unique taxonomy identifier from the NCBI Taxonomy.</p></li>
+<li><p>Scientific name</p></li>
+</ul>
+</section>
+<section id="visualization-using-krona" class="level2">
+<h2 class="anchored" data-anchor-id="visualization-using-krona">Visualization using <em>krona</em></h2>
+<p>Looking at tables is usually tedious and not very intuitive. Fortunately, there are tools available for displaying metagenomic results that allow us to analyze the data easily.</p>
+<section id="convert-kraken-report-file" class="level3">
+<h3 class="anchored" data-anchor-id="convert-kraken-report-file">Convert kraken report file</h3>
+<p>To visualize the <code class="tool">kraken2</code> output the data using the <code class="tool">krona</code> tool, we first need to convert the report file.</p>
+<p>There is a suitable tool for this called <code class="tool">Krakentools: Convert kraken report file</code>.</p>
+<div class="hands-on">
+<p><hands-on-title>Convert kraken2 report file</hands-on-title></p>
+<ul>
+<li>Searchfor and open the <code class="tool">Krakentools: Convert kraken report file</code> tool.</li>
+<li>Set the following parameter:
+<ul>
+<li>Kraken report file: <code>Kraken2 on data X: Report</code> (X can be any number depending on your history).</li>
+</ul></li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled" title="I need help! *(Click here)*">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+I need help! <em>(Click here)</em>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><img src="png/kraken_convertReport.png" class="img-fluid" style="width:80.0%"></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="running-krona" class="level3">
+<h3 class="anchored" data-anchor-id="running-krona">Running krona</h3>
+<p>Next, we can start and view the converted report file with <code class="tool">krona</code> This will greatly simplify the viewing of the results.</p>
+<div class="hands-on">
+<p><hands-on-title>View report with krona</hands-on-title></p>
+<ul>
+<li>Search for the <code class="tool">Krona pie chart</code></li>
+<li>Open the tool to set the parameters:
+<ul>
+<li>What is the type of your iput data: <code>tabular</code></li>
+<li>Input file: <code>Krakentools: Convert kraken report file on data X</code></li>
+</ul></li>
+<li>Click on <code>Run Tool</code></li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled" title="I need help! *(Click here)*">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+I need help! <em>(Click here)</em>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><img src="png/krona_start.png" class="img-fluid" style="width:80.0%"></p>
+</div>
+</div>
+</div>
+<p>Once the krona tool is ready, you can view the results. The visualization is generated as an HTML document (a web page file that your browser can open and display, including interactive elements) and can be viewed directly in Galaxy.</p>
+<ul>
+<li>Click on the eye icon to view the <code>Krona pie chart</code>.</li>
+</ul>
+<p><img src="png/krona_viewResults.png" class="img-fluid" style="width:40.0%"></p>
+</div>
+<p>You will now see the result of krona as an interactive interface. Play around with it to familiarize yourself with it.</p>
+<p><img src="png/krona_snapshot.svg" class="img-fluid" style="width:90.0%"></p>
+<div class="comment">
+<p><comment-title>Was kommt in der Probe vor?</comment-title></p>
+<p>Take a look at the krona pie chart. Can you see what else is present in the sample? The virus BmNPV, which was the target of the sequencing, is referred to as Alphabaculovirus bomori in the visualization. Would you describe this sample as pure?</p>
+</div>
+</section>
+<section id="challenge-advanced-kraken2-workflow" class="level3">
+<h3 class="anchored" data-anchor-id="challenge-advanced-kraken2-workflow">Challenge: Advanced kraken2 workflow</h3>
+<p>Hier möchte ich dir die Möglichkeit geben die zuvor durchgeführte Analyse mit kraken2 zu erweitern.</p>
+<div class="hands-on">
+<p><hands-on-title>Challenge</hands-on-title></p>
+<ul>
+<li>Create a new workflow</li>
+<li>Give the workflow a suitable name</li>
+<li>Create a workflow that automatically performs the following tasks:
+<ul>
+<li>Input: <code>Input Dataset - Single dataset input</code></li>
+<li>Input file is <code>BmNPV-Th2 ONT (SRR27030578)</code> (or another file of your choice)</li>
+<li>The input is forwarded to <code class="tool">kraken2</code></li>
+<li>The parameters are as described above.
+<ul>
+<li>Set the confidence score: <code>0.5</code></li>
+<li>Select a kraken2 database: <code>Prebuilt: Refseq indexes: core_nt (Very large collection ...)</code></li>
+</ul></li>
+<li>The <code class="tool">Krakentools: Convert</code> tool converts the report file.</li>
+<li>The converted file is visualized with <code class="tool">krona</code>.</li>
+</ul></li>
+<li>The workflow shoud consist out of four steps.</li>
+<li>Save the workflow</li>
+<li>Start the workflow by chosing the input file.</li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled" title="I need help! *(Click here)*">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+I need help! <em>(Click here)</em>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><img src="png/kraken_challange.png" class="img-fluid" style="width:100.0%"></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</section>
+<section id="visualization-using-sankey-plot" class="level2">
+<h2 class="anchored" data-anchor-id="visualization-using-sankey-plot">Visualization using <em>Sankey Plot</em></h2>
+<p>The next tool I would like to introduce for displaying classification is available online. The graphic created here is called a Sankey plot created by tool <code class="tool">Pavian</code>. The tool requires the <code>kraken2 report file</code> as input!</p>
+<p>The tool <code class="tool">Pavian</code> is a R shineyapp and can be found at this address: <a href="https://fbreitwieser.shinyapps.io/pavian/" class="uri">https://fbreitwieser.shinyapps.io/pavian/</a>.</p>
+<div class="reference">
+<p><reference-title>Pavian</reference-title></p>
+<p>Breitwieser, F., Salzberg (2020) Pavian: interactive analysis of metagenomic data for microbiome studies and pathogen identification. <em>Bioinformatics</em>, Volume 36, Issue 4, Pages 1303-1304<br>
+https://doi.org/10.1093/bioinformatics/btz715</p>
+</div>
+<div class="hands-on">
+<p><hands-on-title>Running Pavian</hands-on-title></p>
+<p>Do you remember the kraken2 report file that we have saved from your history?</p>
+<p><img src="png/report_file.png" class="img-fluid" style="width:10.0%"> <a href="kraken2_report_file/Galaxy2-[Kraken2 on data 1_ Report].tabular">You can also find the file here for download.</a></p>
+<ul>
+<li>Visit the following homepage <a href="https://fbreitwieser.shinyapps.io/pavian/" class="uri">https://fbreitwieser.shinyapps.io/pavian/</a></li>
+<li>Upload the kraken2 report file <code>Galaxy2-[Kraken2 on data 1_ Report].tabular</code>.</li>
+</ul>
+<p><img src="png/pavian_start.png" class="img-fluid" style="width:100.0%"> The upload should start automatically and the tool’s interface should change slightly.</p>
+<ul>
+<li>Once the upload is complete, click on Sample.</li>
+</ul>
+<p><img src="png/pavian_sample.png" class="img-fluid" style="width:20.0%"></p>
+<p>The Sankey plot should then appear and you can begin analyzing the data.</p>
+<p><img src="png/pavian_sankey.PNG" class="img-fluid" style="width:100.0%"></p>
+</div>
+<p>Fangen wir and und extrahieren alle Reads, die dem Taxon “Virus</p>
+</section>
+<section id="extraction-of-classified-reads" class="level2">
+<h2 class="anchored" data-anchor-id="extraction-of-classified-reads">Extraction of classified reads</h2>
+<p>After classification, the question arises as to whether I can continue working with only a specific group (= taxon) of reads.</p>
+<p>The answer is yes.</p>
+<p>The trick is the <code>classification file</code> that was generated alongside the report. It contains information about which read was assigned to which taxon. This allows you to keep only the reads that correspond to a desired taxon.</p>
+<p><img src="png/kraken-classificationFile.PNG" class="img-fluid" style="width:50.0%"></p>
+<p>Let’s start by extracting all reads that have been assigned to the taxon <code>Baculoviridae</code> (a virus family of dsDNA viruses). To do this, we need to take another look at the <code>Kraken2 report file</code>.</p>
+<div class="hands-on">
+<p><hands-on-title>Read extraction</hands-on-title></p>
+<p>Schauen wir uns das Report file von kraken2 tool noch einmal genauer an. In der 5ten Spale</p>
+<p><img src="png/report_editor_short.PNG" class="img-fluid" style="width:100.0%"></p>
+<p>Let’s take another closer look at the report file from the <code class="tool">kraken2</code> tool. The fifth column contains the <code>taxon ID</code>, which we will now use.</p>
+<p>Here we see that <code>Baculoviridae</code> has the ID <code>10442</code>. We will need this number for the next step!</p>
+<ul>
+<li>Search for tool <code class="tool">krakentools: Extract Kraken Reads By ID</code></li>
+<li>Click to open the tool</li>
+<li>Set the following parameters:
+<ul>
+<li>FASTQ/A file: <code>BmNPV-Th2 ONT (SRR27030578)</code></li>
+<li>Results: <code>Kraken2 on data x: Classification</code></li>
+<li>Report: <code>Kraken2 on data x: Report</code></li>
+<li>Taxonomic ID(s) to match: <code>10442</code></li>
+<li>Scroll down and toggle the following options to <code>Yes</code>:
+<ul>
+<li>Output as FASTQ: <code>Yes</code></li>
+<li>Include children: <code>Yes</code></li>
+</ul></li>
+</ul></li>
+</ul>
+<p><img src="png/kraken_extractReads.png" class="img-fluid" style="width:100.0%"></p>
+<p><img src="png/kraken_extractReads2.png" class="img-fluid" style="width:80.0%"></p>
+<p>Start the tool and wait until it has completed the read extraction.</p>
+<p>You should then see the reads that have been assigned only to the taxon (and more specifically) in the history.</p>
+</div>
+<p><img src="assets/get_end_atgc.png" class="img-fluid" style="width:20.0%"></p>
+<p>Congratulations, you should have your reads metagenomically analyzed, classified, and extracted.</p>
 
 
 </section>
