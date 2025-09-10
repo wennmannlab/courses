@@ -23,7 +23,7 @@ Create a new empty history and rename it to **Quality Check**.
 
 ## Upload NCBI SRA data directly to Galaxy.
 
-Hier wie lern how to get the data directly from SRA to a new history.
+Here we learn how to get the data directly from SRA to a new history.
 
 ::: hands-on
 <hands-on-title>Upload SRA data to Galaxy</hands-on-title>

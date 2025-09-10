@@ -10,7 +10,7 @@ website:
       - href: index.qmd
         text: Home
       - href: topics/01_basics_of_sequencing/01_basics_of_sequencing.qmd
-        text: Technology
+        text: Sequencing
       - href: topics/02_read_sequence_information/02_read_sequence_information.qmd
         text: Reads
       - href: topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.qmd
