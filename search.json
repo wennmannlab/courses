@@ -42,172 +42,228 @@
     "text": "Websites\n\nGalaxy Training Network https://training.galaxyproject.org"
   },
   {
-    "objectID": "topics/01_basics_of_sequencing/01_basics_of_sequencing.html",
-    "href": "topics/01_basics_of_sequencing/01_basics_of_sequencing.html",
-    "title": "The basics of DNA sequencing",
-    "section": "",
-    "text": "To understand how DNA sequencing works, we first need to look at the basics of DNA replication. We also need to understand how DNA is extended and how science uses it for PCR. This is because PCR was the basis for the first method of DNA sequencing, known as Sanger sequencing.\n\nHow to view the presentations Below you can see a preview of presentations. There is also a link to view the presentation in full screen mode. You can navigate through the presentation using the arrow keys:\nNext slide: →\nPrevious slide: ←\nJump to first/last slide: Shift +↑ / Shift + ↓ There is also a link to view the presentation in full screen mode.\nThe ☰ icon in the bottom left corner opens the presentation options.\n\n\nDNA and Sanger sequencing (~15 min)\n    View slides in full screen"
-  },
-  {
-    "objectID": "topics/01_basics_of_sequencing/01_basics_of_sequencing.html#from-dna-to-pcr-to-sequencing",
-    "href": "topics/01_basics_of_sequencing/01_basics_of_sequencing.html#from-dna-to-pcr-to-sequencing",
-    "title": "The basics of DNA sequencing",
-    "section": "",
-    "text": "To understand how DNA sequencing works, we first need to look at the basics of DNA replication. We also need to understand how DNA is extended and how science uses it for PCR. This is because PCR was the basis for the first method of DNA sequencing, known as Sanger sequencing.\n\nHow to view the presentations Below you can see a preview of presentations. There is also a link to view the presentation in full screen mode. You can navigate through the presentation using the arrow keys:\nNext slide: →\nPrevious slide: ←\nJump to first/last slide: Shift +↑ / Shift + ↓ There is also a link to view the presentation in full screen mode.\nThe ☰ icon in the bottom left corner opens the presentation options.\n\n\nDNA and Sanger sequencing (~15 min)\n    View slides in full screen"
-  },
-  {
-    "objectID": "topics/01_basics_of_sequencing/01_basics_of_sequencing.html#next-generation-sequencing-ngs",
-    "href": "topics/01_basics_of_sequencing/01_basics_of_sequencing.html#next-generation-sequencing-ngs",
-    "title": "The basics of DNA sequencing",
-    "section": "Next generation sequencing (NGS)",
-    "text": "Next generation sequencing (NGS)\nThe most widely used sequencing method is Illumina sequencing, a high-throughput sequencing or massively parallel sequencing technique. It is one of the next generation sequencing techniques.\n\nPrinciple of Illumina sequencing (~40 min)\n    View slides in full screen"
-  },
-  {
-    "objectID": "topics/01_basics_of_sequencing/01_basics_of_sequencing.html#nanopore-sequencing",
-    "href": "topics/01_basics_of_sequencing/01_basics_of_sequencing.html#nanopore-sequencing",
-    "title": "The basics of DNA sequencing",
-    "section": "Nanopore sequencing",
-    "text": "Nanopore sequencing\nOne of the latest technologies for DNA sequencing is nanopore sequencing. Here, single-stranded DNA is passed through a pore. The resulting voltage changes are measured and converted into ATGC.\n\nNanopore sequencing (~15 min)\n    View slides in full screen"
-  },
-  {
-    "objectID": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#nano-pore",
-    "href": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#nano-pore",
-    "title": "Nanopore sequencing technology",
-    "section": "Nano? Pore?",
-    "text": "Nano? Pore?\n\n\nIdea: Push DNA through a small gap (pore) in a membrane and detect each nucleotide as it passes by."
-  },
-  {
-    "objectID": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#one-upon-a-time",
-    "href": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#one-upon-a-time",
-    "title": "Nanopore sequencing technology",
-    "section": "One upon a time …",
-    "text": "One upon a time …\n\n\nIdea for Nanopore sequenced in the 1980s…\n\n\n\n\n\n\n\nYear\n\n\n\n\n\n1980\nNobel prize for chain termination method (Sanger sequencing)\n\n\n1980 to mid 2000\nImprovement of Sanger sequencing technique\n\n\n1990\nIdea of using reversible fluorescent labeled nucleotides for sequencing\n\n\n1998\nFormatino of Solexa (sequencing by synthesis) and other companies\n\n\n2007\nIllumina acquires Solexa\n\n\n2021\nSequencing by synthesis is an essential technique and Illumina is market leader"
-  },
-  {
-    "objectID": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#first-pores-were-based-on-alpha-hemolysin",
-    "href": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#first-pores-were-based-on-alpha-hemolysin",
-    "title": "Nanopore sequencing technology",
-    "section": "First pores were based on alpha-hemolysin",
-    "text": "First pores were based on alpha-hemolysin\n…a cell toxin from Staphylococcus aureus"
-  },
-  {
-    "objectID": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#nanopores-allow-ssdna-to-pass",
-    "href": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#nanopores-allow-ssdna-to-pass",
-    "title": "Nanopore sequencing technology",
-    "section": "Nanopores allow ssDNA to pass",
-    "text": "Nanopores allow ssDNA to pass"
-  },
-  {
-    "objectID": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#nanopores-allow-ssdna-to-pass-1",
-    "href": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#nanopores-allow-ssdna-to-pass-1",
-    "title": "Nanopore sequencing technology",
-    "section": "Nanopores allow ssDNA to pass",
-    "text": "Nanopores allow ssDNA to pass"
-  },
-  {
-    "objectID": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#nanopores-allow-ssdna-to-pass-2",
-    "href": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#nanopores-allow-ssdna-to-pass-2",
-    "title": "Nanopore sequencing technology",
-    "section": "Nanopores allow ssDNA to pass",
-    "text": "Nanopores allow ssDNA to pass"
-  },
-  {
-    "objectID": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#the-blockade-of-the-ion-current-is-detectable",
-    "href": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#the-blockade-of-the-ion-current-is-detectable",
-    "title": "Nanopore sequencing technology",
-    "section": "The blockade of the ion current is detectable",
-    "text": "The blockade of the ion current is detectable"
-  },
-  {
-    "objectID": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#dsdna-preparation-for-nanopore-sequencing",
-    "href": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#dsdna-preparation-for-nanopore-sequencing",
-    "title": "Nanopore sequencing technology",
-    "section": "dsDNA preparation for Nanopore sequencing",
-    "text": "dsDNA preparation for Nanopore sequencing"
-  },
-  {
-    "objectID": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#unwinding-the-dsdna-helix",
-    "href": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#unwinding-the-dsdna-helix",
-    "title": "Nanopore sequencing technology",
-    "section": "Unwinding the dsDNA helix",
-    "text": "Unwinding the dsDNA helix"
-  },
-  {
-    "objectID": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#long-reads-with-nanopore",
-    "href": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#long-reads-with-nanopore",
-    "title": "Nanopore sequencing technology",
-    "section": "Long-reads with Nanopore",
-    "text": "Long-reads with Nanopore\n\n\n\n\n\n\nTechnique\nMax read length\n\n\n\n\nSanger sequencing\n~1000 nt\n\n\nIllumina sequencing\n50–400 nt\n\n\nNanopore sequencing\nunlimited?"
-  },
-  {
-    "objectID": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#take-home-message",
-    "href": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#take-home-message",
-    "title": "Nanopore sequencing technology",
-    "section": "Take-home message",
-    "text": "Take-home message\n\n\n\nSequencing of single DNA molecules (no PCR amplification!)\nTheoretically unlimited read length\nReal-Time data\nPortable device\nBut: Lower per-base accuracy (higher error rate)"
-  },
-  {
-    "objectID": "topics/06_galaxy_workflow/06_galaxy_workflow.html",
-    "href": "topics/06_galaxy_workflow/06_galaxy_workflow.html",
+    "objectID": "topics/05_read_quality/05_read_quality.html",
+    "href": "topics/05_read_quality/05_read_quality.html",
     "title": "Accessing read quality",
     "section": "",
     "text": "Here, we would like to focus a little more on the topic of assessing read quality. We will see why this is so important when we look at the next dataset, which we will load directly from NCBI SRA to Galaxy."
   },
   {
-    "objectID": "topics/06_galaxy_workflow/06_galaxy_workflow.html#check-new-illumina-and-nanopore-data",
-    "href": "topics/06_galaxy_workflow/06_galaxy_workflow.html#check-new-illumina-and-nanopore-data",
+    "objectID": "topics/05_read_quality/05_read_quality.html#check-new-illumina-and-nanopore-data",
+    "href": "topics/05_read_quality/05_read_quality.html#check-new-illumina-and-nanopore-data",
     "title": "Accessing read quality",
     "section": "Check new Illumina and Nanopore data",
     "text": "Check new Illumina and Nanopore data\nIt is also possible to upload data directly to NCBI without first storing it on your own PCR. To do this, we will look at two new data sets: SRR25338386 und SRR27030578.\n\nFind out what kind of data it is!\nDu kannst diese Informationen nutzen, um herauszufinden um was es sich für Daten handelt: NCBI SRA."
   },
   {
-    "objectID": "topics/06_galaxy_workflow/06_galaxy_workflow.html#create-a-new-history",
-    "href": "topics/06_galaxy_workflow/06_galaxy_workflow.html#create-a-new-history",
+    "objectID": "topics/05_read_quality/05_read_quality.html#create-a-new-history",
+    "href": "topics/05_read_quality/05_read_quality.html#create-a-new-history",
     "title": "Accessing read quality",
     "section": "Create a new history",
     "text": "Create a new history\nCreate a new empty history and rename it to Quality Check."
   },
   {
-    "objectID": "topics/06_galaxy_workflow/06_galaxy_workflow.html#upload-ncbi-sra-data-directly-to-galaxy.",
-    "href": "topics/06_galaxy_workflow/06_galaxy_workflow.html#upload-ncbi-sra-data-directly-to-galaxy.",
+    "objectID": "topics/05_read_quality/05_read_quality.html#upload-ncbi-sra-data-directly-to-galaxy.",
+    "href": "topics/05_read_quality/05_read_quality.html#upload-ncbi-sra-data-directly-to-galaxy.",
     "title": "Accessing read quality",
     "section": "Upload NCBI SRA data directly to Galaxy.",
     "text": "Upload NCBI SRA data directly to Galaxy.\nHier wie lern how to get the data directly from SRA to a new history.\n\nUpload SRA data to Galaxy\nFirst, we select the Download and Extract Reads in FASTQ.\n\nNow enter both SRA Accession numbers (SRR25338386 und SRR27030578) and start the tool. We leave all other parameters at their default settings.\n\nAn active job should then appear in your history, displayed in grey/orange. This means that the data is being downloaded from NCBI SRA.\n\nWhen the download is complete, both items should be green in the history. We have received two Collection containing the sequence data. Collections are useful for preventing the history from becoming overloaded with files. Collections can contain multiple files. Play around with the Collections a little and try to understand what they are all about."
   },
   {
-    "objectID": "topics/06_galaxy_workflow/06_galaxy_workflow.html#quality-check---nanopore-reads",
-    "href": "topics/06_galaxy_workflow/06_galaxy_workflow.html#quality-check---nanopore-reads",
+    "objectID": "topics/05_read_quality/05_read_quality.html#quality-check---nanopore-reads",
+    "href": "topics/05_read_quality/05_read_quality.html#quality-check---nanopore-reads",
     "title": "Accessing read quality",
     "section": "Quality check - Nanopore reads",
     "text": "Quality check - Nanopore reads\nBefore we start working with data, we always check its quality. You should always be sure about the data you are working with.\n\nQuality of Nanopore reads\nRun the tool nanoplot on the Nanopore data.\n\nWhen the nanoplot tool has finished running (turned green), do the following:\n\nClick on the NanoStat file: \nClick on the eye to see the result: \n\nYou should get this view of the results for the nanopore reads:\n\n\nCan you answer the following questions?\n\nHow long are the Nanopore reads?\n\nWhat is the avarge read quality (Q)?\n\nCan you determine the average error probability (P)?"
   },
   {
-    "objectID": "topics/06_galaxy_workflow/06_galaxy_workflow.html#quality-check-illumina-reads",
-    "href": "topics/06_galaxy_workflow/06_galaxy_workflow.html#quality-check-illumina-reads",
+    "objectID": "topics/05_read_quality/05_read_quality.html#quality-check-illumina-reads",
+    "href": "topics/05_read_quality/05_read_quality.html#quality-check-illumina-reads",
     "title": "Accessing read quality",
     "section": "Quality check Illumina reads",
     "text": "Quality check Illumina reads\nSince Illumina reads are the most widely used, it is most likely that you will be working with this data. Therefore, we will take a closer look at the quality of Illumina data.\n\nQuality of Illumina reads\nRun the tool falco on the Nanopore data.\n\nWhen the falco tool has finished running (turned green), do the following:\n\nClick on the Falco on X: Website file: \nClick on the collection: \nClick on the forward file: \nSave the file on your computer: \nUnzip the downloaded file.\nOpen the html file.\n\n\nCan you answer the following questions?\nThe output should look like the example below. Can you answer the following questions?\n\nHow long are the Illumina reads?\n\nWhat is the avarge read quality (Q)?\n\nCan you say something about the error probability (P)?\n\n    View slides in full screen\n       \n      \n    \n  \n\n\n\nPer Base Sequence Quality (Falco)\nWe pay particular attention to the quality of the sequencing, as this tells us what level of accuracy or error probability we can expect. This can be decisive for the next steps.\nThe falco tool provides us with a quality plot (base sequence quality plot) that shows us how well individual bases were determined during sequencing.\n\nX-axis: Position of the base on the read.\nY-axis: Quality value (Q; Phred score). High value = higher quality = base was determined more accurately.\n\nThe plot can be interpreted as follows: At the beginning of the reads (left), the sequencing is more accurate. Further along at the end of the reads (right), the quality tends to decrease. In other words, accuracy decreases with increasing length.\n\n\n\nAdapter content (Falco)\nWe recall that Illumina sequencing uses adapters that are ligated to the DNA fragments. They serve as primer binding sites and for binding the fragments to the FlowCell. They are, of course, contaminants and are not desired in the subsequent analysis of the sequence data.\nContamination of the sequence data with adapters is also shown in the falco tool. The Illumina adapters used for sequencing are correctly recognized in our dataset:"
   },
   {
-    "objectID": "topics/06_galaxy_workflow/06_galaxy_workflow.html#quality-and-adapter-trimming",
-    "href": "topics/06_galaxy_workflow/06_galaxy_workflow.html#quality-and-adapter-trimming",
+    "objectID": "topics/05_read_quality/05_read_quality.html#quality-and-adapter-trimming",
+    "href": "topics/05_read_quality/05_read_quality.html#quality-and-adapter-trimming",
     "title": "Accessing read quality",
     "section": "Quality and adapter trimming",
     "text": "Quality and adapter trimming\nA very important step in read processing is to filter the reads according to quality and adapters. This is usually/always done after receiving the raw sequencing data and before further analyzing (e.g. genome assembly, metagenomic analysis) the data. So now we have to address two important points:\n\nHow can we improve the quality of the sequencing retrospectively?\nHow do we get rid of the adapters from each read?\n\nOf course, there are a number of tools available for filtering reads, e.g. trimmomatic or Trim Galore!.\nIn this course, I will continue working with the tool Trim Galore!.\n\nRemoving bad quality bases and adapters (Illumina data)\nTo filter the quality and remove the adapters, we use the tool Trim Galore!. By now, you should be familiar with selecting tools in Galaxy. You should also know how to select the parameters of the tools in the Centre Panel.\nCan you start the tool Trim Galore!. with the following parameters?\n\nChose Trim Galore! from the tools panel.\nClick on Trim Galore!\nSet the following parameters (leave everything else as default):\n\nIs this library paired- or single-end: Paired Collection\nSelect a paired collection: Paired-end data (fastq-dump)\nAdapter sequence to be trimmed: Automatic detection\nAdvanced settings = Full parameter list:\n\nTrim low-quality ends from reads in addition to adapter removal (Enter phred quality score thresold): 30\nDiscard reads that became shorter than length N: 50\n\n\nClick on Run Tool to filter your Illumina paired-end dataset.\n\n\n\n\n\n\n\n\nI need help! (Click here)\n\n\n\n\n\nSet the Trim Galore! options as follows:\n\n\n\n\n\n\nAfter clicking on Run Tool to start Trim Galore!, the result should look like this after a short while (click through the collection to see the structure):"
   },
   {
-    "objectID": "topics/06_galaxy_workflow/06_galaxy_workflow.html#checking-the-quality-filteradapter-removel-step",
-    "href": "topics/06_galaxy_workflow/06_galaxy_workflow.html#checking-the-quality-filteradapter-removel-step",
+    "objectID": "topics/05_read_quality/05_read_quality.html#checking-the-quality-filteradapter-removel-step",
+    "href": "topics/05_read_quality/05_read_quality.html#checking-the-quality-filteradapter-removel-step",
     "title": "Accessing read quality",
     "section": "Checking the quality filter/adapter removel step",
     "text": "Checking the quality filter/adapter removel step\nHow can we see whether quality filtering and removing the adapters has worked? We need to make sure that our parameters have been set correctly and that the tool has worked properly.\nFortunately, there is a simple solution for this: we start the falco tool again, only this time the input is Trim Galore! on collectoin 1: paired reads.\n\nChecking the quality/adapter filtered output\n\nChose Falco from the tools panel.\nClick on Falco\nSet the following parameters (leave everything else as default):\n\nRaw read data from your current history –&gt; switch to Dataset Collection as input\nRaw read data from your current history: Trim Galore! on collection x: paired reads (x = it can be any number depending on the file position in your history)\n\nClick on Run Tool to filter your Illumina paired-end dataset.\n\n\n\n\n\n\n\nI need help! (Click here)\n\n\n\n\n\nSet the Trim Galore! options as follows:\n\n\n\n\nWait until the tool has finished running and open the result.\n\nDo you remember how to open up the result?\n\n\n\n\n\n\nI need help! (Click here)\n\n\n\n\n\n\nClick on Falco on collection xx: Webpage\nClick on SRR25338386\nClick on forward once to open it up.\nClick on the disk symbol to download the result: \nSave the ZIP file on your computer.\nUnzip the file.\nOpen the Html document to see the results.\n\n\n\n\n\nWhat has changed after Trim Galore! ?\nThe output should look like the example below.\n\nDid the length of the Illumina reads change?\n\nDid the quality (Q) change?\n\n    View slides in full screen"
   },
   {
-    "objectID": "topics/06_galaxy_workflow/06_galaxy_workflow.html#comparison-before-and-after-filtering",
-    "href": "topics/06_galaxy_workflow/06_galaxy_workflow.html#comparison-before-and-after-filtering",
+    "objectID": "topics/05_read_quality/05_read_quality.html#comparison-before-and-after-filtering",
+    "href": "topics/05_read_quality/05_read_quality.html#comparison-before-and-after-filtering",
     "title": "Accessing read quality",
     "section": "Comparison before and after filtering",
     "text": "Comparison before and after filtering\nYou have now looked at the Illumina Reads before and after filtering (quality and adapter). Think about what has changed. Can you describe it in your own words?\n\nPer Base Sequence Quality\n\n\n\n\nAdapter content\n\n\n\nHave other parameters changed? Compare falco HTML document from the original and filtered reads!\n\nCompare the read length before and after filtering\nCheck both hmtl files and compare the Sequence length distribution of the original and filtered reads.\n\n\nWhat has changed?\nCan you guess what has changed and why?"
+  },
+  {
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#does-this-look-familiar",
+    "href": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#does-this-look-familiar",
+    "title": "DNA and Sanger sequencing",
+    "section": "Does this look familiar?",
+    "text": "Does this look familiar?"
+  },
+  {
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#desoxyribonucleic-acid-dna",
+    "href": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#desoxyribonucleic-acid-dna",
+    "title": "DNA and Sanger sequencing",
+    "section": "Desoxyribonucleic acid (DNA)",
+    "text": "Desoxyribonucleic acid (DNA)\n\n\n\n\n5’-ATGCACAACTTTTACAACTACAGCCCCCGCCCTGGGGCAAAACCTACGTGACGACAAT-3’    ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\n3’-TACGTGTTGAAAATGTTGATGTCGGGGGCGGGACCCCGTTTTGGATGCACTGCTGTTA-5’\n\n\n\n\n\nBiopolymer that codes for genetic information\nMonomers = nucleotides\nBond types are phosphodiester bonds (3’-OH group)\nComplementary base pairing: (A=T; C≡G)\nTwo antiparallel strands (running in opposite directions)"
+  },
+  {
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#dna-replication-fork",
+    "href": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#dna-replication-fork",
+    "title": "DNA and Sanger sequencing",
+    "section": "DNA replication fork",
+    "text": "DNA replication fork"
+  },
+  {
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#direction-of-dna",
+    "href": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#direction-of-dna",
+    "title": "DNA and Sanger sequencing",
+    "section": "Direction of DNA",
+    "text": "Direction of DNA"
+  },
+  {
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#four-nucleotides",
+    "href": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#four-nucleotides",
+    "title": "DNA and Sanger sequencing",
+    "section": "Four nucleotides",
+    "text": "Four nucleotides"
+  },
+  {
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#sanger-sequencing",
+    "href": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#sanger-sequencing",
+    "title": "DNA and Sanger sequencing",
+    "section": "Sanger sequencing",
+    "text": "Sanger sequencing\n\n\n\nbased on modified nuclotides\n2’,3’dideoxyribosee nucleoside triphoshate\nwithout 3’-OH group\nchain termination method"
+  },
+  {
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#sanger-sequencing-1",
+    "href": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#sanger-sequencing-1",
+    "title": "DNA and Sanger sequencing",
+    "section": "Sanger sequencing",
+    "text": "Sanger sequencing"
+  },
+  {
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#sanger-sequencing-chromatogram",
+    "href": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#sanger-sequencing-chromatogram",
+    "title": "DNA and Sanger sequencing",
+    "section": "Sanger sequencing chromatogram",
+    "text": "Sanger sequencing chromatogram"
+  },
+  {
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#take-home-message",
+    "href": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#take-home-message",
+    "title": "DNA and Sanger sequencing",
+    "section": "Take-home message",
+    "text": "Take-home message\n\n\n\nAdvantage of Sanger sequencing\n\nDevices are easy to use\nResults are obtained within couple of hours (overnight)\nRelatively cheep\n\nDisadvantage of Sanger sequencing\n\nFew sequences are generated = low throughput technology\nRead length is limited to about 1000 nucleotides"
+  },
+  {
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#illumina-sequencing-short-read-sequencing",
+    "href": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#illumina-sequencing-short-read-sequencing",
+    "title": "Principle of Illumina sequencing",
+    "section": "Illumina sequencing (short read sequencing)",
+    "text": "Illumina sequencing (short read sequencing)\n\n\n\none of the Next Generation Sequencing (NGS) technologies\nMost widely applied sequencing technique\nGenerates not one but millions of sequences at the same time\nread = single sequence\nhigh accuracy (&gt;99.9%)"
+  },
+  {
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#nucleotides-with-reversible-terminated-3-oh-group",
+    "href": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#nucleotides-with-reversible-terminated-3-oh-group",
+    "title": "Principle of Illumina sequencing",
+    "section": "Nucleotides with reversible terminated 3’-OH group",
+    "text": "Nucleotides with reversible terminated 3’-OH group\n\n\n\n\nBentley et al. (2008) Accurate whole human genome sequencing using reversible terminator chemistry, Nature, 456, 53-59 (DOI: https://doi.org/10.1038/nature07517)"
+  },
+  {
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#sequencing-by-synthesis---step-by-step",
+    "href": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#sequencing-by-synthesis---step-by-step",
+    "title": "Principle of Illumina sequencing",
+    "section": "Sequencing by synthesis - step by step",
+    "text": "Sequencing by synthesis - step by step\n\n\n\n\n\n\n\nAssumptions:\n\nBlue: Single stranded temple = sequence of interest\nThe DNA strand is fixed to a surface at the 5’-OH end.\nTwo terminal adapters (of known sequence) are ligated to both ends of the DNA strand.\nA primer (oligonucleotide) is bound at one side.\nOligonucleotide as a free 3’ OH group."
+  },
+  {
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#which-bases-have-been-sequenced",
+    "href": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#which-bases-have-been-sequenced",
+    "title": "Principle of Illumina sequencing",
+    "section": "Which bases have been sequenced?",
+    "text": "Which bases have been sequenced?"
+  },
+  {
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#from-top-we-see-only-the-emitted-light",
+    "href": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#from-top-we-see-only-the-emitted-light",
+    "title": "Principle of Illumina sequencing",
+    "section": "From top we see only the emitted light",
+    "text": "From top we see only the emitted light"
+  },
+  {
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#dna-fragmentation-prior-to-sequencing",
+    "href": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#dna-fragmentation-prior-to-sequencing",
+    "title": "Principle of Illumina sequencing",
+    "section": "DNA fragmentation prior to sequencing",
+    "text": "DNA fragmentation prior to sequencing\n\n\n\n\n\n\n\n\n\nUsually DNA is too large to be sequenced directly.\nDNA is fragmented (enzymatically/mechanically) into smaller pieces.\nFragment sizes differ depending on the applied protocol.\nAdapters with known sequences are added to the fragments."
+  },
+  {
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#sequencing-adapter",
+    "href": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#sequencing-adapter",
+    "title": "Principle of Illumina sequencing",
+    "section": "Sequencing adapter",
+    "text": "Sequencing adapter"
+  },
+  {
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#binding-of-sequences-to-the-flow-cell",
+    "href": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#binding-of-sequences-to-the-flow-cell",
+    "title": "Principle of Illumina sequencing",
+    "section": "Binding of sequences to the flow cell",
+    "text": "Binding of sequences to the flow cell\n\n\n\nFlow cell is a slide on which both capture sequences are attached.\nThe attached capture sequences complement the adapters that have been ligated to the insert."
+  },
+  {
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#take-home-message",
+    "href": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#take-home-message",
+    "title": "Principle of Illumina sequencing",
+    "section": "Take-home message",
+    "text": "Take-home message\n\n\n\nIllumina uses sequencing by synthesis.\nBillions of DNA fragments (reads) are sequenced in parallel on a flow cell\nLarge number of reads! But reads are short: 50 to 300 nucleotides\nClusters are created through bridge PCR amplification\nBases are detected by fluorescent labeled nucleotides\nStrength: high accuracy\nLimitation: short read length"
+  },
+  {
+    "objectID": "topics/06_galaxy_workflow/06_galaxy_workflow.html",
+    "href": "topics/06_galaxy_workflow/06_galaxy_workflow.html",
+    "title": "Automated workflows in Galaxy",
+    "section": "",
+    "text": "In bioinformatics, some steps are repeated frequently. These include, for example, checking the quality of reads before and after filtering. It is also undesirable to constantly adjust the parameters manually, as this can quickly lead to errors.\nThe strength of Galaxy therefore lies in the fact that analyses can be repeated in a standardized manner.\nFor this purpose, so-called workflows have been developed that allow work steps and entire analyses to be performed repeatedly.\nIn this chapter, we will learn how to create a simple workflow."
+  },
+  {
+    "objectID": "topics/06_galaxy_workflow/06_galaxy_workflow.html#are-you-tired-of-doing-the-same-thing-over-and-over-again",
+    "href": "topics/06_galaxy_workflow/06_galaxy_workflow.html#are-you-tired-of-doing-the-same-thing-over-and-over-again",
+    "title": "Automated workflows in Galaxy",
+    "section": "",
+    "text": "In bioinformatics, some steps are repeated frequently. These include, for example, checking the quality of reads before and after filtering. It is also undesirable to constantly adjust the parameters manually, as this can quickly lead to errors.\nThe strength of Galaxy therefore lies in the fact that analyses can be repeated in a standardized manner.\nFor this purpose, so-called workflows have been developed that allow work steps and entire analyses to be performed repeatedly.\nIn this chapter, we will learn how to create a simple workflow."
+  },
+  {
+    "objectID": "topics/06_galaxy_workflow/06_galaxy_workflow.html#create-a-new-workflow",
+    "href": "topics/06_galaxy_workflow/06_galaxy_workflow.html#create-a-new-workflow",
+    "title": "Automated workflows in Galaxy",
+    "section": "Create a new workflow",
+    "text": "Create a new workflow\n\nCreate a new workflow\nChose Workflow in the Activity Bar on the very left side of the Galay user interface.\n\nAfter the new workflow is create we can rename it to Read Filter."
+  },
+  {
+    "objectID": "topics/06_galaxy_workflow/06_galaxy_workflow.html#adding-tools-to-the-workflow",
+    "href": "topics/06_galaxy_workflow/06_galaxy_workflow.html#adding-tools-to-the-workflow",
+    "title": "Automated workflows in Galaxy",
+    "section": "Adding tools to the workflow",
+    "text": "Adding tools to the workflow\nAfter creating an empty template for a workflow, we still need to fill it with content. To do this, we perform the following steps.\n\nAdding and connecting tools\nInside the empty workflow panel perform the following steps:\n\nClick on Inputs on the left in the action panel.\nChose Input Dataset Collection \nClick and move 1: Input dataset collection to the desired position.\nClick on 1: Input dataset collection and on the right side the options menue for the selected tool will open.\nChange Collection type to list:paired \nNext go to tools and chose Falco.\nThe new tool appears inside the workflow window.\nConnect 1: Input dataset collection with 2: Falco.\n\n\n\nOpen up the tool bar again and search for Trim Galore!\nClick on Trim Galore! and add it to your workflow.\nMove the tool to the desired position.\nClick on the tool and open the options.\nChange the following parameters of Trim Galore!\n\nIs this library paired- or single end: Paired Collection\nAdvanced settings: Full parameter list\nTrim low-quality ends from reads in addition to adapter removal (Enter phred quality score threshold): 30\nDiscard reads that became shorter than length N: 50\n\nConnect 1: Input dataset collection with 3: Trim Galore!\n\n\n\nSave the workflow by cliching the disk symbol in the top right corner"
+  },
+  {
+    "objectID": "topics/06_galaxy_workflow/06_galaxy_workflow.html#start-the-workflow",
+    "href": "topics/06_galaxy_workflow/06_galaxy_workflow.html#start-the-workflow",
+    "title": "Automated workflows in Galaxy",
+    "section": "Start the workflow",
+    "text": "Start the workflow\nNow it’s time to test the newly created workflow.\n\nStart workflow\nClick on the left side on Workflows and chose your workflow Read Filter.\n\nSet your workflow parameters by chosing the correct input file: Paired-end data (fastq-dump).\n\n\n\nAdvanced task: Quality of the Trim Galore output\nNow try to work on the workflow until it completes the following task:\n\nThe workflow takes the paired reads (Illumina) as input\nThe falco tool is launched on the data set.\nThe data set is then filtered using Trim Galore!.\nfalco is run again on the result of Trim Galore!.\n\n\n\n\n\n\n\nI need help! (Click here)\n\n\n\n\n\nSet the Trim Galore! options as follows:\n\n\n\n\nAdditional task:\n\nWhat would the workflow look like if you started with the SRA accession number SRR25338386? Tip: Use the Download and Extract Reads in FASTQ tool!\n\n\n Congratulations! You have created and started a workflow."
   },
   {
     "objectID": "topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.html",
@@ -469,192 +525,108 @@
     "text": "Upload data from NCBI to Galaxy\nIt is also possible to upload data directly to NCBI without first storing it on your own PCR. To do this, we will look at two new data sets: SRR25338386 und SRR27030578.\n\nFind out what kind of data it is!\nDu kannst diese Informationen nutzen, um herauszufinden um was es sich für Daten handelt: NCBI SRA."
   },
   {
-    "objectID": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#illumina-sequencing-short-read-sequencing",
-    "href": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#illumina-sequencing-short-read-sequencing",
-    "title": "Principle of Illumina sequencing",
-    "section": "Illumina sequencing (short read sequencing)",
-    "text": "Illumina sequencing (short read sequencing)\n\n\n\none of the Next Generation Sequencing (NGS) technologies\nMost widely applied sequencing technique\nGenerates not one but millions of sequences at the same time\nread = single sequence\nhigh accuracy (&gt;99.9%)"
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#nano-pore",
+    "href": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#nano-pore",
+    "title": "Nanopore sequencing technology",
+    "section": "Nano? Pore?",
+    "text": "Nano? Pore?\n\n\nIdea: Push DNA through a small gap (pore) in a membrane and detect each nucleotide as it passes by."
   },
   {
-    "objectID": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#nucleotides-with-reversible-terminated-3-oh-group",
-    "href": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#nucleotides-with-reversible-terminated-3-oh-group",
-    "title": "Principle of Illumina sequencing",
-    "section": "Nucleotides with reversible terminated 3’-OH group",
-    "text": "Nucleotides with reversible terminated 3’-OH group\n\n\n\n\nBentley et al. (2008) Accurate whole human genome sequencing using reversible terminator chemistry, Nature, 456, 53-59 (DOI: https://doi.org/10.1038/nature07517)"
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#one-upon-a-time",
+    "href": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#one-upon-a-time",
+    "title": "Nanopore sequencing technology",
+    "section": "One upon a time …",
+    "text": "One upon a time …\n\n\nIdea for Nanopore sequenced in the 1980s…\n\n\n\n\n\n\n\nYear\n\n\n\n\n\n1980\nNobel prize for chain termination method (Sanger sequencing)\n\n\n1980 to mid 2000\nImprovement of Sanger sequencing technique\n\n\n1990\nIdea of using reversible fluorescent labeled nucleotides for sequencing\n\n\n1998\nFormatino of Solexa (sequencing by synthesis) and other companies\n\n\n2007\nIllumina acquires Solexa\n\n\n2021\nSequencing by synthesis is an essential technique and Illumina is market leader"
   },
   {
-    "objectID": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#sequencing-by-synthesis---step-by-step",
-    "href": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#sequencing-by-synthesis---step-by-step",
-    "title": "Principle of Illumina sequencing",
-    "section": "Sequencing by synthesis - step by step",
-    "text": "Sequencing by synthesis - step by step\n\n\n\n\n\n\n\nAssumptions:\n\nBlue: Single stranded temple = sequence of interest\nThe DNA strand is fixed to a surface at the 5’-OH end.\nTwo terminal adapters (of known sequence) are ligated to both ends of the DNA strand.\nA primer (oligonucleotide) is bound at one side.\nOligonucleotide as a free 3’ OH group."
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#first-pores-were-based-on-alpha-hemolysin",
+    "href": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#first-pores-were-based-on-alpha-hemolysin",
+    "title": "Nanopore sequencing technology",
+    "section": "First pores were based on alpha-hemolysin",
+    "text": "First pores were based on alpha-hemolysin\n…a cell toxin from Staphylococcus aureus"
   },
   {
-    "objectID": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#which-bases-have-been-sequenced",
-    "href": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#which-bases-have-been-sequenced",
-    "title": "Principle of Illumina sequencing",
-    "section": "Which bases have been sequenced?",
-    "text": "Which bases have been sequenced?"
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#nanopores-allow-ssdna-to-pass",
+    "href": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#nanopores-allow-ssdna-to-pass",
+    "title": "Nanopore sequencing technology",
+    "section": "Nanopores allow ssDNA to pass",
+    "text": "Nanopores allow ssDNA to pass"
   },
   {
-    "objectID": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#from-top-we-see-only-the-emitted-light",
-    "href": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#from-top-we-see-only-the-emitted-light",
-    "title": "Principle of Illumina sequencing",
-    "section": "From top we see only the emitted light",
-    "text": "From top we see only the emitted light"
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#nanopores-allow-ssdna-to-pass-1",
+    "href": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#nanopores-allow-ssdna-to-pass-1",
+    "title": "Nanopore sequencing technology",
+    "section": "Nanopores allow ssDNA to pass",
+    "text": "Nanopores allow ssDNA to pass"
   },
   {
-    "objectID": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#dna-fragmentation-prior-to-sequencing",
-    "href": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#dna-fragmentation-prior-to-sequencing",
-    "title": "Principle of Illumina sequencing",
-    "section": "DNA fragmentation prior to sequencing",
-    "text": "DNA fragmentation prior to sequencing\n\n\n\n\n\n\n\n\n\nUsually DNA is too large to be sequenced directly.\nDNA is fragmented (enzymatically/mechanically) into smaller pieces.\nFragment sizes differ depending on the applied protocol.\nAdapters with known sequences are added to the fragments."
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#nanopores-allow-ssdna-to-pass-2",
+    "href": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#nanopores-allow-ssdna-to-pass-2",
+    "title": "Nanopore sequencing technology",
+    "section": "Nanopores allow ssDNA to pass",
+    "text": "Nanopores allow ssDNA to pass"
   },
   {
-    "objectID": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#sequencing-adapter",
-    "href": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#sequencing-adapter",
-    "title": "Principle of Illumina sequencing",
-    "section": "Sequencing adapter",
-    "text": "Sequencing adapter"
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#the-blockade-of-the-ion-current-is-detectable",
+    "href": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#the-blockade-of-the-ion-current-is-detectable",
+    "title": "Nanopore sequencing technology",
+    "section": "The blockade of the ion current is detectable",
+    "text": "The blockade of the ion current is detectable"
   },
   {
-    "objectID": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#binding-of-sequences-to-the-flow-cell",
-    "href": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#binding-of-sequences-to-the-flow-cell",
-    "title": "Principle of Illumina sequencing",
-    "section": "Binding of sequences to the flow cell",
-    "text": "Binding of sequences to the flow cell\n\n\n\nFlow cell is a slide on which both capture sequences are attached.\nThe attached capture sequences complement the adapters that have been ligated to the insert."
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#dsdna-preparation-for-nanopore-sequencing",
+    "href": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#dsdna-preparation-for-nanopore-sequencing",
+    "title": "Nanopore sequencing technology",
+    "section": "dsDNA preparation for Nanopore sequencing",
+    "text": "dsDNA preparation for Nanopore sequencing"
   },
   {
-    "objectID": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#take-home-message",
-    "href": "topics/01_basics_of_sequencing/lecture/01-1_lecture_basics_illumina.html#take-home-message",
-    "title": "Principle of Illumina sequencing",
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#unwinding-the-dsdna-helix",
+    "href": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#unwinding-the-dsdna-helix",
+    "title": "Nanopore sequencing technology",
+    "section": "Unwinding the dsDNA helix",
+    "text": "Unwinding the dsDNA helix"
+  },
+  {
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#long-reads-with-nanopore",
+    "href": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#long-reads-with-nanopore",
+    "title": "Nanopore sequencing technology",
+    "section": "Long-reads with Nanopore",
+    "text": "Long-reads with Nanopore\n\n\n\n\n\n\nTechnique\nMax read length\n\n\n\n\nSanger sequencing\n~1000 nt\n\n\nIllumina sequencing\n50–400 nt\n\n\nNanopore sequencing\nunlimited?"
+  },
+  {
+    "objectID": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#take-home-message",
+    "href": "topics/01_basics_of_sequencing/lecture/01-2_lecture_basics_nanopore.html#take-home-message",
+    "title": "Nanopore sequencing technology",
     "section": "Take-home message",
-    "text": "Take-home message\n\n\n\nIllumina uses sequencing by synthesis.\nBillions of DNA fragments (reads) are sequenced in parallel on a flow cell\nLarge number of reads! But reads are short: 50 to 300 nucleotides\nClusters are created through bridge PCR amplification\nBases are detected by fluorescent labeled nucleotides\nStrength: high accuracy\nLimitation: short read length"
+    "text": "Take-home message\n\n\n\nSequencing of single DNA molecules (no PCR amplification!)\nTheoretically unlimited read length\nReal-Time data\nPortable device\nBut: Lower per-base accuracy (higher error rate)"
   },
   {
-    "objectID": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#does-this-look-familiar",
-    "href": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#does-this-look-familiar",
-    "title": "DNA and Sanger sequencing",
-    "section": "Does this look familiar?",
-    "text": "Does this look familiar?"
-  },
-  {
-    "objectID": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#desoxyribonucleic-acid-dna",
-    "href": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#desoxyribonucleic-acid-dna",
-    "title": "DNA and Sanger sequencing",
-    "section": "Desoxyribonucleic acid (DNA)",
-    "text": "Desoxyribonucleic acid (DNA)\n\n\n\n\n5’-ATGCACAACTTTTACAACTACAGCCCCCGCCCTGGGGCAAAACCTACGTGACGACAAT-3’    ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||\n3’-TACGTGTTGAAAATGTTGATGTCGGGGGCGGGACCCCGTTTTGGATGCACTGCTGTTA-5’\n\n\n\n\n\nBiopolymer that codes for genetic information\nMonomers = nucleotides\nBond types are phosphodiester bonds (3’-OH group)\nComplementary base pairing: (A=T; C≡G)\nTwo antiparallel strands (running in opposite directions)"
-  },
-  {
-    "objectID": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#dna-replication-fork",
-    "href": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#dna-replication-fork",
-    "title": "DNA and Sanger sequencing",
-    "section": "DNA replication fork",
-    "text": "DNA replication fork"
-  },
-  {
-    "objectID": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#direction-of-dna",
-    "href": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#direction-of-dna",
-    "title": "DNA and Sanger sequencing",
-    "section": "Direction of DNA",
-    "text": "Direction of DNA"
-  },
-  {
-    "objectID": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#four-nucleotides",
-    "href": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#four-nucleotides",
-    "title": "DNA and Sanger sequencing",
-    "section": "Four nucleotides",
-    "text": "Four nucleotides"
-  },
-  {
-    "objectID": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#sanger-sequencing",
-    "href": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#sanger-sequencing",
-    "title": "DNA and Sanger sequencing",
-    "section": "Sanger sequencing",
-    "text": "Sanger sequencing\n\n\n\nbased on modified nuclotides\n2’,3’dideoxyribosee nucleoside triphoshate\nwithout 3’-OH group\nchain termination method"
-  },
-  {
-    "objectID": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#sanger-sequencing-1",
-    "href": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#sanger-sequencing-1",
-    "title": "DNA and Sanger sequencing",
-    "section": "Sanger sequencing",
-    "text": "Sanger sequencing"
-  },
-  {
-    "objectID": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#sanger-sequencing-chromatogram",
-    "href": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#sanger-sequencing-chromatogram",
-    "title": "DNA and Sanger sequencing",
-    "section": "Sanger sequencing chromatogram",
-    "text": "Sanger sequencing chromatogram"
-  },
-  {
-    "objectID": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#take-home-message",
-    "href": "topics/01_basics_of_sequencing/lecture/01-0_lecture_basics_Sanger.html#take-home-message",
-    "title": "DNA and Sanger sequencing",
-    "section": "Take-home message",
-    "text": "Take-home message\n\n\n\nAdvantage of Sanger sequencing\n\nDevices are easy to use\nResults are obtained within couple of hours (overnight)\nRelatively cheep\n\nDisadvantage of Sanger sequencing\n\nFew sequences are generated = low throughput technology\nRead length is limited to about 1000 nucleotides"
-  },
-  {
-    "objectID": "topics/05_read_quality/05_read_quality.html",
-    "href": "topics/05_read_quality/05_read_quality.html",
-    "title": "Accessing read quality",
+    "objectID": "topics/01_basics_of_sequencing/01_basics_of_sequencing.html",
+    "href": "topics/01_basics_of_sequencing/01_basics_of_sequencing.html",
+    "title": "The basics of DNA sequencing",
     "section": "",
-    "text": "Here, we would like to focus a little more on the topic of assessing read quality. We will see why this is so important when we look at the next dataset, which we will load directly from NCBI SRA to Galaxy."
+    "text": "To understand how DNA sequencing works, we first need to look at the basics of DNA replication. We also need to understand how DNA is extended and how science uses it for PCR. This is because PCR was the basis for the first method of DNA sequencing, known as Sanger sequencing.\n\nHow to view the presentations Below you can see a preview of presentations. There is also a link to view the presentation in full screen mode. You can navigate through the presentation using the arrow keys:\nNext slide: →\nPrevious slide: ←\nJump to first/last slide: Shift +↑ / Shift + ↓ There is also a link to view the presentation in full screen mode.\nThe ☰ icon in the bottom left corner opens the presentation options.\n\n\nDNA and Sanger sequencing (~15 min)\n    View slides in full screen"
   },
   {
-    "objectID": "topics/05_read_quality/05_read_quality.html#check-new-illumina-and-nanopore-data",
-    "href": "topics/05_read_quality/05_read_quality.html#check-new-illumina-and-nanopore-data",
-    "title": "Accessing read quality",
-    "section": "Check new Illumina and Nanopore data",
-    "text": "Check new Illumina and Nanopore data\nIt is also possible to upload data directly to NCBI without first storing it on your own PCR. To do this, we will look at two new data sets: SRR25338386 und SRR27030578.\n\nFind out what kind of data it is!\nDu kannst diese Informationen nutzen, um herauszufinden um was es sich für Daten handelt: NCBI SRA."
+    "objectID": "topics/01_basics_of_sequencing/01_basics_of_sequencing.html#from-dna-to-pcr-to-sequencing",
+    "href": "topics/01_basics_of_sequencing/01_basics_of_sequencing.html#from-dna-to-pcr-to-sequencing",
+    "title": "The basics of DNA sequencing",
+    "section": "",
+    "text": "To understand how DNA sequencing works, we first need to look at the basics of DNA replication. We also need to understand how DNA is extended and how science uses it for PCR. This is because PCR was the basis for the first method of DNA sequencing, known as Sanger sequencing.\n\nHow to view the presentations Below you can see a preview of presentations. There is also a link to view the presentation in full screen mode. You can navigate through the presentation using the arrow keys:\nNext slide: →\nPrevious slide: ←\nJump to first/last slide: Shift +↑ / Shift + ↓ There is also a link to view the presentation in full screen mode.\nThe ☰ icon in the bottom left corner opens the presentation options.\n\n\nDNA and Sanger sequencing (~15 min)\n    View slides in full screen"
   },
   {
-    "objectID": "topics/05_read_quality/05_read_quality.html#create-a-new-history",
-    "href": "topics/05_read_quality/05_read_quality.html#create-a-new-history",
-    "title": "Accessing read quality",
-    "section": "Create a new history",
-    "text": "Create a new history\nCreate a new empty history and rename it to Quality Check."
+    "objectID": "topics/01_basics_of_sequencing/01_basics_of_sequencing.html#next-generation-sequencing-ngs",
+    "href": "topics/01_basics_of_sequencing/01_basics_of_sequencing.html#next-generation-sequencing-ngs",
+    "title": "The basics of DNA sequencing",
+    "section": "Next generation sequencing (NGS)",
+    "text": "Next generation sequencing (NGS)\nThe most widely used sequencing method is Illumina sequencing, a high-throughput sequencing or massively parallel sequencing technique. It is one of the next generation sequencing techniques.\n\nPrinciple of Illumina sequencing (~40 min)\n    View slides in full screen"
   },
   {
-    "objectID": "topics/05_read_quality/05_read_quality.html#upload-ncbi-sra-data-directly-to-galaxy.",
-    "href": "topics/05_read_quality/05_read_quality.html#upload-ncbi-sra-data-directly-to-galaxy.",
-    "title": "Accessing read quality",
-    "section": "Upload NCBI SRA data directly to Galaxy.",
-    "text": "Upload NCBI SRA data directly to Galaxy.\nHier wie lern how to get the data directly from SRA to a new history.\n\nUpload SRA data to Galaxy\nFirst, we select the Download and Extract Reads in FASTQ.\n\nNow enter both SRA Accession numbers (SRR25338386 und SRR27030578) and start the tool. We leave all other parameters at their default settings.\n\nAn active job should then appear in your history, displayed in grey/orange. This means that the data is being downloaded from NCBI SRA.\n\nWhen the download is complete, both items should be green in the history. We have received two Collection containing the sequence data. Collections are useful for preventing the history from becoming overloaded with files. Collections can contain multiple files. Play around with the Collections a little and try to understand what they are all about."
-  },
-  {
-    "objectID": "topics/05_read_quality/05_read_quality.html#quality-check---nanopore-reads",
-    "href": "topics/05_read_quality/05_read_quality.html#quality-check---nanopore-reads",
-    "title": "Accessing read quality",
-    "section": "Quality check - Nanopore reads",
-    "text": "Quality check - Nanopore reads\nBefore we start working with data, we always check its quality. You should always be sure about the data you are working with.\n\nQuality of Nanopore reads\nRun the tool nanoplot on the Nanopore data.\n\nWhen the nanoplot tool has finished running (turned green), do the following:\n\nClick on the NanoStat file: \nClick on the eye to see the result: \n\nYou should get this view of the results for the nanopore reads:\n\n\nCan you answer the following questions?\n\nHow long are the Nanopore reads?\n\nWhat is the avarge read quality (Q)?\n\nCan you determine the average error probability (P)?"
-  },
-  {
-    "objectID": "topics/05_read_quality/05_read_quality.html#quality-check-illumina-reads",
-    "href": "topics/05_read_quality/05_read_quality.html#quality-check-illumina-reads",
-    "title": "Accessing read quality",
-    "section": "Quality check Illumina reads",
-    "text": "Quality check Illumina reads\nSince Illumina reads are the most widely used, it is most likely that you will be working with this data. Therefore, we will take a closer look at the quality of Illumina data.\n\nQuality of Illumina reads\nRun the tool falco on the Nanopore data.\n\nWhen the falco tool has finished running (turned green), do the following:\n\nClick on the Falco on X: Website file: \nClick on the collection: \nClick on the forward file: \nSave the file on your computer: \nUnzip the downloaded file.\nOpen the html file.\n\n\nCan you answer the following questions?\nThe output should look like the example below. Can you answer the following questions?\n\nHow long are the Illumina reads?\n\nWhat is the avarge read quality (Q)?\n\nCan you say something about the error probability (P)?\n\n    View slides in full screen\n       \n      \n    \n  \n\n\n\nPer Base Sequence Quality (Falco)\nWe pay particular attention to the quality of the sequencing, as this tells us what level of accuracy or error probability we can expect. This can be decisive for the next steps.\nThe falco tool provides us with a quality plot (base sequence quality plot) that shows us how well individual bases were determined during sequencing.\n\nX-axis: Position of the base on the read.\nY-axis: Quality value (Q; Phred score). High value = higher quality = base was determined more accurately.\n\nThe plot can be interpreted as follows: At the beginning of the reads (left), the sequencing is more accurate. Further along at the end of the reads (right), the quality tends to decrease. In other words, accuracy decreases with increasing length.\n\n\n\nAdapter content (Falco)\nWe recall that Illumina sequencing uses adapters that are ligated to the DNA fragments. They serve as primer binding sites and for binding the fragments to the FlowCell. They are, of course, contaminants and are not desired in the subsequent analysis of the sequence data.\nContamination of the sequence data with adapters is also shown in the falco tool. The Illumina adapters used for sequencing are correctly recognized in our dataset:"
-  },
-  {
-    "objectID": "topics/05_read_quality/05_read_quality.html#quality-and-adapter-trimming",
-    "href": "topics/05_read_quality/05_read_quality.html#quality-and-adapter-trimming",
-    "title": "Accessing read quality",
-    "section": "Quality and adapter trimming",
-    "text": "Quality and adapter trimming\nA very important step in read processing is to filter the reads according to quality and adapters. This is usually/always done after receiving the raw sequencing data and before further analyzing (e.g. genome assembly, metagenomic analysis) the data. So now we have to address two important points:\n\nHow can we improve the quality of the sequencing retrospectively?\nHow do we get rid of the adapters from each read?\n\nOf course, there are a number of tools available for filtering reads, e.g. trimmomatic or Trim Galore!.\nIn this course, I will continue working with the tool Trim Galore!.\n\nRemoving bad quality bases and adapters (Illumina data)\nTo filter the quality and remove the adapters, we use the tool Trim Galore!. By now, you should be familiar with selecting tools in Galaxy. You should also know how to select the parameters of the tools in the Centre Panel.\nCan you start the tool Trim Galore!. with the following parameters?\n\nChose Trim Galore! from the tools panel.\nClick on Trim Galore!\nSet the following parameters (leave everything else as default):\n\nIs this library paired- or single-end: Paired Collection\nSelect a paired collection: Paired-end data (fastq-dump)\nAdapter sequence to be trimmed: Automatic detection\nAdvanced settings = Full parameter list:\n\nTrim low-quality ends from reads in addition to adapter removal (Enter phred quality score thresold): 30\nDiscard reads that became shorter than length N: 50\n\n\nClick on Run Tool to filter your Illumina paired-end dataset.\n\n\n\n\n\n\n\n\nI need help! (Click here)\n\n\n\n\n\nSet the Trim Galore! options as follows:\n\n\n\n\n\n\nAfter clicking on Run Tool to start Trim Galore!, the result should look like this after a short while (click through the collection to see the structure):"
-  },
-  {
-    "objectID": "topics/05_read_quality/05_read_quality.html#checking-the-quality-filteradapter-removel-step",
-    "href": "topics/05_read_quality/05_read_quality.html#checking-the-quality-filteradapter-removel-step",
-    "title": "Accessing read quality",
-    "section": "Checking the quality filter/adapter removel step",
-    "text": "Checking the quality filter/adapter removel step\nHow can we see whether quality filtering and removing the adapters has worked? We need to make sure that our parameters have been set correctly and that the tool has worked properly.\nFortunately, there is a simple solution for this: we start the falco tool again, only this time the input is Trim Galore! on collectoin 1: paired reads.\n\nChecking the quality/adapter filtered output\n\nChose Falco from the tools panel.\nClick on Falco\nSet the following parameters (leave everything else as default):\n\nRaw read data from your current history –&gt; switch to Dataset Collection as input\nRaw read data from your current history: Trim Galore! on collection x: paired reads (x = it can be any number depending on the file position in your history)\n\nClick on Run Tool to filter your Illumina paired-end dataset.\n\n\n\n\n\n\n\nI need help! (Click here)\n\n\n\n\n\nSet the Trim Galore! options as follows:\n\n\n\n\nWait until the tool has finished running and open the result.\n\nDo you remember how to open up the result?\n\n\n\n\n\n\nI need help! (Click here)\n\n\n\n\n\n\nClick on Falco on collection xx: Webpage\nClick on SRR25338386\nClick on forward once to open it up.\nClick on the disk symbol to download the result: \nSave the ZIP file on your computer.\nUnzip the file.\nOpen the Html document to see the results.\n\n\n\n\n\nWhat has changed after Trim Galore! ?\nThe output should look like the example below.\n\nDid the length of the Illumina reads change?\n\nDid the quality (Q) change?\n\n    View slides in full screen"
-  },
-  {
-    "objectID": "topics/05_read_quality/05_read_quality.html#comparison-before-and-after-filtering",
-    "href": "topics/05_read_quality/05_read_quality.html#comparison-before-and-after-filtering",
-    "title": "Accessing read quality",
-    "section": "Comparison before and after filtering",
-    "text": "Comparison before and after filtering\nYou have now looked at the Illumina Reads before and after filtering (quality and adapter). Think about what has changed. Can you describe it in your own words?\n\nPer Base Sequence Quality\n\n\n\n\nAdapter content\n\n\n\nHave other parameters changed? Compare falco HTML document from the original and filtered reads!\n\nCompare the read length before and after filtering\nCheck both hmtl files and compare the Sequence length distribution of the original and filtered reads.\n\n\nWhat has changed?\nCan you guess what has changed and why?"
+    "objectID": "topics/01_basics_of_sequencing/01_basics_of_sequencing.html#nanopore-sequencing",
+    "href": "topics/01_basics_of_sequencing/01_basics_of_sequencing.html#nanopore-sequencing",
+    "title": "The basics of DNA sequencing",
+    "section": "Nanopore sequencing",
+    "text": "Nanopore sequencing\nOne of the latest technologies for DNA sequencing is nanopore sequencing. Here, single-stranded DNA is passed through a pore. The resulting voltage changes are measured and converted into ATGC.\n\nNanopore sequencing (~15 min)\n    View slides in full screen"
   }
 ]
