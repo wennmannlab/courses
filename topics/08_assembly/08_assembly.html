@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Assembly – Courses, Tutorials and Slides</title>
+<title>Genome assembly – Courses, Tutorials and Slides</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -67,6 +67,14 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+ 
+  <style>
+  .slide-deck {
+      border: 3px solid #dee2e6;
+      width: 100%;
+  }
+  </style>
+  
 
 
 <link rel="stylesheet" href="../../styles.css">
@@ -95,7 +103,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../topics/01_basics_of_sequencing/01_basics_of_sequencing.html"> 
-<span class="menu-text">Technology</span></a>
+<span class="menu-text">Sequencing</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../topics/02_read_sequence_information/02_read_sequence_information.html"> 
@@ -145,7 +153,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#assembly" id="toc-assembly" class="nav-link active" data-scroll-target="#assembly">Assembly</a></li>
+  <li><a href="#the-theory-of-genome-assembly" id="toc-the-theory-of-genome-assembly" class="nav-link active" data-scroll-target="#the-theory-of-genome-assembly">The theory of genome assembly</a></li>
+  <li><a href="#create-a-new-history" id="toc-create-a-new-history" class="nav-link" data-scroll-target="#create-a-new-history">Create a new history</a></li>
+  <li><a href="#upload-ncbi-sra-data-directly-to-galaxy." id="toc-upload-ncbi-sra-data-directly-to-galaxy." class="nav-link" data-scroll-target="#upload-ncbi-sra-data-directly-to-galaxy.">Upload NCBI SRA data directly to Galaxy.</a></li>
+  <li><a href="#quality-and-adapter-trimming-illumina" id="toc-quality-and-adapter-trimming-illumina" class="nav-link" data-scroll-target="#quality-and-adapter-trimming-illumina">Quality and adapter trimming (Illumina)</a></li>
+  <li><a href="#unicycler-assembly" id="toc-unicycler-assembly" class="nav-link" data-scroll-target="#unicycler-assembly">Unicycler assembly</a></li>
   </ul>
 </nav>
     </div>
@@ -154,7 +166,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Assembly</h1>
+<h1 class="title">Genome assembly</h1>
 </div>
 
 
@@ -171,8 +183,135 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="assembly" class="level2">
-<h2 class="anchored" data-anchor-id="assembly">Assembly</h2>
+<section id="the-theory-of-genome-assembly" class="level2">
+<h2 class="anchored" data-anchor-id="the-theory-of-genome-assembly">The theory of genome assembly</h2>
+<div class="lecture">
+<p><lecture-title>Assembly (~30 min)</lecture-title></p>
+<p>Below you can see a preview of a presentation from the Galaxy Training Network (GTN). You can navigate through the presentation using the arrow keys: Next slide: <code>→</code>; Previous slide: <code>←</code>.</p>
+<p><a href="https://training.galaxyproject.org/training-material/topics/assembly"><img src="assets/jp.svg" class="flag img-fluid" width="25" alt="日本語"> Japanese version</a></p>
+    <p><a href="https://training.galaxyproject.org/training-material/topics/assembly/tutorials/general-introduction/slides.html" target="_blank">View slides in full screen</a></p>
+       <div>
+      <iframe class="slide-deck" src="https://training.galaxyproject.org/training-material/topics/assembly/tutorials/general-introduction/slides.html" height="475px"></iframe>
+    </div>
+  
+<div class="reference">
+<p><reference-title>Reference</reference-title> This presentation is from the Galaxy Training Network (GTN): <a href="training.galaxyproject.org/training-material/topics/assembly/tutorials/general-introduction/"><em>Introduction to Galaxy</em></a> Lizenz: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
+</div>
+</div>
+<p>The science of assembling a genome is complicated, and there are many ways to attempt it. With the various sequencing technologies, different tools (assemblers) have also been developed that exploit the strengths of short reads (Illumina = short but extremely high accuracy) and long reads (Nanopore and PacBio = stretching long part of the genome).</p>
+<p>At this point, I will only introduce one tool that is particularly well suited for assembling the circular genomes of bacteria, as it was developed specifically for this purpose.</p>
+<p>Nevertheless, I hope to provide a small but sufficient insight into the theory and complexity of genome assembly.</p>
+<p>The assembler we use for genome reconstruction is unicylcer`{.tool} We already have worked with the data we use for genome assembly and we will recycle the same data just for training purposes.</p>
+<div class="comment">
+<p><comment-title>Why do we use this data?</comment-title></p>
+<p>Assembly is a computationally intensive process that can take minutes, hours, days, or longer, depending on the complexity of the genome. Since we don’t have the time to wait hours for a result, we will limit ourselves to the genome of Bombyx mori nucleopolyhedrovirus. The genome is 130,000 bp long and circularly closed.</p>
+<p>The virus belongs to the large dsDNA viruses and the genome resembles a plasmid or a very small bacterial genome. This makes it perfect for practice because the assembly only takes minutes, which is suitable for this course.</p>
+</div>
+</section>
+<section id="create-a-new-history" class="level2">
+<h2 class="anchored" data-anchor-id="create-a-new-history">Create a new history</h2>
+<p>Create a new empty history and rename it to <code>Unicycler assembly</code>.</p>
+<p><img src="png/history_new.png" class="img-fluid" style="width:60.0%"></p>
+</section>
+<section id="upload-ncbi-sra-data-directly-to-galaxy." class="level2">
+<h2 class="anchored" data-anchor-id="upload-ncbi-sra-data-directly-to-galaxy.">Upload NCBI SRA data directly to Galaxy.</h2>
+<p>Upload the data to your history from NCBI SRA (or transfer it from your other history).</p>
+<div class="hands-on">
+<p><hands-on-title>Upload SRA data to Galaxy</hands-on-title></p>
+<p>First, we select the <code class="tool">Download and Extract Reads in FASTQ</code>.</p>
+<p><img src="png/tool_ncbi_sra_download.png" class="img-fluid" style="width:70.0%"></p>
+<p>Now enter both SRA Accession numbers (<code>SRR25338386</code> und <code>SRR27030578</code>) and start the tool. We leave all other parameters at their default settings.</p>
+<p><img src="png/tool_ncbi_sra_accessions.png" class="img-fluid" style="width:60.0%"></p>
+<p>An active job should then appear in your history, displayed in grey/orange. This means that the data is being downloaded from NCBI SRA.</p>
+<p><img src="png/tool_ncbi_sra_active.png" class="img-fluid" style="width:60.0%"></p>
+<p>When the download is complete, both items should be green in the history. We have received two <code>Collection</code> containing the sequence data. Collections are useful for preventing the history from becoming overloaded with files. Collections can contain multiple files. Play around with the Collections a little and try to understand what they are all about.</p>
+<p><img src="png/tool_ncbi_sra_finished.png" class="img-fluid" style="width:40.0%"></p>
+</div>
+</section>
+<section id="quality-and-adapter-trimming-illumina" class="level2">
+<h2 class="anchored" data-anchor-id="quality-and-adapter-trimming-illumina">Quality and adapter trimming (Illumina)</h2>
+<p>Now we use <code class="tool">Trim Galore!</code> to quality filter and adapter trim the Illumina data.</p>
+<div class="hands-on">
+<p><hands-on-title>Removing bad quality bases and adapters (Illumina data)</hands-on-title></p>
+<p>To filter the quality and remove the adapters, we use the tool <code class="tool">Trim Galore!</code>. By now, you should be familiar with selecting tools in Galaxy. You should also know how to select the parameters of the tools in the <code>Centre Panel</code>.</p>
+<p>Start the tool <code class="tool">Trim Galore!</code>. with the following parameters:</p>
+<ul>
+<li>Chose <code class="tool">Trim Galore!</code> from the tools panel.</li>
+<li>Click on <code class="tool">Trim Galore!</code></li>
+<li>Set the following parameters (<em>leave everything else as default</em>):
+<ul>
+<li>Is this library paired- or single-end: <code>Paired Collection</code></li>
+<li>Select a paired collection: <code>Paired-end data (fastq-dump)</code></li>
+<li>Adapter sequence to be trimmed: <code>Automatic detection</code></li>
+<li><strong>Advanced settings</strong> = <code>Full parameter list</code>:
+<ul>
+<li>Trim low-quality ends from reads in addition to adapter removal (Enter phred quality score thresold): <code>30</code></li>
+<li>Discard reads that became shorter than length N: <code>50</code></li>
+</ul></li>
+</ul></li>
+<li>Click on <code>Run Tool</code> to filter your Illumina paired-end dataset.</li>
+</ul>
+<p><img src="png/trimGalore_tool.png" class="img-fluid" style="width:40.0%"></p>
+<div class="callout callout-style-default callout-note callout-titled" title="I need help! *(Click here)*">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+I need help! <em>(Click here)</em>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Set the <code class="tool">Trim Galore!</code> options as follows:</p>
+<p><img src="png/trimGalore_help1.PNG" class="img-fluid" style="width:100.0%"></p>
+<p><img src="png/trimGalore_help2.PNG" class="img-fluid" style="width:100.0%"></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="unicycler-assembly" class="level2">
+<h2 class="anchored" data-anchor-id="unicycler-assembly">Unicycler assembly</h2>
+<p>Now we use the tool <code class="tool">unicycler</code> to reconstruct the genome.</p>
+<p><code class="tool">Unicycler</code> is a tool that leverages the strengths of Illumina and Nanopore data to perform hybrid assembly. It is also possible to perform Illumina or Nanopore assembly alone.</p>
+<p>However, since we have both, we utilize both data sets.</p>
+<div class="reference">
+<p><reference-title>Reference: Unicycler</reference-title></p>
+<p>Here you can find more information about the Unicycler tool and how it works: <a href="https://github.com/swlong/Unicycler" class="uri">https://github.com/swlong/Unicycler</a></p>
+</div>
+<p>The tool is already somewhat older, and there is now a successor called <code class="tool">autocycler</code> However, we are sticking with <code class="tool">unicycler</code> because it works excellently and is still frequently used today.</p>
+<div class="hands-on">
+<p><hands-on-title>unicycler</hands-on-title></p>
+<p>Search and open the <code class="tool">unicycler</code> tool.<br>
+The the following parameters:</p>
+<ul>
+<li><p>Paired or Singe end data: <code>Paired Collection</code></p></li>
+<li><p>Select a paired collection: <code>Trim Galore! on collection x: paired reads</code></p></li>
+<li><p>Select long reads. If there are no long reads, leave this empty: <code>*Switch to: Dataset Collection*</code> <img src="png/unicycler_dataCollection.png" class="img-fluid" style="width:30.0%"></p></li>
+<li><p>Select long reads. If there are no long reads, leave this empty: <code>Single-end data (fastq-dump)</code></p></li>
+</ul>
+<div class="callout callout-style-default callout-note callout-titled" title="I need help! *(Click here)*">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+I need help! <em>(Click here)</em>
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Set the <code class="tool">Trim Galore!</code> options as follows:</p>
+<p><img src="png/unicycler_start.png" class="img-fluid" style="width:100.0%"></p>
+</div>
+</div>
+</div>
+</div>
+<p><img src="assets/get_end_atgc.png" class="img-fluid" style="width:20.0%"></p>
+<p>Congratulations, you have started your assembly.Lets</p>
 
 
 </section>
