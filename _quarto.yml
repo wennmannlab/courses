@@ -19,8 +19,12 @@ website:
         text: First steps in Galaxy
       - href: topics/05_read_quality/05_read_quality.qmd
         text: Quality filter
-      - href: topics/06_galaxy_workflow/06_quality_workflow.qmd
+      - href: topics/06_galaxy_workflow/06_galaxy_workflow.qmd
         text: Workflows
+      - href: topics/07_metagenomic/07_metagenomic.qmd
+        text: Metagenomic
+      - href: topics/08_assembly/08_assembly.qmd
+        text: Assembly   
       - href: topics/99_flyer/99_flyer.qmd
         text: Flyer
       

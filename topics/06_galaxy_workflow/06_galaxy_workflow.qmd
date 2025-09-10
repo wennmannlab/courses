@@ -1,304 +1,111 @@
 ---
-title: "Accessing read quality"
+title: "Automated workflows in Galaxy"
 ---
 
-Here, we would like to focus a little more on the topic of assessing read quality. We will see why this is so important when we look at the next dataset, which we will load directly from NCBI SRA to Galaxy.
+## Are you tired of doing the same thing over and over again?
 
-## Check new Illumina and Nanopore data
+In bioinformatics, some steps are repeated frequently. These include, for example, checking the quality of reads before and after filtering. It is also undesirable to constantly adjust the parameters manually, as this can quickly lead to errors.  
 
-It is also possible to upload data directly to NCBI without first storing it on your own PCR. To do this, we will look at two new data sets: `SRR25338386` und `SRR27030578`.
+The strength of Galaxy therefore lies in the fact that analyses can be repeated in a standardized manner.  
 
-::: hands-on
-<hands-on-title>Find out what kind of data it is!</hands-on-title>
+For this purpose, so-called workflows have been developed that allow work steps and entire analyses to be performed repeatedly. 
 
-Du kannst diese Informationen nutzen, um herauszufinden um was es sich für Daten handelt: [NCBI SRA](https://wennmannlab.github.io/courses/topics/03_ncbi_sra_at_glance/03_ncbi_sra_at_glance.html).
-:::
+In this chapter, we will learn how to create a simple workflow.
 
-## Create a new history
-
-Create a new empty history and rename it to **Quality Check**.
-
-![](png/history_new.png){width="60%"}
-
-
-## Upload NCBI SRA data directly to Galaxy.
-
-Hier wie lern how to get the data directly from SRA to a new history.
+## Create a new workflow
 
 ::: hands-on
-<hands-on-title>Upload SRA data to Galaxy</hands-on-title>
+<hands-on-title>Create a new workflow</hands-on-title>
 
-First, we select the  `Download and Extract Reads in FASTQ
-`{.tool}.
+Chose `Workflow` in the Activity Bar on the very left side of the Galay user interface.
 
-![](png/tool_ncbi_sra_download.png){width="70%"}
+![](png/workflow_create.png){width="60%"}
 
-Now enter both SRA Accession numbers (`SRR25338386` und `SRR27030578`) and start the tool. We leave all other parameters at their default settings. 
+After the new workflow is create we can rename it to `Read Filter`.
 
-
-![](png/tool_ncbi_sra_accessions.png){width="60%"}
-
-An active job should then appear in your history, displayed in grey/orange. This means that the data is being downloaded from NCBI SRA.
-
-![](png/tool_ncbi_sra_active.png){width="60%"}
-
-When the download is complete, both items should be green in the history. We have received two `Collection` containing the sequence data. Collections are useful for preventing the history from becoming overloaded with files. Collections can contain multiple files. Play around with the Collections a little and try to understand what they are all about.
-
-![](png/tool_ncbi_sra_finished.png){width="40%"}
-:::
-
-
-## Quality check - Nanopore reads
-
-Before we start working with data, we always check its quality. You should always be sure about the data you are working with.
-
-::: hands-on
-<hands-on-title>Quality of Nanopore reads</hands-on-title>
-
-Run the tool `nanoplot`{.tool} on the Nanopore data.
-
-![](png/nanoplot_nanopore_settings.png){width="100%"}
-
-When the `nanoplot`{.tool} tool has finished running (turned green), do the following:
-
-- Click on the NanoStat file: ![](png/nanoplot_result_history.png){width="50%"}
-- Click on the eye to see the result: ![](png/nanoplot_result_history2.png){width="50%"}
-
-You should get this view of the results for the nanopore reads:
-
-![](png/nanoplot_result.png){width="100%"}
-
-::: comment
-<comment-title>Can you answer the following questions?</comment-title>
-
-- How long are the Nanopore reads?  
-- What is the avarge read quality (Q)?  
-- Can you determine the average error probability (P)?  
+![](png/workflow_rename.png){width="100%"}
 
 :::
 
-:::
+## Adding tools to the workflow
 
-## Quality check Illumina reads
-
-Since Illumina reads are the most widely used, it is most likely that you will be working with this data. Therefore, we will take a closer look at the quality of Illumina data.
+After creating an empty template for a workflow, we still need to fill it with content. To do this, we perform the following steps.
 
 ::: hands-on
-<hands-on-title>Quality of Illumina reads</hands-on-title>
+<hands-on-title>Adding and connecting tools</hands-on-title>
 
-Run the tool `falco`{.tool} on the Nanopore data.
+Inside the empty workflow panel perform the following steps:
 
-![](png/falco_illumina_settings.png){width="100%"}
+- Click on `Inputs` on the left in the action panel.
+- Chose `Input Dataset Collection` ![](png/workflow_dataset_collection.png){width="30%"}
+- Click and move `1: Input dataset collection` to the desired position.
+- Click on `1: Input dataset collection` and on the right side the options menue for the selected tool will open.
+- Change Collection type to `list:paired` ![](png/workflow_paired_collection.png){width="50%"}
+- Next go to tools and chose `Falco`{.tool}.
+- The new tool appears inside the workflow window.
+- Connect `1: Input dataset collection` with `2: Falco`.
 
-When the `falco`{.tool} tool has finished running (turned green), do the following:
+![](png/workflow_setup.gif){width="100%"}
 
-- Click on the `Falco on X: Website` file: ![](png/faclo_result1.png){width="50%"}
+- Open up the tool bar again and search for `Trim Galore!`{.tool}
+- Click on `Trim Galore!`{.tool} and add it to your workflow.
+- Move the tool to the desired position.
+- Click on the tool and open the options.
+- Change the following parameters of `Trim Galore!`{.tool}
+  - Is this library paired- or single end: `Paired Collection`
+  - Advanced settings: `Full parameter list`
+  - Trim low-quality ends from reads in addition to adapter removal (Enter phred quality score threshold): `30`
+  - Discard reads that became shorter than length N: `50`
+- Connect `1: Input dataset collection` with `3: Trim Galore!`
 
+![](png/workflow_add_trimGalore.gif){width="100%"}
 
-- Click on the collection: ![](png/faclo_result2.png){width="50%"}
+- Save the workflow by cliching the disk symbol in the top right corner ![](png/workflow_save.PNG){width="20%"}
 
+:::
 
-- Click on the forward file: ![](png/faclo_result3.png){width="50%"}
+## Start the workflow
 
+Now it's time to test the newly created workflow.
 
-- Save the file on your computer: ![](png/faclo_result4.png){width="50%"}
+::: hands-on
+<hands-on-title>Start workflow</hands-on-title>
 
+Click on the left side on `Workflows` and chose your workflow `Read Filter`.
 
-- `Unzip` the downloaded file.
+![](png/workflow_run1.png){width="70%"}
 
+Set your workflow parameters by chosing the correct input file: `Paired-end data (fastq-dump)`.
 
-- Open the `html` file.
-
+![](png/workflow_run2.png){width="70%"}
+:::
 
 
 ::: comment
-<comment-title>Can you answer the following questions?</comment-title>
+<comment-title>Advanced task: Quality of the Trim Galore output</comment-title>
 
-The output should look like the example below. Can you answer the following questions? 
+Now try to work on the workflow until it completes the following task:
 
-- How long are the Illumina reads?  
-- What is the avarge read quality (Q)?  
-- Can you say something about the error probability (P)?  
-
-{{< revealjs "html_falco/Falco_on_rawReads.html" >}}
-
-:::
-
-:::
-
-### Per Base Sequence Quality (Falco)
-
-We pay particular attention to the quality of the sequencing, as this tells us what level of accuracy or error probability we can expect. This can be decisive for the next steps.  
-
-The `falco`{.tool} tool provides us with a quality plot (base sequence quality plot) that shows us how well individual bases were determined during sequencing.  
-
--   X-axis: Position of the base on the read.
--   Y-axis: Quality value (Q; Phred score). High value = higher quality = base was determined more accurately.  
-
-The plot can be interpreted as follows: At the beginning of the reads (left), the sequencing is more accurate. Further along at the end of the reads (right), the quality tends to decrease. In other words, accuracy decreases with increasing length.
-
-
-![](png/falco_PerBaseSequenceQuality.png){width="100%"}
-
-### Adapter content (Falco)
-
-We recall that Illumina sequencing uses adapters that are ligated to the DNA fragments. They serve as primer binding sites and for binding the fragments to the FlowCell. They are, of course, contaminants and are not desired in the subsequent analysis of the sequence data.
- 
-Contamination of the sequence data with adapters is also shown in the `falco`{.tool} tool. The Illumina adapters used for sequencing are correctly recognized in our dataset:  
-
-![](png/falco_AdapterContent.png){width="100%"}
-
-
-## Quality and adapter trimming
-
-A very important step in read processing is to filter the reads according to quality and adapters. This is usually/always done after receiving the raw sequencing data and before further analyzing (e.g. genome assembly, metagenomic analysis) the data. So now we have to address two important points:
-
-- How can we improve the quality of the sequencing retrospectively?
-- How do we get rid of the adapters from each read?  
-
-Of course, there are a number of tools available for filtering reads, e.g. `trimmomatic`{.tool} or `Trim Galore!`{.tool}.  
-
-In this course, I will continue working with the tool `Trim Galore!`{.tool}.  
-
-
-::: hands-on
-<hands-on-title>Removing bad quality bases and adapters (Illumina data)</hands-on-title>
-
-To filter the quality and remove the adapters, we use the tool `Trim Galore!`{.tool}. By now, you should be familiar with selecting tools in Galaxy. You should also know how to select the parameters of the tools in the `Centre Panel`.
-
-Can you start the tool `Trim Galore!`{.tool}. with the following parameters?
-
-- Chose `Trim Galore!`{.tool} from the tools panel.
-- Click on `Trim Galore!`{.tool}
-- Set the following parameters (*leave everything else as default*):
-  - Is this library paired- or single-end: `Paired Collection`
-  - Select a paired collection: `Paired-end data (fastq-dump)`
-  - Adapter sequence to be trimmed: `Automatic detection`
-  - **Advanced settings** = `Full parameter list`:
-    - Trim low-quality ends from reads in addition to adapter removal (Enter phred quality score thresold): `30`
-    - Discard reads that became shorter than length N: `50`
-- Click on `Run Tool` to filter your Illumina paired-end dataset.
-
-
-![](png/trimGalore_tool.png){width="40%"}
+- The workflow takes the paired reads (Illumina) as input
+- The `falco`{.tool} tool is launched on the data set.
+- The data set is then filtered using `Trim Galore!`{.tool}.
+- `falco`{.tool} is run again on the result of `Trim Galore!`{.tool}.
 
 ::: {.callout-note collapse="true" title="I need help! *(Click here)*"}
-
 Set the `Trim Galore!`{.tool} options as follows:
 
-![](png/trimGalore_help1.PNG){width="100%"}
-
-![](png/trimGalore_help2.PNG){width="100%"}
+![](png/workflow_additional_falco.PNG){width="100%"}
 
 :::
 
-:::
+Additional task:
 
-After clicking on `Run Tool` to start `Trim Galore!`{.tool}, the result should look like this after a short while (click through the collection to see the structure):
-
-![](png/trimGalore_result_collection1.png){width="50%"}
-
-## Checking the quality filter/adapter removel step
-
-How can we see whether quality filtering and removing the adapters has worked? We need to make sure that our parameters have been set correctly and that the tool has worked properly.  
-
-Fortunately, there is a simple solution for this: we start the `falco`{.tool} tool again, only this time the input is `Trim Galore! on collectoin 1: paired reads`.  
-
-::: hands-on
-<hands-on-title>Checking the quality/adapter filtered output</hands-on-title>
-
-- Chose `Falco`{.tool} from the tools panel.
-- Click on `Falco`{.tool}
-- Set the following parameters (*leave everything else as default*):
-  - Raw read data from your current history --> switch to Dataset Collection as input
-  - Raw read data from your current history: `Trim Galore! on collection x: paired reads` (x = it can be any number depending on the file position in your history)
-- Click on `Run Tool` to filter your Illumina paired-end dataset.
-
-::: {.callout-note collapse="true" title="I need help! *(Click here)*"}
-
-Set the `Trim Galore!`{.tool} options as follows:
-
-![](png/falco_trimGalore_collection1.png){width="100%"}
-
-:::
-
-Wait until the tool has finished running and open the result.
-
-![](png/falco_trimGalore_green.png){width="50%"}
-
-
-Do you remember how to open up the result?
-
-::: {.callout-note collapse="true" title="I need help! *(Click here)*"}
-
-- Click on `Falco on collection xx: Webpage`
-- Click on `SRR25338386`
-- Click on `forward` once to open it up.
-- Click on the disk symbol to download the result: ![](png/falco_trimGalore_download.png){width="60%"}
-- Save the ZIP file on your computer.
-- Unzip the file.
-- Open the Html document to see the results.
-
-:::
-
-::: comment
-<comment-title>What has changed after Trim Galore! ?</comment-title>
-
-The output should look like the example below. 
-
-- Did the length of the Illumina reads change?  
-- Did the quality (Q) change?
-
-{{< revealjs "html_falco/Falco_on_trimGalore.html" >}}
+- What would the workflow look like if you started with the SRA accession number `SRR25338386`? Tip: Use the `Download and Extract Reads in FASTQ`{.tool} tool!
 
 :::
 
 
-:::
-
-## Comparison before and after filtering 
-
-You have now looked at the Illumina Reads before and after filtering (quality and adapter). Think about what has changed. Can you describe it in your own words?  
-
-::: comment
-<comment-title>Per Base Sequence Quality</comment-title>
-
-![](png/falco_PerBaseSequenceQuality.png){width="100%"}
-
-![](png/falco_trimGalore_PerBaseSequenceQuality.png){width="100%"}
-
-:::
-
-
-::: comment
-<comment-title>Adapter content</comment-title>
-
-![](png/falco_AdapterContent.png){width="100%"}
-
-![](png/falco_trimGalore_AdapterContent.png){width="100%"}
-
-:::
-
-Have other parameters changed? Compare `falco`{.tool} HTML document from the original and filtered reads!
-
-
-::: hands-on
-<hands-on-title>Compare the read length before and after filtering</hands-on-title>
-
-Check both hmtl files and compare the `Sequence length distribution` of the original and filtered reads.
-
-![](png/falco_report_menu.PNG){width="40%"}
-
-::: comment
-<comment-title>What has changed?</comment-title>
-
-Can you guess what has changed and why?
-
-:::
-
-:::
-
-
+![](assets/get_end_atgc.png){width="20%"} Congratulations! You have created and started a workflow.
 
 
 
