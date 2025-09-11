@@ -140,7 +140,7 @@ Set the `Trim Galore!`{.tool} options as follows:
 
 ![](assets/get_end_atgc.png){width="20%"}
 
-Congratulations, you have started your assembly.Lets
+Congratulations, you have started your assembly.
 
 
 
