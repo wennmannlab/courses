@@ -8,38 +8,36 @@ Welcome to this brief introduction to Bioinformatics. It is intended as an intro
 
 The contents of this website are for informational purposes only. They are continuously updated and expanded. However, no guarantee can be given for the topicality, correctness, and completeness of the information provided.
 
-If you have any questions or comments, please contact me at: *joerg.wennmann@julius-kuehn.de*
+If you have any questions or comments, please contact me at: *joerg.wennmann\@julius-kuehn.de*
 
 ## Time Schedule
 
-<div style="max-width: 500px; margin: 0;">
-
-| 18 Sept     | Session                                         |
-|-------------|-------------------------------------------------|
-| 13:00–13:30 | Welcome & Introduction                          |
-| 13:30–14:30 | Lecture: Introduction to sequencing techniques  |
-| 14:30–14:50 | Break                                           |
-| 14:50–15:15 | Lecture: Storage of sequence information        |
-| 15:15–15:45 | Hands-on: NCBI SRA                              |
-| 15:45–16:00 | Lecture: Introduction to Galaxy                 |
-| 16:00–16:15 | Break                                           |
-| 16:15–17:00 | Hands-on: First steps with Galaxy               |
+::: {style="max-width: 500px; margin: 0;"}
+| 18 Sept     | Session                                        |
+|-------------|------------------------------------------------|
+| 13:00–13:30 | Welcome & Introduction                         |
+| 13:30–14:30 | Lecture: Introduction to sequencing techniques |
+| 14:30–14:50 | Break                                          |
+| 14:50–15:15 | Lecture: Storage of sequence information       |
+| 15:15–15:45 | Hands-on: NCBI SRA                             |
+| 15:45–16:00 | Lecture: Introduction to Galaxy                |
+| 16:00–16:15 | Break                                          |
+| 16:15–17:00 | Hands-on: First steps with Galaxy              |
 
 \
 \
 
-| 19 Sept     | Session                                         |
-|-------------|-------------------------------------------------|
-| 13:00–13:15 | Recap & Questions                               |
-| 13:15–14:00 | Hands-on: Upload Data, Read Quality and Trimming|
-| 14:00–14:30 | Hands-on: Workflows in Galaxy                   |
-| 14:30–14:50 | Break                                           |
-| 14:50–15:40 | Hands-on: Metagenomics                          |
-| 15:40–16:00 | Lecture: Genome Assembly                        |
-| 16:00–16:15 | Break                                           |
-| 16:15–17:00 | Hands-on: Genome Assembly                       |
-
-</div>
+| 19 Sept     | Session                                          |
+|-------------|--------------------------------------------------|
+| 13:00–13:15 | Recap & Questions                                |
+| 13:15–14:00 | Hands-on: Upload Data, Read Quality and Trimming |
+| 14:00–14:30 | Hands-on: Workflows in Galaxy                    |
+| 14:30–14:50 | Break                                            |
+| 14:50–15:40 | Hands-on: Metagenomics                           |
+| 15:40–16:00 | Lecture: Genome Assembly                         |
+| 16:00–16:15 | Break                                            |
+| 16:15–17:00 | Hands-on: Genome Assembly                        |
+:::
 
 ## Required items
 
@@ -53,7 +51,7 @@ To complete this tutorial, you will need access to a Galaxy Platform. There are 
 -   An account at usegalaxy.eu
 :::
 
-## Crate an Galaxy account
+## Create an Galaxy account
 
 Depending on the instance and update of the website, the home page may look slightly different.
 
