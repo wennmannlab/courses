@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.34">
+<meta name="generator" content="quarto-1.8.24">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -32,14 +32,15 @@ ul.task-list li input[type="checkbox"] {
 <meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-c8ad9e5dbd60b7b70b38521ab19b7da4.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dc55a5b9e770e841cd82e46aadbfb9b0.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-85c3401a6a05d25e251483c19810c9d1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-e17efdb83303f0afcbabb6452e5805b3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -79,6 +80,8 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    </a>
     <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">The Beginner’s Guide to Galaxy</span>
     </a>
@@ -147,7 +150,7 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#time-schedule" id="toc-time-schedule" class="nav-link active" data-scroll-target="#time-schedule">Time Schedule</a></li>
   <li><a href="#required-items" id="toc-required-items" class="nav-link" data-scroll-target="#required-items">Required items</a></li>
-  <li><a href="#crate-an-galaxy-account" id="toc-crate-an-galaxy-account" class="nav-link" data-scroll-target="#crate-an-galaxy-account">Crate an Galaxy account</a></li>
+  <li><a href="#create-an-galaxy-account" id="toc-create-an-galaxy-account" class="nav-link" data-scroll-target="#create-an-galaxy-account">Create an Galaxy account</a></li>
   <li><a href="#laptop-or-computer" id="toc-laptop-or-computer" class="nav-link" data-scroll-target="#laptop-or-computer">Laptop or computer</a></li>
   <li><a href="#internet-connection." id="toc-internet-connection." class="nav-link" data-scroll-target="#internet-connection.">Internet connection.</a></li>
   <li><a href="#websites" id="toc-websites" class="nav-link" data-scroll-target="#websites">Websites</a></li>
@@ -288,8 +291,8 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 </div>
 </section>
-<section id="crate-an-galaxy-account" class="level2">
-<h2 class="anchored" data-anchor-id="crate-an-galaxy-account">Crate an Galaxy account</h2>
+<section id="create-an-galaxy-account" class="level2">
+<h2 class="anchored" data-anchor-id="create-an-galaxy-account">Create an Galaxy account</h2>
 <p>Depending on the instance and update of the website, the home page may look slightly different.</p>
 <div class="hands-on">
 <p><hands-on-title>Login or Register to Galaxy</hands-on-title></p>
@@ -371,13 +374,14 @@ ul.task-list li input[type="checkbox"] {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
