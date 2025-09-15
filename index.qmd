@@ -51,7 +51,7 @@ To complete this tutorial, you will need access to a Galaxy Platform. There are 
 -   An account at usegalaxy.eu
 :::
 
-## Create an Galaxy account
+## Create a Galaxy account
 
 Depending on the instance and update of the website, the home page may look slightly different.
 
@@ -71,7 +71,7 @@ If you have registered as a new user, don't forget to confirm your email address
 
 There are no requirements for your laptop! You can use any laptop or computer to participate, as all calculations are performed on the Galaxy server itself.
 
-## Internet connection.
+## Internet connection
 
 A stable internet connection is required, as a connection to the Galaxy server is necessary in order to perform bioinformatic analysis.
 
