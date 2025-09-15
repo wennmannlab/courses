@@ -21,11 +21,11 @@
     "text": "Required items\nTo complete this tutorial, you will need access to a Galaxy Platform. There are various Galaxy servers in different regions around the world. Of course, you are free to choose whichever instance you prefer. For this tutorial, I recommend creating an account at usegalaxy.eu. Accounts are free and can be deleted at any time.\n\nRequired course items The follwoing course items are required:\n\nBring your own laptop\nInternet connection\nAn account at usegalaxy.eu"
   },
   {
-    "objectID": "index.html#create-an-galaxy-account",
-    "href": "index.html#create-an-galaxy-account",
+    "objectID": "index.html#create-a-galaxy-account",
+    "href": "index.html#create-a-galaxy-account",
     "title": "Welcome",
-    "section": "Create an Galaxy account",
-    "text": "Create an Galaxy account\nDepending on the instance and update of the website, the home page may look slightly different.\n\nLogin or Register to Galaxy\n\nOpen your favorite browser.\nBrowse to https://usegalaxy.eu\nLogin or register\n\n\nIf you have registered as a new user, don’t forget to confirm your email address."
+    "section": "Create a Galaxy account",
+    "text": "Create a Galaxy account\nDepending on the instance and update of the website, the home page may look slightly different.\n\nLogin or Register to Galaxy\n\nOpen your favorite browser.\nBrowse to https://usegalaxy.eu\nLogin or register\n\n\nIf you have registered as a new user, don’t forget to confirm your email address."
   },
   {
     "objectID": "index.html#laptop-or-computer",
@@ -35,11 +35,11 @@
     "text": "Laptop or computer\nThere are no requirements for your laptop! You can use any laptop or computer to participate, as all calculations are performed on the Galaxy server itself."
   },
   {
-    "objectID": "index.html#internet-connection.",
-    "href": "index.html#internet-connection.",
+    "objectID": "index.html#internet-connection",
+    "href": "index.html#internet-connection",
     "title": "Welcome",
-    "section": "Internet connection.",
-    "text": "Internet connection.\nA stable internet connection is required, as a connection to the Galaxy server is necessary in order to perform bioinformatic analysis."
+    "section": "Internet connection",
+    "text": "Internet connection\nA stable internet connection is required, as a connection to the Galaxy server is necessary in order to perform bioinformatic analysis."
   },
   {
     "objectID": "index.html#websites",
