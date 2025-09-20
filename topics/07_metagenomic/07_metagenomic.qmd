@@ -249,8 +249,6 @@ The Sankey plot should then appear and you can begin analyzing the data.
 ![](png/pavian_sankey.PNG){width="100%"}
 :::
 
-Fangen wir and und extrahieren alle Reads, die dem Taxon "Virus
-
 ## Extraction of classified reads
 
 After classification, the question arises as to whether I can continue working with only a specific group (= taxon) of reads.
